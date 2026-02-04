@@ -1,0 +1,221 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "8808cc79-a1ab-4995-8341-f296cbb2a43b": {
+      "type": "collection-list",
+      "blocks": {
+        "template--15954664390828__8808cc79-a1ab-4995-8341-f296cbb2a43b-1667402890c98bf233-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "wohnen",
+            "image": "shopify://shop_images/11869-mood--Guten-Appetet-Krug.jpg"
+          }
+        },
+        "template--15954664390828__8808cc79-a1ab-4995-8341-f296cbb2a43b-1667402890c98bf233-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "trend",
+            "image": "shopify://shop_images/75dpi__zwitscherbox_weiss_fruehjahr_2021.jpg"
+          }
+        },
+        "template--15954664390828__8808cc79-a1ab-4995-8341-f296cbb2a43b-1667402890c98bf233-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "kuechenartikel",
+            "image": "shopify://shop_images/teekanne_leaf_1_5liter_25LEA_1024_dquadrat_plint-1.jpg"
+          }
+        },
+        "d6ad552e-b7b1-4798-9635-9afd003121ff": {
+          "type": "collection",
+          "settings": {
+            "collection": "geschenke",
+            "image": "shopify://shop_images/mothers-day-gifts.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--15954664390828__8808cc79-a1ab-4995-8341-f296cbb2a43b-1667402890c98bf233-0",
+        "template--15954664390828__8808cc79-a1ab-4995-8341-f296cbb2a43b-1667402890c98bf233-1",
+        "template--15954664390828__8808cc79-a1ab-4995-8341-f296cbb2a43b-1667402890c98bf233-2",
+        "d6ad552e-b7b1-4798-9635-9afd003121ff"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Unser Sortiment",
+        "layout": "rows",
+        "grid": 4,
+        "grid_mobile": "1",
+        "show_view_all": false,
+        "alternate_bg_color": false
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "disabled": true,
+      "settings": {
+        "show_collection_content": true,
+        "show_collection_image": true,
+        "description_position": "top",
+        "layout": "rows",
+        "grid": 3,
+        "grid_mobile": "2",
+        "products_per_page": 18,
+        "enable_infinite_scroll": true,
+        "show_vendor": false,
+        "show_filter_counts": false,
+        "show_filter_deadends": true,
+        "ajax_products": true,
+        "filter_mode": "sidebar",
+        "sticky_sidebar": true,
+        "collapse_filters_method": "none",
+        "collapse_sort_by": false,
+        "enable_sorting": true,
+        "show_featured_in_sort": false
+      }
+    },
+    "165477742524042bd2": {
+      "type": "gallery",
+      "blocks": {
+        "1654777425e7922d86-0": {
+          "type": "image",
+          "settings": {
+            "video": "",
+            "desktop_image_position": "center center",
+            "mobile_image_position": "center center",
+            "enlarge_image": false,
+            "subheading": "Gallery",
+            "title": "Tell your story",
+            "heading_h1": false,
+            "button_label": "Shop this",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "1654777425e7922d86-1": {
+          "type": "image",
+          "settings": {
+            "video": "",
+            "desktop_image_position": "center center",
+            "mobile_image_position": "center center",
+            "enlarge_image": false,
+            "subheading": "Gallery",
+            "title": "Tell your story",
+            "heading_h1": false,
+            "button_label": "Shop this",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "1654777425e7922d86-2": {
+          "type": "image",
+          "settings": {
+            "video": "",
+            "desktop_image_position": "center center",
+            "mobile_image_position": "center center",
+            "enlarge_image": false,
+            "subheading": "Gallery",
+            "title": "Tell your story",
+            "heading_h1": false,
+            "button_label": "Shop this",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": [
+        "1654777425e7922d86-0",
+        "1654777425e7922d86-1",
+        "1654777425e7922d86-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "grid": 3,
+        "desktop_image_height": 300,
+        "mobile_image_height": 400,
+        "title_size": 44,
+        "enable_margin": true,
+        "full_width": false,
+        "enable_carousel": true,
+        "overlay_style_tint": true,
+        "alternate_bg_color": false
+      }
+    },
+    "08bd9aca-d472-47f5-adc7-d7f4dfb34606": {
+      "type": "collection-list",
+      "blocks": {
+        "template--15954664390828__08bd9aca-d472-47f5-adc7-d7f4dfb34606-16674034176c734b84-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "alle-artikel-herren",
+            "image": "shopify://shop_images/Screenshot_2025-10-09_143802.png"
+          }
+        },
+        "template--15954664390828__08bd9aca-d472-47f5-adc7-d7f4dfb34606-16674034176c734b84-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "damentracht",
+            "image": "shopify://shop_images/Titel-Dirndlbluse-Kollektion_af7a0b10-da30-4e5b-8b90-de8311d23a9c.jpg"
+          }
+        },
+        "template--15954664390828__08bd9aca-d472-47f5-adc7-d7f4dfb34606-16674034176c734b84-2": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15954664390828__08bd9aca-d472-47f5-adc7-d7f4dfb34606-16674034176c734b84-1",
+        "template--15954664390828__08bd9aca-d472-47f5-adc7-d7f4dfb34606-16674034176c734b84-0",
+        "template--15954664390828__08bd9aca-d472-47f5-adc7-d7f4dfb34606-16674034176c734b84-2"
+      ],
+      "settings": {
+        "title": "Tracht",
+        "layout": "rows",
+        "grid": 2,
+        "grid_mobile": "2",
+        "show_view_all": false,
+        "alternate_bg_color": false
+      }
+    },
+    "image_with_text_hW88Ha": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "",
+        "title": "Größenberatung",
+        "title_size": 28,
+        "text": "<p>Du weißt nicht genau, welche Größe dir passt? Kein Problem, hier findest du eine ausführliche Anleitung, wie du deine Größe ermittelst.</p>",
+        "button_label": "Größe ermitteln",
+        "button_link": "shopify://pages/grossenberatung-1",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/Bilder_Shop_Grosse_1200_x_1800_px_-_2025-07-16T110900.557.png",
+        "video": "",
+        "image_width": 100,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "custom",
+        "color_bg": "#ffffff",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "8808cc79-a1ab-4995-8341-f296cbb2a43b",
+    "main",
+    "165477742524042bd2",
+    "08bd9aca-d472-47f5-adc7-d7f4dfb34606",
+    "image_with_text_hW88Ha"
+  ]
+}

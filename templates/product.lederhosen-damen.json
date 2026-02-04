@@ -1,0 +1,268 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "a0b4682b-0284-43e0-8b5e-25fdd36d201c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Logo_Krueger_schwarz.png",
+            "image_width": 130,
+            "url": ""
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_h1": true
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "7827740d-0797-4dbe-b0b9-9f6355d3be76": {
+          "type": "text",
+          "settings": {
+            "text": "Lieferzeit: ca. 2-4 Werktage",
+            "text_style": "uppercase"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {}
+        },
+        "5631a395-cc4a-4aeb-95d2-62342d321575": {
+          "type": "link",
+          "settings": {
+            "text": "zur Größenberatung",
+            "url": "shopify://pages/grossenberatung-1",
+            "text_style": "button_secondary",
+            "open_new_window": true
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_style": "underlined",
+            "show_realtime_availability": true,
+            "show_size_chart": false,
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "show_quantity_selector": true,
+            "enable_payment_button": false,
+            "show_pickup_availability": true,
+            "enable_mobile_sticky_cart": false
+          }
+        },
+        "a395d1b6-a240-48f7-81d0-386a8171780a": {
+          "type": "trust_icons",
+          "settings": {
+            "icon_size": 30,
+            "show_icon1": true,
+            "text1": "<p>Versandkostenrabatt auf Trachtenmode ab 70 Euro Bestellwert.</p>",
+            "icon1": "check_mark",
+            "show_icon2": true,
+            "text2": "<p>schnelle Lieferung</p>",
+            "icon2": "truck",
+            "show_icon3": true,
+            "text3": "<p>weiterverwendete Kartons</p>",
+            "icon3": "box",
+            "show_icon4": true,
+            "text4": "<p>designt in Deutschland</p>",
+            "icon4": "heart"
+          }
+        },
+        "a0c4d84d-f4f4-46c5-bdff-cc293cb5f1ac": {
+          "type": "description",
+          "settings": {
+            "display": "accordion_open",
+            "icon": "heart"
+          }
+        },
+        "9ed659ca-743a-4877-82db-1da05984edd1": {
+          "type": "accordion",
+          "settings": {
+            "icon": "box",
+            "title": "Versand",
+            "content": "<p>Lieferzeit innerhalb Deutschlands ca. 2-4 Werktage.</p><p>Versandkostenrabatt ab 60 Euro bei Trachtenmode.</p><p>Die Rücksendekosten sind selbst zu tragen.</p><p>Mehr Informationen findest du unter <a href=\"/pages/zahlung-versand\" title=\"Versand & Lieferung\">Versand & Lieferung</a>.</p>",
+            "page": "",
+            "open": false
+          }
+        },
+        "393e03c4-12f6-473c-b2ea-3eb18d39eadd": {
+          "type": "accordion",
+          "settings": {
+            "icon": "shirt",
+            "title": "Passform",
+            "content": "<p>normal</p><p><strong>Tipp:</strong> die Lederhose muss knackig sitzen, da das Leder noch weicher wird</p>",
+            "page": "",
+            "open": false
+          }
+        },
+        "19325e18-288d-4298-98ac-a911d703d753": {
+          "type": "accordion",
+          "settings": {
+            "icon": "washing",
+            "title": "Pflege",
+            "content": "<p>Da die Lederhosen von Krüger aus echtem Leder bestehen, kannst du sie nicht waschen.</p><p>Nur spezielle Lederreinigung möglich.</p><p>ACHTUNG: Bei dunklen und intensiven Farben ist ein Abfärben auf helle Kleidungsstücke, Möbel und andere Gegenstände möglich.</p>",
+            "page": "",
+            "open": false
+          }
+        },
+        "f5d39fbc-6c69-434f-8553-d39ca5082f3b": {
+          "type": "link",
+          "settings": {
+            "text": "So ziehe ich meine neue Lederhose an >",
+            "url": "shopify://blogs/trachten-blog/wie-trage-ich-eine-lederhose",
+            "text_style": "link",
+            "open_new_window": false
+          }
+        },
+        "14a0ef09-063f-4387-88d7-9be86385600f": {
+          "type": "sku",
+          "settings": {}
+        },
+        "560bdaff-51eb-4652-9931-eaf552ba27bf": {
+          "type": "social",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "a0b4682b-0284-43e0-8b5e-25fdd36d201c",
+        "title",
+        "price",
+        "7827740d-0797-4dbe-b0b9-9f6355d3be76",
+        "rating",
+        "5631a395-cc4a-4aeb-95d2-62342d321575",
+        "variant_picker",
+        "buy_buttons",
+        "a395d1b6-a240-48f7-81d0-386a8171780a",
+        "a0c4d84d-f4f4-46c5-bdff-cc293cb5f1ac",
+        "9ed659ca-743a-4877-82db-1da05984edd1",
+        "393e03c4-12f6-473c-b2ea-3eb18d39eadd",
+        "19325e18-288d-4298-98ac-a911d703d753",
+        "f5d39fbc-6c69-434f-8553-d39ca5082f3b",
+        "14a0ef09-063f-4387-88d7-9be86385600f",
+        "560bdaff-51eb-4652-9931-eaf552ba27bf"
+      ],
+      "settings": {
+        "media_style": "two-column",
+        "sticky_behaviour": "bottom",
+        "full_width": true,
+        "show_backorder_text": true,
+        "slide_nav_style": "dots",
+        "media_crop": "center",
+        "enable_zoom": false,
+        "zoom_cursor": "plus-light",
+        "show_thumbnails": true,
+        "enable_video_looping": false,
+        "scroll_to_variant_media": true,
+        "highlight_selected_media": true,
+        "variant_media_grouping": false,
+        "variant_media_grouping_option": "Color,Colour,Couleur,Farbe"
+      }
+    },
+    "1660919086cafaca46": {
+      "type": "apps",
+      "settings": {
+        "skip_container": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "show_product_recommendations": true,
+        "title": "Das könnte dir auch gefallen",
+        "hide_swatches": false,
+        "show_vendor": false,
+        "grid": 3
+      }
+    },
+    "1657272993adcad198": {
+      "type": "collection-list",
+      "blocks": {
+        "1657272993940b230c-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "blusen-t-shirts",
+            "image": "shopify://shop_images/Collection-List-Blusen.jpg"
+          }
+        },
+        "1657272993940b230c-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "mieder",
+            "image": "shopify://shop_images/Collection-List-Mieder.jpg"
+          }
+        },
+        "1657272993940b230c-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "trachtenjacken",
+            "image": "shopify://shop_images/Collection-List-Lederhosen-Trachtenjacken-Damen.jpg"
+          }
+        },
+        "d7ffab5f-347e-4b68-a664-257df1592c29": {
+          "type": "collection",
+          "settings": {
+            "collection": "trachtenschuhe-damen",
+            "image": "shopify://shop_images/Collection-List-Trachtenschuhe-Damen.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "1657272993940b230c-0",
+        "1657272993940b230c-1",
+        "1657272993940b230c-2",
+        "d7ffab5f-347e-4b68-a664-257df1592c29"
+      ],
+      "settings": {
+        "title": "Mach dein Outfit komplett",
+        "layout": "carousel",
+        "grid": 3,
+        "grid_mobile": "2",
+        "show_view_all": true,
+        "alternate_bg_color": false
+      }
+    },
+    "16551872197b74e0e0": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Das könnte dir auch gefallen",
+        "collection": "lederhosen-co-damen",
+        "layout": "carousel",
+        "show_vendor": false,
+        "grid": 3,
+        "rows": 1,
+        "grid_mobile": "2",
+        "hide_swatches": false,
+        "alternate_bg_color": false,
+        "show_view_all": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1660919086cafaca46",
+    "product-recommendations",
+    "1657272993adcad198",
+    "16551872197b74e0e0"
+  ]
+}

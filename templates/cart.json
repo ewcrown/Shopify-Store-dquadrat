@@ -1,0 +1,155 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-cart",
+      "settings": {
+        "cart_show_title": true,
+        "cart_terms_show": false,
+        "cart_terms_page": "",
+        "continue_shopping_page": "/",
+        "cart_note_show": false,
+        "show_tax_and_shipping": true,
+        "show_additional_checkout_buttons": true,
+        "show_backorder_text": true
+      }
+    },
+    "4e24efac-a66b-487e-850f-0fdde22fd200": {
+      "type": "gallery",
+      "blocks": {
+        "template--15954664325292__4e24efac-a66b-487e-850f-0fdde22fd200-1678453349656ead15-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_1024_53.png",
+            "video": "",
+            "desktop_image_position": "center center",
+            "mobile_image_position": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "heading_h1": false,
+            "button_label": "",
+            "link": "https://www.dquadrat-stores.de",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "template--15954664325292__4e24efac-a66b-487e-850f-0fdde22fd200-1678453349656ead15-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "video": "",
+            "desktop_image_position": "center center",
+            "mobile_image_position": "center center",
+            "enlarge_image": false,
+            "subheading": "Gallery",
+            "title": "Tell your story",
+            "heading_h1": false,
+            "button_label": "Shop this",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "template--15954664325292__4e24efac-a66b-487e-850f-0fdde22fd200-1678453349656ead15-2": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "video": "",
+            "desktop_image_position": "center center",
+            "mobile_image_position": "center center",
+            "enlarge_image": false,
+            "subheading": "Gallery",
+            "title": "Tell your story",
+            "heading_h1": false,
+            "button_label": "Shop this",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": [
+        "template--15954664325292__4e24efac-a66b-487e-850f-0fdde22fd200-1678453349656ead15-0",
+        "template--15954664325292__4e24efac-a66b-487e-850f-0fdde22fd200-1678453349656ead15-1",
+        "template--15954664325292__4e24efac-a66b-487e-850f-0fdde22fd200-1678453349656ead15-2"
+      ],
+      "settings": {
+        "title": "",
+        "grid": 3,
+        "desktop_image_height": 290,
+        "mobile_image_height": 150,
+        "title_size": 22,
+        "enable_margin": true,
+        "full_width": false,
+        "enable_carousel": true,
+        "overlay_style_tint": true,
+        "alternate_bg_color": false
+      }
+    },
+    "2752a885-d79e-4d9b-a08b-a7188395d8d5": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Das könnte dir auch gefallen",
+        "collection": "tracht",
+        "layout": "carousel",
+        "show_vendor": false,
+        "grid": 4,
+        "rows": 1,
+        "grid_mobile": "2",
+        "hide_swatches": false,
+        "alternate_bg_color": false,
+        "show_view_all": true
+      }
+    },
+    "16571940261597424d": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Viele Produkte sind reduziert. Vielleicht ist ja etwas für dich dabei!",
+        "collection": "allgemein-sale",
+        "layout": "carousel",
+        "show_vendor": false,
+        "grid": 3,
+        "rows": 1,
+        "grid_mobile": "2",
+        "hide_swatches": false,
+        "alternate_bg_color": false,
+        "show_view_all": false
+      }
+    },
+    "5b5d8cb4-c726-4de6-a3ce-bec29d7a1e6c": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Media with text",
+        "title_size": 28,
+        "text": "<p>Use this text to share information about your store. Describe products, share announcements, or welcome customers to your store.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "auto",
+        "video": "",
+        "image_width": 100,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "4e24efac-a66b-487e-850f-0fdde22fd200",
+    "2752a885-d79e-4d9b-a08b-a7188395d8d5",
+    "16571940261597424d",
+    "5b5d8cb4-c726-4de6-a3ce-bec29d7a1e6c"
+  ]
+}

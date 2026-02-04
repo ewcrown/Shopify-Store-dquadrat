@@ -1,0 +1,107 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "blocks": {
+        "f0a00a80-7d61-47a9-9494-692d7f41aa55": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "collection": "kruger-tracht-herren"
+          }
+        },
+        "0905c421-faac-4caa-8dda-24bc271130f9": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "collection": "trend"
+          }
+        },
+        "77b680ee-3a45-4388-8457-d4397814b4b9": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "collection": "kruger-tracht"
+          }
+        },
+        "f7f650e5-3118-4599-be01-72b1f3821a8e": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "collection": "genuss"
+          }
+        },
+        "bc0ceeb9-e4c0-40ff-b7df-ff2a94c77ef2": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "collection": "kuechenartikel"
+          }
+        },
+        "f6e5733f-378c-481f-a386-58a824b1b60f": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "collection": "wohnen"
+          }
+        },
+        "01b02056-6dc9-488a-97ce-4f908c748226": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "collection": "kuschelige-weihnachten"
+          }
+        },
+        "image_hARBMj": {
+          "type": "image",
+          "settings": {
+            "collection": "sale-tracht"
+          }
+        },
+        "image_9jQX9F": {
+          "type": "image",
+          "settings": {
+            "collection": "sale-tracht-h"
+          }
+        },
+        "image_r8GciC": {
+          "type": "image",
+          "settings": {
+            "collection": "sale-wohnen-livestyle"
+          }
+        }
+      },
+      "block_order": [
+        "f0a00a80-7d61-47a9-9494-692d7f41aa55",
+        "0905c421-faac-4caa-8dda-24bc271130f9",
+        "77b680ee-3a45-4388-8457-d4397814b4b9",
+        "f7f650e5-3118-4599-be01-72b1f3821a8e",
+        "bc0ceeb9-e4c0-40ff-b7df-ff2a94c77ef2",
+        "f6e5733f-378c-481f-a386-58a824b1b60f",
+        "01b02056-6dc9-488a-97ce-4f908c748226",
+        "image_hARBMj",
+        "image_9jQX9F",
+        "image_r8GciC"
+      ],
+      "settings": {
+        "title": "",
+        "layout": "columns",
+        "grid": 3,
+        "collections_per_page": 44,
+        "display_type": "selected"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

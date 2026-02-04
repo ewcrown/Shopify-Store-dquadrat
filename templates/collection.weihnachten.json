@@ -1,0 +1,87 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "8808cc79-a1ab-4995-8341-f296cbb2a43b": {
+      "type": "collection-list",
+      "blocks": {
+        "template--15954664390828__8808cc79-a1ab-4995-8341-f296cbb2a43b-1667402890c98bf233-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "wohnen",
+            "image": "shopify://shop_images/11869-mood--Guten-Appetet-Krug.jpg"
+          }
+        },
+        "template--15954664390828__8808cc79-a1ab-4995-8341-f296cbb2a43b-1667402890c98bf233-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "trend",
+            "image": "shopify://shop_images/75dpi__zwitscherbox_weiss_fruehjahr_2021.jpg"
+          }
+        },
+        "template--15954664390828__8808cc79-a1ab-4995-8341-f296cbb2a43b-1667402890c98bf233-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "kuechenartikel",
+            "image": "shopify://shop_images/teekanne_leaf_1_5liter_25LEA_1024_dquadrat_plint-1.jpg"
+          }
+        },
+        "d6ad552e-b7b1-4798-9635-9afd003121ff": {
+          "type": "collection",
+          "settings": {
+            "collection": "geschenke",
+            "image": "shopify://shop_images/mothers-day-gifts.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--15954664390828__8808cc79-a1ab-4995-8341-f296cbb2a43b-1667402890c98bf233-0",
+        "template--15954664390828__8808cc79-a1ab-4995-8341-f296cbb2a43b-1667402890c98bf233-1",
+        "template--15954664390828__8808cc79-a1ab-4995-8341-f296cbb2a43b-1667402890c98bf233-2",
+        "d6ad552e-b7b1-4798-9635-9afd003121ff"
+      ],
+      "settings": {
+        "title": "Unser Sortiment",
+        "layout": "rows",
+        "grid": 4,
+        "grid_mobile": "1",
+        "show_view_all": false,
+        "alternate_bg_color": false
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_collection_content": false,
+        "show_collection_image": false,
+        "description_position": "top",
+        "layout": "rows",
+        "grid": 3,
+        "grid_mobile": "2",
+        "products_per_page": 18,
+        "enable_infinite_scroll": true,
+        "show_vendor": false,
+        "show_filter_counts": false,
+        "show_filter_deadends": true,
+        "ajax_products": true,
+        "filter_mode": "sidebar",
+        "sticky_sidebar": true,
+        "collapse_filters_method": "none",
+        "collapse_sort_by": false,
+        "enable_sorting": true,
+        "show_featured_in_sort": false
+      }
+    }
+  },
+  "order": [
+    "8808cc79-a1ab-4995-8341-f296cbb2a43b",
+    "main"
+  ]
+}

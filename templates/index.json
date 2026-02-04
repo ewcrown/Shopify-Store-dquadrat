@@ -1,0 +1,980 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "scrolling_text_wq3ccw": {
+      "type": "scrolling-text",
+      "disabled": true,
+      "settings": {
+        "text": "Info: Kein Versand bis zum 06.01.2026! Wir wünschen ein gutes neues Jahr 2026!",
+        "link": "",
+        "text_size": 16,
+        "line_height": 1.5,
+        "speed": 0.5,
+        "direction": "left",
+        "font": "heading",
+        "space_x": true,
+        "stencil_all_text": false,
+        "stencil_text": "",
+        "overlay_style_tint": false,
+        "color_scheme": "custom",
+        "color_bg": "#e50051",
+        "color_text": "#ffffff"
+      }
+    },
+    "8e1e01a7-afd6-4a0e-93f3-80dc3425518d": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Garantierte Lieferung bis Weihnachten bei Bestellungen bis 17.12.2025",
+        "title_size": 38,
+        "heading_h1": false,
+        "text": "<p>Kein Versand zwischen dem 24.12.2025 und dem 06.01.2026!</p><p>Wir wünschen frohe Festtage und einen guten Rutsch ins Jahr 2026!</p>",
+        "image_width": 700,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "alt",
+        "color_bg": "#e7afc3",
+        "color_text": "#e50051"
+      }
+    },
+    "aa6a0b4b-81c7-424a-a645-f1fe42ba43cc": {
+      "type": "slideshow",
+      "blocks": {
+        "image_6H6kyC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_1024_51.png",
+            "mobile_image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_1024_51.png",
+            "desktop_image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "shopify://collections/geschenke-mit-herz",
+            "subheading": "",
+            "title": "",
+            "title_size": 60,
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label": "Geschenke mit Herz entdecken",
+            "overlay_position": "position--left position--bottom"
+          }
+        },
+        "image_CGpbeg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_1024_46.png",
+            "mobile_image": "shopify://shop_images/Mobile_Slider_297_x_420_mm_f7cc9491-22c6-457e-9af5-2bc0442d62e6.png",
+            "desktop_image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "shopify://collections/warmende-tracht",
+            "subheading": "Perfekt für den Winter",
+            "title": "Wärmende Tracht",
+            "title_size": 60,
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label": "Jetzt entdecken",
+            "overlay_position": "position--left position--bottom"
+          }
+        },
+        "image_dwdHJQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_1024_50.png",
+            "mobile_image": "shopify://shop_images/Mobile_Slider_297_x_420_mm_2_c050dbb3-8e30-4cd5-893c-cb16d0aa4555.png",
+            "desktop_image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "shopify://collections/unsere-neuheiten",
+            "subheading": "",
+            "title": "",
+            "title_size": 60,
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label": "Unsere Neuheiten hier entdecken",
+            "overlay_position": "position--left position--bottom"
+          }
+        },
+        "79c2a28e-e8ad-4e3c-9076-96357d53c561": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/neue-kollektion-krueger-hw25.png",
+            "mobile_image": "shopify://shop_images/neue-kollektion-krueger-hw25.png",
+            "desktop_image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "shopify://collections/dirndl",
+            "subheading": "Krüger Trachtenmode",
+            "title": "Die neue Krüger Kollektion",
+            "title_size": 60,
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label": "Jetzt entdecken",
+            "overlay_position": "position--left position--bottom"
+          }
+        },
+        "29d19ac9-202c-4a3e-96e8-b5365ac03f95": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_1024_34.png",
+            "mobile_image": "shopify://shop_images/Vase-Goldvoegelchen-18445-RaederDesign-dquadrat_2.png",
+            "desktop_image_position": "left bottom",
+            "mobile_image_position": "center center",
+            "slide_link": "shopify://collections/rader-design",
+            "subheading": "",
+            "title": "Viele neue Dekostücke - für noch mehr Gemütlichkeit!",
+            "title_size": 60,
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label": "Räder Design entdecken",
+            "overlay_position": "position--left position--bottom"
+          }
+        },
+        "image_rHNarN": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Karte-Umfrage_Banner_Querformat_3.png",
+            "mobile_image": "shopify://shop_images/Karte-Umfrage_Karte_WhatsApp_2.png",
+            "desktop_image_position": "center center",
+            "mobile_image_position": "left bottom",
+            "slide_link": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__42PJ35UQVZGV1hSOU5UMEZPNkNMSVY2NDc1RjczNy4u&origin=lprLink&route=shorturl",
+            "subheading": "",
+            "title": "",
+            "title_size": 60,
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label": "An Umfrage teilnehmen",
+            "overlay_position": "position--left position--bottom"
+          }
+        },
+        "template--15954664751276__aa6a0b4b-81c7-424a-a645-f1fe42ba43cc-image-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Startseiten_Slider_19.png",
+            "mobile_image": "shopify://shop_images/7015-Bowl-18-cm-Gruen-und-Form-_2.jpg",
+            "desktop_image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "shopify://collections/kuechenartikel",
+            "subheading": "",
+            "title": "Grün und Form",
+            "title_size": 60,
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label": "Jetzt entdecken",
+            "overlay_position": "position--left position--bottom"
+          }
+        },
+        "image_yKEMef": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_852_px2048_x_850_px_28.png",
+            "mobile_image": "shopify://shop_images/Mobile_Slider_297_x_420_mm_3.png",
+            "desktop_image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "shopify://collections/winkekatzen",
+            "subheading": "",
+            "title": "",
+            "title_size": 60,
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label": "Entdecke unsere Winkekatzen",
+            "overlay_position": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": [
+        "image_6H6kyC",
+        "image_CGpbeg",
+        "image_dwdHJQ",
+        "79c2a28e-e8ad-4e3c-9076-96357d53c561",
+        "29d19ac9-202c-4a3e-96e8-b5365ac03f95",
+        "image_rHNarN",
+        "template--15954664751276__aa6a0b4b-81c7-424a-a645-f1fe42ba43cc-image-3",
+        "image_yKEMef"
+      ],
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 800,
+        "height_mobile": 500,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": false,
+        "slide_transition": "slide",
+        "slide_navigation": "dots",
+        "autoplay": true,
+        "autoplay_speed": 4
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "Herzlich Willkommen",
+        "title": "Schön, dass du da bist!",
+        "title_size": 52,
+        "heading_h1": false,
+        "text": "<p><strong>Wir sind dein Online Shop mit Trachtenmode von Krüger und vielen Produkten aus den Bereichen Geschenke, Feinkost, Lifestyle und Wohnen. </strong></p><p><strong>Zu uns gehört auch die </strong><a href=\"https://www.tee-undkraeutergalerie.de/\" target=\"_blank\" title=\"https://www.tee-undkraeutergalerie.de/\"><strong>Tee-und-Kräutergalerie</strong></a><strong> im Breuningerland Ludwigsburg.</strong></p><p><strong>Außerdem haben wir einige Stores im Großraum Ludwigsburg und Stuttgart.</strong></p><p>👇<br/><a href=\"/pages/stores\" title=\"Stores und Öffnungszeiten\"><strong>Stores und Öffnungszeiten</strong></a></p><p><strong>Deine Vorteile:</strong></p><p><strong>- Rabattierter Versand der Trachtenmode innerhalb Deutschlands ab 70 Euro Verkaufswert. Einfach Code VKFREE im Checkout eingeben!</strong></p><p><strong>- Schneller Versand</strong></p><p><strong>- Freundlicher Service</strong></p><p><strong>- Kompetente Beratung</strong></p><p><strong>- 5 % Rabatt bei Newsletteranmeldung</strong></p><p><strong>- Viele Rabatt- und Sale-Aktionen!</strong></p><p>❤️<br/></p><p><strong>Wir wünschen dir viel Spaß beim Stöbern und Entdecken!</strong></p><p></p><p></p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": true,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "slideshow_tMaaqK": {
+      "type": "slideshow",
+      "blocks": {
+        "image_DQBcEq": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "desktop_image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "Subheading",
+            "title": "Two line\nslide heading",
+            "title_size": 60,
+            "heading_h1": false,
+            "text": "<p>and optional subtext</p>",
+            "enlarge_text": true,
+            "button_label": "",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        },
+        "image_k78XgG": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "desktop_image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "Subheading",
+            "title": "Two line\nslide heading",
+            "title_size": 60,
+            "heading_h1": false,
+            "text": "<p>and optional subtext</p>",
+            "enlarge_text": true,
+            "button_label": "",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        },
+        "image_bEw97z": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2025-10-10_113441.png",
+            "mobile_image": "shopify://shop_images/Screenshot_2025-10-10_113441.png",
+            "desktop_image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "shopify://collections/rader-design",
+            "subheading": "Gemütlichkeit für den winter",
+            "title": "RÄDER DESIGN",
+            "title_size": 60,
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label": "Jetzt entdecken",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        }
+      },
+      "block_order": [
+        "image_DQBcEq",
+        "image_k78XgG",
+        "image_bEw97z"
+      ],
+      "disabled": true,
+      "name": "Slideshow",
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true,
+        "slide_transition": "slide",
+        "slide_navigation": "dots",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "collection_list_Br8mxQ": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_GJgDJM": {
+          "type": "collection",
+          "settings": {
+            "collection": "dirndl-zum-knopfen",
+            "image": "shopify://shop_images/Bilder_Shop_Grosse_1200_x_1800_px_-_2025-07-23T113633.578.png"
+          }
+        },
+        "collection_Lmj9FM": {
+          "type": "collection",
+          "settings": {
+            "collection": "hochgeschlossene-blusen",
+            "image": "shopify://shop_images/Bilder_Shop_Grosse_1200_x_1800_px_-_2025-07-23T114255.581.png"
+          }
+        },
+        "collection_kr7RKQ": {
+          "type": "collection",
+          "settings": {
+            "collection": "dirndl-ohne-schnurung",
+            "image": "shopify://shop_images/Bilder_Shop_Grosse_1200_x_1800_px_-_2025-07-23T114421.876.png"
+          }
+        },
+        "collection_ARt3nJ": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "influencer-collection-paola-maria"
+          }
+        }
+      },
+      "block_order": [
+        "collection_GJgDJM",
+        "collection_Lmj9FM",
+        "collection_kr7RKQ",
+        "collection_ARt3nJ"
+      ],
+      "settings": {
+        "title": "Trachten Must Haves 2026",
+        "layout": "rows",
+        "grid": 3,
+        "grid_mobile": "2",
+        "show_view_all": true,
+        "alternate_bg_color": false
+      }
+    },
+    "27b7b0de-83a8-4bff-8fb4-e6ca12ff7126": {
+      "type": "collection-list",
+      "blocks": {
+        "template--15954664751276__27b7b0de-83a8-4bff-8fb4-e6ca12ff7126-166738645918f3703c-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "tracht",
+            "image": "shopify://shop_images/Screenshot_2025-07-08_080442.png"
+          }
+        },
+        "template--15954664751276__27b7b0de-83a8-4bff-8fb4-e6ca12ff7126-166738645918f3703c-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "wohnen-und-lifestyle",
+            "image": "shopify://shop_images/16733-Naturgestalten-Flora-_2_b6b1856a-381c-4d80-96f5-d7ec1c0ea9bf.jpg"
+          }
+        },
+        "template--15954664751276__27b7b0de-83a8-4bff-8fb4-e6ca12ff7126-166738645918f3703c-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "kuechenartikel",
+            "image": "shopify://shop_images/7015-Bowl-18-cm-Gruen-und-Form-_1_be837850-836a-4657-a1cc-7235720e02cd.jpg"
+          }
+        },
+        "caac94c8-24b0-4127-8eca-5fc68681ef07": {
+          "type": "collection",
+          "settings": {
+            "collection": "trend",
+            "image": "shopify://shop_images/Vase_-_CROISSANT_-_AAVSECROISSANT_-_Fluid_Market_-_Wohnen-dquadrat-2.png"
+          }
+        },
+        "collection_UMfjYg": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": ""
+          }
+        },
+        "c9b44979-4619-4e3c-a7c5-6cff63b2e21d": {
+          "type": "collection",
+          "settings": {
+            "collection": "genuss",
+            "image": "shopify://shop_images/1720002-Balsamico-Essig-mit-Olivenoel-Senf-_1_5def50e0-a6ed-4b06-925b-db1ae585f598.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--15954664751276__27b7b0de-83a8-4bff-8fb4-e6ca12ff7126-166738645918f3703c-0",
+        "template--15954664751276__27b7b0de-83a8-4bff-8fb4-e6ca12ff7126-166738645918f3703c-1",
+        "template--15954664751276__27b7b0de-83a8-4bff-8fb4-e6ca12ff7126-166738645918f3703c-2",
+        "caac94c8-24b0-4127-8eca-5fc68681ef07",
+        "collection_UMfjYg",
+        "c9b44979-4619-4e3c-a7c5-6cff63b2e21d"
+      ],
+      "settings": {
+        "title": "Unser großes Sortiment",
+        "layout": "carousel",
+        "grid": 4,
+        "grid_mobile": "2",
+        "show_view_all": false,
+        "alternate_bg_color": false
+      }
+    },
+    "featured_collection_Vm8WcG": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Schönes von Räder Design",
+        "collection": "rader-design-weihnachten",
+        "layout": "rows",
+        "show_vendor": false,
+        "grid": 4,
+        "rows": 2,
+        "grid_mobile": "2",
+        "hide_swatches": false,
+        "alternate_bg_color": false,
+        "show_view_all": true
+      }
+    },
+    "featured_collection_XfKcBr": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Tolle Geschenkideen! Mit Herz gestaltet, mit Liebe verschenkt!",
+        "collection": "valentinstag",
+        "layout": "rows",
+        "show_vendor": false,
+        "grid": 3,
+        "rows": 2,
+        "grid_mobile": "2",
+        "hide_swatches": false,
+        "alternate_bg_color": false,
+        "show_view_all": true
+      }
+    },
+    "c9f79080-18ad-4daa-ab2a-9ad3259ee2ab": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Dirndltrends 2025/2026",
+        "collection": "dirndl",
+        "layout": "carousel",
+        "show_vendor": false,
+        "grid": 4,
+        "rows": 1,
+        "grid_mobile": "2",
+        "hide_swatches": false,
+        "alternate_bg_color": false,
+        "show_view_all": true
+      }
+    },
+    "image_with_text_T7kJNn": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Dirndl Annabelle, unser Lieblingsdirndl der Woche",
+        "title_size": 28,
+        "text": "<p>Neu eingetroffen, einfach schick und stylisch! Mit seinem ornamentalen Muster auf Mieder und Rock und einem sanften Gold/Ockerton ein wahrer Blickfang für die Wiesn und den Wasen!</p>",
+        "button_label": "Jetzt in 50er & 60er Länge entdecken",
+        "button_link": "https://www.dquadrat-stores.de/search?type=product&options%5Bprefix%5D=last&q=dirndl+annabelle",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/Vorlage_Freisteller_Tee_Aufsicht_oben.jpg",
+        "video": "",
+        "image_width": 100,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "gallery_VTMtx4": {
+      "type": "gallery",
+      "blocks": {
+        "image_XBKCLD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Cannstatter-Wasen.jpg",
+            "video": "",
+            "desktop_image_position": "center center",
+            "mobile_image_position": "center center",
+            "enlarge_image": false,
+            "subheading": "Viele tolle Modelle",
+            "title": "Dirndl Sale",
+            "heading_h1": false,
+            "button_label": "Ansehen",
+            "link": "shopify://collections/sale-tracht",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_XFJXcT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Instagram_Dquadrat_-_2024-10-07T120625.064.png",
+            "video": "",
+            "desktop_image_position": "center center",
+            "mobile_image_position": "center center",
+            "enlarge_image": false,
+            "subheading": "Für kühle Tage",
+            "title": "Warme Trachtenjacken",
+            "heading_h1": false,
+            "button_label": "Ansehen",
+            "link": "shopify://collections/trachtenjacken",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_RaikDj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_852_px2048_x_850_px.png",
+            "video": "",
+            "desktop_image_position": "center center",
+            "mobile_image_position": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "Die Tracht - <br> Das ganze Jahr über tragen",
+            "heading_h1": false,
+            "button_label": "Jetzt lesen",
+            "link": "shopify://blogs/trachten-blog/tracht-das-ganze-jahr-ein-zeitloser-stil-fur-jeden-anlass",
+            "text_alignment": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": [
+        "image_XBKCLD",
+        "image_XFJXcT",
+        "image_RaikDj"
+      ],
+      "settings": {
+        "title": "",
+        "grid": 2,
+        "desktop_image_height": 300,
+        "mobile_image_height": 400,
+        "title_size": 44,
+        "enable_margin": true,
+        "full_width": true,
+        "enable_carousel": true,
+        "overlay_style_tint": true,
+        "alternate_bg_color": false
+      }
+    },
+    "a22842ed-4db0-41be-8312-1e13edc18945": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Geschenkideen zu Weihnachten",
+        "collection": "kuschelige-weihnachten",
+        "layout": "carousel",
+        "show_vendor": false,
+        "grid": 4,
+        "rows": 1,
+        "grid_mobile": "2",
+        "hide_swatches": false,
+        "alternate_bg_color": false,
+        "show_view_all": true
+      }
+    },
+    "16571093007e331473": {
+      "type": "collection-list",
+      "blocks": {
+        "371ac9f0-eb5f-414e-a3b8-fcb8a564a0c9": {
+          "type": "collection",
+          "settings": {
+            "collection": "dirndl",
+            "image": "shopify://shop_images/look_16_3071.jpg"
+          }
+        },
+        "165710930003158201-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "dirndlblusen",
+            "image": "shopify://shop_images/look_07_2242.jpg"
+          }
+        },
+        "165710930003158201-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "lederhosen-co-damen",
+            "image": "shopify://shop_images/look_09_002_MADL.jpg"
+          }
+        },
+        "165710930003158201-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "trachtenjacken",
+            "image": "shopify://shop_images/web_L_11_114869_6340.jpg"
+          }
+        },
+        "d4bbc29f-7a46-45e4-8651-c4572d0fc72f": {
+          "type": "collection",
+          "settings": {
+            "collection": "mieder",
+            "image": "shopify://shop_images/web_L_14_232169_4916.jpg"
+          }
+        },
+        "6d1f3108-ecb5-444a-aa18-eab2fa6001ad": {
+          "type": "collection",
+          "settings": {
+            "collection": "accessoires-damen"
+          }
+        }
+      },
+      "block_order": [
+        "371ac9f0-eb5f-414e-a3b8-fcb8a564a0c9",
+        "165710930003158201-0",
+        "165710930003158201-1",
+        "165710930003158201-2",
+        "d4bbc29f-7a46-45e4-8651-c4572d0fc72f",
+        "6d1f3108-ecb5-444a-aa18-eab2fa6001ad"
+      ],
+      "settings": {
+        "title": "Madl und Collection - finde dein perfektes Trachtenoutfit",
+        "layout": "carousel",
+        "grid": 4,
+        "grid_mobile": "2",
+        "show_view_all": false,
+        "alternate_bg_color": false
+      }
+    },
+    "collection-list": {
+      "type": "collection-list",
+      "blocks": {
+        "1648220659c91ed362-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "westen",
+            "image": "shopify://shop_images/look_27_0902.jpg"
+          }
+        },
+        "1648220659c91ed362-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "lederhosen-co-herren",
+            "image": "shopify://shop_images/look_20_0103.jpg"
+          }
+        },
+        "1648220659c91ed362-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "hemden",
+            "image": "shopify://shop_images/Titel-Trachtenhemden-Kollektion.jpg"
+          }
+        },
+        "1648220659c91ed362-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "herren-jacken",
+            "image": "shopify://shop_images/look_20_0132.jpg"
+          }
+        },
+        "402b3873-a6eb-425d-bd24-c2fea8eac838": {
+          "type": "collection",
+          "settings": {
+            "collection": "trachtenschuhe-herren",
+            "image": "shopify://shop_images/Collection-List-Trachtenschuhe-Herren.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "1648220659c91ed362-0",
+        "1648220659c91ed362-1",
+        "1648220659c91ed362-2",
+        "1648220659c91ed362-3",
+        "402b3873-a6eb-425d-bd24-c2fea8eac838"
+      ],
+      "settings": {
+        "title": "Buam - der stylische Trachtenlook für Herren",
+        "layout": "carousel",
+        "grid": 4,
+        "grid_mobile": "1",
+        "show_view_all": false,
+        "alternate_bg_color": true
+      }
+    },
+    "84f06b36-cd12-4b31-9d3f-48d5384ff842": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Trachtentrends Buam 2024",
+        "collection": "alle-artikel-herren",
+        "layout": "carousel",
+        "show_vendor": false,
+        "grid": 4,
+        "rows": 1,
+        "grid_mobile": "2",
+        "hide_swatches": false,
+        "alternate_bg_color": false,
+        "show_view_all": true
+      }
+    },
+    "24cfaedd-d2ed-40fa-845e-1b258e17fc5c": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Mach deine Küche bunt mit Grün&Form",
+        "collection": "kuechenartikel",
+        "layout": "carousel",
+        "show_vendor": false,
+        "grid": 4,
+        "rows": 1,
+        "grid_mobile": "2",
+        "hide_swatches": false,
+        "alternate_bg_color": false,
+        "show_view_all": true
+      }
+    },
+    "image_with_text_qTDBBz": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "",
+        "title": "<b>Dquadrat Store</b>\nKrüger Tracht <br>Wohnen & Lifestyle <br>Feinkost & Tee\n<b>im Breuningerland Ludwigsburg</b><br>",
+        "title_size": 30,
+        "text": "",
+        "button_label": "Weitere Standorte & Öffnungszeiten",
+        "button_link": "shopify://pages/stores",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "primary",
+        "image": "shopify://shop_images/Instagram_Dquadrat_Tee_Vorlage_Shop_1080_x_1080_px_4_23023578-3bbd-4f52-9a9b-62c5b15d73a0.png",
+        "video": "",
+        "image_width": 83,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "custom",
+        "color_bg": "#e3e3e3",
+        "color_text": ""
+      }
+    },
+    "98301abe-d739-4924-ab31-7e8b563153a9": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Voll im Trend",
+        "collection": "trend",
+        "layout": "carousel",
+        "show_vendor": false,
+        "grid": 4,
+        "rows": 1,
+        "grid_mobile": "2",
+        "hide_swatches": false,
+        "alternate_bg_color": false,
+        "show_view_all": true
+      }
+    },
+    "858689f0-3aa3-42d9-897b-dc07ac5d6c9e": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "KOMM UNS BESUCHEN",
+        "title": "UNSERE STANDORTE",
+        "title_size": 28,
+        "text": "<p>Neben unserem Onlineshop führen wir auch Fachgeschäfte. Hier wirst du persönlich von unserem kompetenten Team beraten und kannst dir deine Lieblingsprodukte in Ruhe ansehen. Wir wünschen viel Freude beim Stöbern.</p>",
+        "button_label": "HIER SIND WIR ZU FINDEN",
+        "button_link": "shopify://pages/stores",
+        "text_alignment": "center",
+        "text_width": 61,
+        "button_style": "primary",
+        "image": "shopify://shop_images/Instagram_Dquadrat_Tee_Vorlage_Shop_1080_x_1080_px_3_2a959683-b9c1-4698-ac55-22b592ee6559.png",
+        "video": "",
+        "image_width": 76,
+        "image_position": "right",
+        "media_size": "contain",
+        "color_scheme": "custom",
+        "color_bg": "#c9c9c9",
+        "color_text": ""
+      }
+    },
+    "80ebd66c-218a-4cd5-9f33-589fa352c448": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Schöne Wohnaccessoires für dein Zuhause",
+        "collection": "wohnen",
+        "layout": "carousel",
+        "show_vendor": true,
+        "grid": 4,
+        "rows": 1,
+        "grid_mobile": "2",
+        "hide_swatches": false,
+        "alternate_bg_color": false,
+        "show_view_all": true
+      }
+    },
+    "83165254-86d5-4110-8680-0736093d5505": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Intuitiv entspannen mit  den Zwitscherboxen",
+        "collection": "zwitscherbox-und-co",
+        "layout": "rows",
+        "show_vendor": false,
+        "grid": 4,
+        "rows": 1,
+        "grid_mobile": "2",
+        "hide_swatches": false,
+        "alternate_bg_color": false,
+        "show_view_all": true
+      }
+    },
+    "gallery": {
+      "type": "gallery",
+      "blocks": {
+        "1601554848772-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Juli_2020_Krueger_Tag_313501_iso_1.jpg",
+            "video": "",
+            "desktop_image_position": "bottom center",
+            "mobile_image_position": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "Trachten-Accessoires",
+            "heading_h1": false,
+            "button_label": "hier entdecken",
+            "link": "shopify://collections/accessoires-damen",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "1601560664254": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Juli_2020_Krueger_Tag_313214_iso_1.jpg",
+            "video": "",
+            "desktop_image_position": "top center",
+            "mobile_image_position": "center center",
+            "enlarge_image": true,
+            "subheading": "",
+            "title": "Lederhosen & Röcke",
+            "heading_h1": false,
+            "button_label": "hier entdecken",
+            "link": "shopify://collections/lederhosen-co-damen",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_8hMmrx": {
+          "type": "image",
+          "settings": {
+            "video": "",
+            "desktop_image_position": "center center",
+            "mobile_image_position": "center center",
+            "enlarge_image": false,
+            "subheading": "Gallery",
+            "title": "Tell your story",
+            "heading_h1": false,
+            "button_label": "Shop this",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "1601554848772-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SEB8064_iso_1.jpg",
+            "video": "",
+            "desktop_image_position": "top center",
+            "mobile_image_position": "center center",
+            "enlarge_image": true,
+            "subheading": "ohne geht´s nicht",
+            "title": "Dirndlblusen",
+            "heading_h1": false,
+            "button_label": "hier entdecken",
+            "link": "shopify://collections/dirndlblusen",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "1601554848772-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Juli_2020_Krueger_Tag_313048_iso_1.jpg",
+            "video": "",
+            "desktop_image_position": "center center",
+            "mobile_image_position": "center center",
+            "enlarge_image": false,
+            "subheading": "Damen",
+            "title": "Trachtenjacken",
+            "heading_h1": false,
+            "button_label": "hier entdecken",
+            "link": "shopify://collections/trachtenjacken",
+            "text_alignment": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": [
+        "1601554848772-0",
+        "1601560664254",
+        "image_8hMmrx",
+        "1601554848772-2",
+        "1601554848772-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Madl - stell dir dein Outfit zusammen!",
+        "grid": 2,
+        "desktop_image_height": 400,
+        "mobile_image_height": 400,
+        "title_size": 40,
+        "enable_margin": true,
+        "full_width": true,
+        "enable_carousel": true,
+        "overlay_style_tint": true,
+        "alternate_bg_color": false
+      }
+    },
+    "1658159708fba469c7": {
+      "type": "scrolling-text",
+      "settings": {
+        "text": "Du möchtest in die Schweiz liefern lassen? Klicke hier...",
+        "link": "https://meineinkauf.ch/bestellen/dquadrat-schweiz/",
+        "text_size": 20,
+        "line_height": 1.4,
+        "speed": 0.5,
+        "direction": "left",
+        "font": "heading",
+        "space_x": true,
+        "stencil_all_text": false,
+        "stencil_text": "",
+        "overlay_style_tint": false,
+        "color_scheme": "custom",
+        "color_bg": "#e50051",
+        "color_text": "#f4f4f4"
+      }
+    }
+  },
+  "order": [
+    "scrolling_text_wq3ccw",
+    "8e1e01a7-afd6-4a0e-93f3-80dc3425518d",
+    "aa6a0b4b-81c7-424a-a645-f1fe42ba43cc",
+    "rich-text",
+    "slideshow_tMaaqK",
+    "collection_list_Br8mxQ",
+    "27b7b0de-83a8-4bff-8fb4-e6ca12ff7126",
+    "featured_collection_Vm8WcG",
+    "featured_collection_XfKcBr",
+    "c9f79080-18ad-4daa-ab2a-9ad3259ee2ab",
+    "image_with_text_T7kJNn",
+    "gallery_VTMtx4",
+    "a22842ed-4db0-41be-8312-1e13edc18945",
+    "16571093007e331473",
+    "collection-list",
+    "84f06b36-cd12-4b31-9d3f-48d5384ff842",
+    "24cfaedd-d2ed-40fa-845e-1b258e17fc5c",
+    "image_with_text_qTDBBz",
+    "98301abe-d739-4924-ab31-7e8b563153a9",
+    "858689f0-3aa3-42d9-897b-dc07ac5d6c9e",
+    "80ebd66c-218a-4cd5-9f33-589fa352c448",
+    "83165254-86d5-4110-8680-0736093d5505",
+    "gallery",
+    "1658159708fba469c7"
+  ]
+}
