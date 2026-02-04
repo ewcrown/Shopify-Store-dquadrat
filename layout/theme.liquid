@@ -84,6 +84,57 @@
       animationEnabledDesktop: {{ settings.animation_enabled_desktop | json }},
       animationEnabledMobile: {{ settings.animation_enabled_mobile | json }}
     };
+    {%- comment -%} Free gift: threshold; products array (freeVariantId, title, imageUrl, productUrl) for chooser UI {%- endcomment -%}
+    {%- assign fg_p1 = all_products[settings.custom_free_product_1] -%}
+    {%- assign fg_p2 = all_products[settings.custom_free_product_2] -%}
+    {%- assign fg_p3 = all_products[settings.custom_free_product_3] -%}
+    {%- assign fg_p1_free_variant = nil -%}
+    {%- assign fg_p1_image = nil -%}
+    {%- if fg_p1 != blank -%}
+      {%- for v in fg_p1.variants -%}
+        {%- if v.price == 0 -%}
+          {%- assign fg_p1_free_variant = v -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- if fg_p1_free_variant == nil -%}
+        {%- assign fg_p1_free_variant = fg_p1.first_available_variant -%}
+      {%- endif -%}
+      {%- assign fg_p1_image = fg_p1.featured_image | default: fg_p1.images.first -%}
+    {%- endif -%}
+    {%- assign fg_p2_free_variant = nil -%}
+    {%- assign fg_p2_image = nil -%}
+    {%- if fg_p2 != blank -%}
+      {%- for v in fg_p2.variants -%}
+        {%- if v.price == 0 -%}
+          {%- assign fg_p2_free_variant = v -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- if fg_p2_free_variant == nil -%}
+        {%- assign fg_p2_free_variant = fg_p2.first_available_variant -%}
+      {%- endif -%}
+      {%- assign fg_p2_image = fg_p2.featured_image | default: fg_p2.images.first -%}
+    {%- endif -%}
+    {%- assign fg_p3_free_variant = nil -%}
+    {%- assign fg_p3_image = nil -%}
+    {%- if fg_p3 != blank -%}
+      {%- for v in fg_p3.variants -%}
+        {%- if v.price == 0 -%}
+          {%- assign fg_p3_free_variant = v -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- if fg_p3_free_variant == nil -%}
+        {%- assign fg_p3_free_variant = fg_p3.first_available_variant -%}
+      {%- endif -%}
+      {%- assign fg_p3_image = fg_p3.featured_image | default: fg_p3.images.first -%}
+    {%- endif -%}
+    theme.freeGift = {
+      thresholdCents: {{ settings.custom_integer | times: 100 }},
+      variantIds: [{% assign first = true %}{% if fg_p1_free_variant %}{% unless first %},{% endunless %}{{ fg_p1_free_variant.id }}{% assign first = false %}{% endif %}{% if fg_p2_free_variant %}{% unless first %},{% endunless %}{{ fg_p2_free_variant.id }}{% assign first = false %}{% endif %}{% if fg_p3_free_variant %}{% unless first %},{% endunless %}{{ fg_p3_free_variant.id }}{% assign first = false %}{% endif %}],
+      products: [{% assign first = true %}{% if fg_p1_free_variant %}{% unless first %},{% endunless %}{"variantId":{{ fg_p1_free_variant.id }},"title":{{ fg_p1.title | json }},"imageUrl":{% if fg_p1_image != blank %}{{ fg_p1_image | image_url: width: 240 | json }}{% else %}{{ 'dummy-product.svg' | asset_url | json }}{% endif %},"productUrl":{{ fg_p1.url | json }}}{% assign first = false %}{% endif %}{% if fg_p2_free_variant %}{% unless first %},{% endunless %}{"variantId":{{ fg_p2_free_variant.id }},"title":{{ fg_p2.title | json }},"imageUrl":{% if fg_p2_image != blank %}{{ fg_p2_image | image_url: width: 240 | json }}{% else %}{{ 'dummy-product.svg' | asset_url | json }}{% endif %},"productUrl":{{ fg_p2.url | json }}}{% assign first = false %}{% endif %}{% if fg_p3_free_variant %}{% unless first %},{% endunless %}{"variantId":{{ fg_p3_free_variant.id }},"title":{{ fg_p3.title | json }},"imageUrl":{% if fg_p3_image != blank %}{{ fg_p3_image | image_url: width: 240 | json }}{% else %}{{ 'dummy-product.svg' | asset_url | json }}{% endif %},"productUrl":{{ fg_p3.url | json }}}{% assign first = false %}{% endif %}]
+    };
     theme.checkViewportFillers = function(){
       var toggleState = false;
       var elPageContent = document.getElementById('page-content');
@@ -277,5 +328,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="{{ 'vendor.min.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
   {% render 'body-end-tag' %}
-{% render "bc_banner" %}</body>
+{% render "bc_banner" %}
+{{ 'custom.js' | asset_url | script_tag }}
+</body>
 </html>
