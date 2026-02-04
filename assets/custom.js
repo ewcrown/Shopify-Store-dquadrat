@@ -102,7 +102,7 @@
 
   function refreshCartUI() {
     if (window.location.pathname === '/cart' || window.location.pathname === '/cart/') {
-      setTimeout(function () { window.location.reload(); }, 400);
+      setTimeout(function () { window.location.reload(); }, 200);
     } else {
       document.dispatchEvent(new CustomEvent('cart:refresh'));
     }
