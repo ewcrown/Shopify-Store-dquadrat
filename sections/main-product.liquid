@@ -35,6 +35,134 @@
       padding-bottom: {{ 1 | divided_by: product.media.first.aspect_ratio | times: 100 }}%;
     }
   }
+
+  /* Size Guide Button & Modal Styles */
+  .size-guide-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+  }
+  .size-guide-btn--link {
+    background: none;
+    border: none;
+    padding: 0;
+    color: {{ settings.col_links | default: '#e75f8f' }};
+    text-decoration: underline;
+    font-size: inherit;
+  }
+  .size-guide-btn--link:hover {
+    color: {{ settings.col_headings | default: '#423f3f' }};
+  }
+  .size-guide-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  .size-guide-modal[aria-hidden="false"] {
+    opacity: 1;
+    visibility: visible;
+  }
+  .size-guide-modal__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+  }
+  .size-guide-modal__content {
+    position: relative;
+    background: #fff;
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+  }
+  .size-guide-modal[aria-hidden="false"] .size-guide-modal__content {
+    transform: translateY(0);
+  }
+  .size-guide-modal__close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    color: #333;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.2s;
+  }
+  .size-guide-modal__close:hover {
+    background: #f0f0f0;
+  }
+  .size-guide-modal__title {
+    margin: 0 0 16px;
+    padding-right: 40px;
+    font-size: 1.5rem;
+  }
+  .size-guide-modal__images {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .size-guide-modal__image-wrap {
+    width: 100%;
+  }
+  .size-guide-modal__image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .size-guide-modal__page-content {
+    max-width: 100%;
+  }
+  .size-guide-modal__page-content img {
+    max-width: 100%;
+    height: auto;
+  }
+  .size-guide-modal__page-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+  }
+  .size-guide-modal__page-content th,
+  .size-guide-modal__page-content td {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  .size-guide-modal__page-content th {
+    background: #f5f5f5;
+    font-weight: 600;
+  }
+  @media (min-width: 768px) {
+    .size-guide-modal__content {
+      max-width: 800px;
+      padding: 32px;
+    }
+  }
 {% endstyle %}
 
 <div class="product-area
@@ -881,6 +1009,128 @@
 
                 {%- when 'divider' -%}
                   <hr class="divider__line-{{ block.settings.show_line }} divider__gap-above-{{ block.settings.spacing_above }}  divider__gap-below-{{ block.settings.spacing_below }}" {{ block.shopify_attributes }}/>
+
+                {%- when 'size_guide' -%}
+                  {%- liquid
+                    comment
+                      Size Guide Priority System:
+                      1. Product metafield images (custom.size_guide_image)
+                      2. Product metafield page (custom.size_guide_page)
+                      3. Customizer fallback page
+                      4. Customizer fallback image
+                    endcomment
+
+                    assign size_guide_content_type = nil
+                    assign size_guide_images = nil
+                    assign size_guide_page = nil
+                    assign is_single_image = false
+                    assign has_size_guide = false
+
+                    assign meta_images = product.metafields.custom.size_guide_image.value
+                    assign meta_page_ref = product.metafields.custom.size_guide_page.value
+
+                    if meta_images != blank
+                      assign has_size_guide = true
+                      assign size_guide_content_type = 'images'
+                      assign size_guide_images = meta_images
+                      if size_guide_images.first == blank
+                        assign is_single_image = true
+                      endif
+                    elsif meta_page_ref != blank
+                      comment
+                        Handle both page_reference (returns page object) and text (returns handle string)
+                      endcomment
+                      if meta_page_ref.content != blank
+                        assign size_guide_page = meta_page_ref
+                      else
+                        assign size_guide_page = pages[meta_page_ref]
+                      endif
+                      if size_guide_page != blank and size_guide_page.content != blank
+                        assign has_size_guide = true
+                        assign size_guide_content_type = 'page'
+                      endif
+                    elsif block.settings.fallback_page != blank
+                      assign size_guide_page = pages[block.settings.fallback_page]
+                      if size_guide_page != blank and size_guide_page.content != blank
+                        assign has_size_guide = true
+                        assign size_guide_content_type = 'page'
+                      endif
+                    elsif block.settings.fallback_image != blank
+                      assign has_size_guide = true
+                      assign size_guide_content_type = 'fallback_image'
+                    endif
+
+                    assign modal_id = 'size-guide-modal-' | append: section.id | append: '-' | append: block.id
+                  -%}
+                  {%- if has_size_guide -%}
+                    <div class="product-detail__gap-sm size-guide-block" {{ block.shopify_attributes }}>
+                      <button type="button" class="size-guide-btn {% if block.settings.button_style == 'primary' %}button{% elsif block.settings.button_style == 'secondary' %}button alt{% else %}size-guide-btn--link{% endif %}" data-size-guide-trigger="{{ modal_id }}">
+                        {%- if block.settings.show_icon -%}
+                          {% render 'icon', icon: 'ruler', width: 18 %}
+                        {%- endif -%}
+                        {{ block.settings.button_text | default: 'Größentabelle' }}
+                      </button>
+
+                      <div class="size-guide-modal" id="{{ modal_id }}" aria-hidden="true">
+                        <div class="size-guide-modal__overlay" data-size-guide-close></div>
+                        <div class="size-guide-modal__content">
+                          <button type="button" class="size-guide-modal__close" data-size-guide-close aria-label="{{ 'general.accessibility_labels.close' | t }}">&times;</button>
+                          <h2 class="size-guide-modal__title">{{ block.settings.modal_title | default: 'Größentabelle' }}</h2>
+
+                          {%- case size_guide_content_type -%}
+                            {%- when 'images' -%}
+                              <div class="size-guide-modal__images">
+                                {%- if is_single_image -%}
+                                  <div class="size-guide-modal__image-wrap">
+                                    <img
+                                      src="{{ size_guide_images | image_url: width: 1200 }}"
+                                      alt="{{ size_guide_images.alt | escape | default: 'Größentabelle' }}"
+                                      width="{{ size_guide_images.width | default: 1200 }}"
+                                      height="{{ size_guide_images.height | default: 800 }}"
+                                      loading="lazy"
+                                      class="size-guide-modal__image"
+                                    >
+                                  </div>
+                                {%- else -%}
+                                  {%- for image in size_guide_images -%}
+                                    <div class="size-guide-modal__image-wrap">
+                                      <img
+                                        src="{{ image | image_url: width: 1200 }}"
+                                        alt="{{ image.alt | escape | default: 'Größentabelle' }}"
+                                        width="{{ image.width | default: 1200 }}"
+                                        height="{{ image.height | default: 800 }}"
+                                        loading="lazy"
+                                        class="size-guide-modal__image"
+                                      >
+                                    </div>
+                                  {%- endfor -%}
+                                {%- endif -%}
+                              </div>
+
+                            {%- when 'page' -%}
+                              <div class="size-guide-modal__page-content rte">
+                                {{ size_guide_page.content }}
+                              </div>
+
+                            {%- when 'fallback_image' -%}
+                              <div class="size-guide-modal__images">
+                                <div class="size-guide-modal__image-wrap">
+                                  <img
+                                    src="{{ block.settings.fallback_image | image_url: width: 1200 }}"
+                                    alt="{{ block.settings.fallback_image.alt | escape | default: 'Größentabelle' }}"
+                                    width="{{ block.settings.fallback_image.width | default: 1200 }}"
+                                    height="{{ block.settings.fallback_image.height | default: 800 }}"
+                                    loading="lazy"
+                                    class="size-guide-modal__image"
+                                  >
+                                </div>
+                              </div>
+                          {%- endcase -%}
+
+                        </div>
+                      </div>
+                    </div>
+                  {%- endif -%}
 
               {%- endcase -%}
             {%- endfor -%}
@@ -2648,6 +2898,75 @@
                 "label": "Large"
               }
             ]
+          }
+        ]
+      },
+      {
+        "type": "size_guide",
+        "name": "Size Guide Button",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "header",
+            "content": "Button Settings"
+          },
+          {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button text",
+            "default": "Größentabelle"
+          },
+          {
+            "type": "text",
+            "id": "modal_title",
+            "label": "Modal title",
+            "default": "Größentabelle"
+          },
+          {
+            "type": "checkbox",
+            "id": "show_icon",
+            "label": "Show ruler icon",
+            "default": true
+          },
+          {
+            "type": "select",
+            "id": "button_style",
+            "label": "Button style",
+            "default": "link",
+            "options": [
+              {
+                "value": "link",
+                "label": "Text link"
+              },
+              {
+                "value": "primary",
+                "label": "Primary button"
+              },
+              {
+                "value": "secondary",
+                "label": "Secondary button"
+              }
+            ]
+          },
+          {
+            "type": "header",
+            "content": "Content Source"
+          },
+          {
+            "type": "paragraph",
+            "content": "Priority: 1) Product metafield 'custom.size_guide_image' (images), 2) Product metafield 'custom.size_guide_page' (page handle), 3) Fallback page below, 4) Fallback image below."
+          },
+          {
+            "type": "page",
+            "id": "fallback_page",
+            "label": "Fallback page (for all products)",
+            "info": "Used when product has no size guide metafield. Select a page with your size guide content."
+          },
+          {
+            "type": "image_picker",
+            "id": "fallback_image",
+            "label": "Fallback image (for all products)",
+            "info": "Used when no metafield or fallback page is set."
           }
         ]
       }

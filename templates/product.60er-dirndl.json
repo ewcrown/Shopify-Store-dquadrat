@@ -58,6 +58,16 @@
             "open_new_window": true
           }
         },
+        "size_guide_APxbDJ": {
+          "type": "size_guide",
+          "settings": {
+            "button_text": "Größentabelle",
+            "modal_title": "Größentabelle",
+            "show_icon": true,
+            "button_style": "link",
+            "fallback_page": ""
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -159,6 +169,7 @@
         "7827740d-0797-4dbe-b0b9-9f6355d3be76",
         "rating",
         "5631a395-cc4a-4aeb-95d2-62342d321575",
+        "size_guide_APxbDJ",
         "variant_picker",
         "buy_buttons",
         "59c5f8ea-49c1-4616-b439-61c71351b738",

@@ -183,6 +183,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-KP952DH');</script>
 <!-- End Google Tag Manager -->
 <link rel="icon" type="image/png" sizes="32x32" href="//cdn.shopify.com/s/files/1/0623/0337/1436/files/05_herz_element_pfade-01.png?v=1654182557">
+{{ 'ew-styles.css' | asset_url | stylesheet_tag }}
 </head>
 <body class="page-{{ page_title | handle }} {% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% if template.suffix != blank %} template-suffix-{{ template.suffix }}{% endif %}{% if template contains 'customers' %} template-customer-area{% endif %}{% if logo_html contains 'img' %} has-logo{% endif %} animation-speed-{{ settings.animation_speed }}"
       {% if settings.animation_speed == "fast" %}data-cc-animate-timeout="0"{% endif %}>

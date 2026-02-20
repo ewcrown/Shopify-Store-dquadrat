@@ -256,3 +256,60 @@
     observer.observe(document.body, { childList: true, subtree: true });
   })();
 })();
+
+/**
+ * Size Guide Modal: Opens a popup showing size guide images from product metafield.
+ */
+(function () {
+  function initSizeGuideModals() {
+    var triggers = document.querySelectorAll('[data-size-guide-trigger]');
+    triggers.forEach(function (trigger) {
+      if (trigger.dataset.sizeGuideInitialized) return;
+      trigger.dataset.sizeGuideInitialized = 'true';
+
+      var modalId = trigger.getAttribute('data-size-guide-trigger');
+      var modal = document.getElementById(modalId);
+      if (!modal) return;
+
+      function openModal(e) {
+        e.preventDefault();
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+
+      trigger.addEventListener('click', openModal);
+
+      modal.querySelectorAll('[data-size-guide-close]').forEach(function (el) {
+        el.addEventListener('click', closeModal);
+      });
+
+      modal.addEventListener('click', function (e) {
+        if (e.target === modal) {
+          closeModal();
+        }
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && modal.getAttribute('aria-hidden') === 'false') {
+          closeModal();
+        }
+      });
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initSizeGuideModals);
+  } else {
+    initSizeGuideModals();
+  }
+
+  var observer = new MutationObserver(function () {
+    initSizeGuideModals();
+  });
+  observer.observe(document.body, { childList: true, subtree: true });
+})();
