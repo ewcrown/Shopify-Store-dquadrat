@@ -57,18 +57,18 @@
         "image_6H6kyC": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_1024_51.png",
-            "mobile_image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_1024_51.png",
+            "image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_1024_58.png",
+            "mobile_image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_1024_58.png",
             "desktop_image_position": "center center",
             "mobile_image_position": "center center",
-            "slide_link": "shopify://collections/geschenke-mit-herz",
+            "slide_link": "shopify://collections/ostern",
             "subheading": "",
-            "title": "",
+            "title": "Jetzt schon an Ostern denken!",
             "title_size": 60,
             "heading_h1": false,
             "text": "",
             "enlarge_text": true,
-            "button_label": "Geschenke mit Herz entdecken",
+            "button_label": "Jetzt entdecken",
             "overlay_position": "position--left position--bottom"
           }
         },
@@ -80,7 +80,7 @@
             "desktop_image_position": "center center",
             "mobile_image_position": "center center",
             "slide_link": "shopify://collections/warmende-tracht",
-            "subheading": "Perfekt für den Winter",
+            "subheading": "Perfekt für kühle Tage",
             "title": "Wärmende Tracht",
             "title_size": 60,
             "heading_h1": false,
@@ -93,26 +93,26 @@
         "image_dwdHJQ": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_1024_50.png",
-            "mobile_image": "shopify://shop_images/Mobile_Slider_297_x_420_mm_2_c050dbb3-8e30-4cd5-893c-cb16d0aa4555.png",
+            "image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_1024_61.png",
+            "mobile_image": "shopify://shop_images/Mobile_Slider_297_x_420_mm_11.png",
             "desktop_image_position": "center center",
             "mobile_image_position": "center center",
-            "slide_link": "shopify://collections/unsere-neuheiten",
+            "slide_link": "shopify://collections/fluid-market",
             "subheading": "",
             "title": "",
             "title_size": 60,
             "heading_h1": false,
             "text": "",
             "enlarge_text": true,
-            "button_label": "Unsere Neuheiten hier entdecken",
+            "button_label": "Zu Fluid Market",
             "overlay_position": "position--left position--bottom"
           }
         },
         "79c2a28e-e8ad-4e3c-9076-96357d53c561": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/neue-kollektion-krueger-hw25.png",
-            "mobile_image": "shopify://shop_images/neue-kollektion-krueger-hw25.png",
+            "image": "shopify://shop_images/Screenshot_2026-02-16_074041.png",
+            "mobile_image": "shopify://shop_images/Screenshot_2026-02-16_074041.png",
             "desktop_image_position": "center center",
             "mobile_image_position": "center center",
             "slide_link": "shopify://collections/dirndl",
@@ -184,8 +184,8 @@
         "image_yKEMef": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_852_px2048_x_850_px_28.png",
-            "mobile_image": "shopify://shop_images/Mobile_Slider_297_x_420_mm_3.png",
+            "image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_1024_60.png",
+            "mobile_image": "shopify://shop_images/Mobile_Slider_297_x_420_mm_9.png",
             "desktop_image_position": "center center",
             "mobile_image_position": "center center",
             "slide_link": "shopify://collections/winkekatzen",
@@ -327,21 +327,21 @@
           "type": "collection",
           "settings": {
             "collection": "dirndl-zum-knopfen",
-            "image": "shopify://shop_images/Bilder_Shop_Grosse_1200_x_1800_px_-_2025-07-23T113633.578.png"
+            "image": "shopify://shop_images/Dirndl-zum-knopfen-kruger-2026-dquadrat.png"
           }
         },
         "collection_Lmj9FM": {
           "type": "collection",
           "settings": {
             "collection": "hochgeschlossene-blusen",
-            "image": "shopify://shop_images/Bilder_Shop_Grosse_1200_x_1800_px_-_2025-07-23T114255.581.png"
+            "image": "shopify://shop_images/Dirndl-hochgeschlossen-kruger-2026-dquadrat.png"
           }
         },
         "collection_kr7RKQ": {
           "type": "collection",
           "settings": {
             "collection": "dirndl-ohne-schnurung",
-            "image": "shopify://shop_images/Bilder_Shop_Grosse_1200_x_1800_px_-_2025-07-23T114421.876.png"
+            "image": "shopify://shop_images/Dirndl-ohne-Schnurung-kruger-2026-dquadrat.png"
           }
         },
         "collection_ARt3nJ": {
@@ -374,7 +374,7 @@
           "type": "collection",
           "settings": {
             "collection": "tracht",
-            "image": "shopify://shop_images/Screenshot_2025-07-08_080442.png"
+            "image": "shopify://shop_images/Tracht-Kr_ger-2026-dquadrat.png"
           }
         },
         "template--15954664751276__27b7b0de-83a8-4bff-8fb4-e6ca12ff7126-166738645918f3703c-1": {
@@ -593,14 +593,14 @@
           "type": "collection",
           "settings": {
             "collection": "dirndl",
-            "image": "shopify://shop_images/look_16_3071.jpg"
+            "image": "shopify://shop_images/Dirndl-Kollektion-2026-kruger-dquadrat.png"
           }
         },
         "165710930003158201-0": {
           "type": "collection",
           "settings": {
             "collection": "dirndlblusen",
-            "image": "shopify://shop_images/look_07_2242.jpg"
+            "image": "shopify://shop_images/Dirndlbluse-kruger-2026-dquadrat.png"
           }
         },
         "165710930003158201-1": {
@@ -655,28 +655,28 @@
           "type": "collection",
           "settings": {
             "collection": "westen",
-            "image": "shopify://shop_images/look_27_0902.jpg"
+            "image": "shopify://shop_images/Herren_Weste_Kr_ger_2026-_dquadrat.png"
           }
         },
         "1648220659c91ed362-1": {
           "type": "collection",
           "settings": {
             "collection": "lederhosen-co-herren",
-            "image": "shopify://shop_images/look_20_0103.jpg"
+            "image": "shopify://shop_images/Herren-Lederhose-2026-Kruger-dquadrat.png"
           }
         },
         "1648220659c91ed362-2": {
           "type": "collection",
           "settings": {
             "collection": "hemden",
-            "image": "shopify://shop_images/Titel-Trachtenhemden-Kollektion.jpg"
+            "image": "shopify://shop_images/Hemden-Kruger-2026-dquadrat.png"
           }
         },
         "1648220659c91ed362-3": {
           "type": "collection",
           "settings": {
             "collection": "herren-jacken",
-            "image": "shopify://shop_images/look_20_0132.jpg"
+            "image": "shopify://shop_images/Trachtenjacke-kruger-2026-dquadrat.png"
           }
         },
         "402b3873-a6eb-425d-bd24-c2fea8eac838": {

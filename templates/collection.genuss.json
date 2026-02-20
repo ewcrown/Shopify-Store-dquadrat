@@ -72,9 +72,8 @@
     },
     "6eac8767-f128-4c55-89c7-ce7a87c6cc63": {
       "type": "featured-collection",
-      "disabled": true,
       "settings": {
-        "title": "Das könnte dir gefallen",
+        "title": "Das könnte dir auch gefallen",
         "collection": "kuechenartikel",
         "layout": "carousel",
         "show_vendor": false,
