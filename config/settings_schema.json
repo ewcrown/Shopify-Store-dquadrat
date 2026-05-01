@@ -417,11 +417,10 @@
         ]
       },
       {
-        "type": "range",
+        "type": "number",
         "id": "prod_new_limit_int",
         "min": 2,
-        "max": 100,
-        "step": 1,
+        "max": 200,
         "label": "New limit",
         "default": 7,
         "info": "Label shows if product was created within this many days"
