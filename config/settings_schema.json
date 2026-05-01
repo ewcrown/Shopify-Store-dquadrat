@@ -1058,5 +1058,48 @@
         "default": false
       }
     ]
-  }
+  },
+   {
+		"name": "Custom",
+		"settings": [
+			{
+				"type": "header",
+				"content": "Custom settings"
+			},
+			{
+				"type": "range",
+				"id": "custom_integer",
+				"label": "Minimum cart total (€)",
+				"min": 0,
+				"max": 100,
+				"step": 1,
+				"default": 49,
+				"unit": "€",
+				"info": "Free gift options appear when cart total reaches this amount (e.g. 49 = €49)."
+			},
+			{
+				"type": "header",
+				"content": "Free gift products"
+			},
+			{
+				"type": "paragraph",
+				"content": "When cart total reaches the minimum above, the customer sees these 3 options and can choose one product to add as their free gift."
+			},
+			{
+				"type": "product",
+				"id": "custom_free_product_1",
+				"label": "Free product option 1"
+			},
+			{
+				"type": "product",
+				"id": "custom_free_product_2",
+				"label": "Free product option 2"
+			},
+			{
+				"type": "product",
+				"id": "custom_free_product_3",
+				"label": "Free product option 3"
+			}
+		]
+	}
 ]

@@ -121,8 +121,8 @@
           "settings": {
             "icon": "box",
             "title": "Versand",
-            "content": "<p>Lieferzeit innerhalb Deutschlands ca. 2-4 Werktage.</p><p>Die Rücksendekosten sind selbst zu tragen.</p><p>Mehr Informationen findest du unter <a href=\"/pages/zahlung-versand\" title=\"Versand & Lieferung\">Versand & Lieferung</a>.</p>",
-            "page": "",
+            "content": "",
+            "page": "versandkosten-information",
             "open": false
           }
         },
@@ -144,15 +144,6 @@
             "content": "<p>Jedes Dirndl von Krüger Dirndl kann in der Waschmaschine bei 30°C mit geringer Schleuderzahl gewaschen werden. Das Dirndl bitte in ein Wäschenetz legen und mit ähnlichen Farben waschen. </p><p>Die Schürze bitte separat waschen (Handwäsche).</p><p>Wir empfehlen Feinwaschmittel. Auf alle Fälle kein Waschmittel mit Aufheller verwenden!</p><p>Dein Lieblingsdirndl sollte auf keinen Fall in den Trockner gesteckt werden. Hänge stattdessen das Dirndl auf einen Kleiderbügel auf, ziehe den Stoff zurecht und lass es lufttrocknen.</p><p>Bist Du dir trotz allem unsicher, empfehlen wir dir, das Dirndl zur Reinigung zu geben. Hier kann dann nichts mehr schief gehen.</p>",
             "page": "",
             "open": false
-          }
-        },
-        "be7088e0-481d-4c93-8b1f-dcca58746a82": {
-          "type": "link",
-          "settings": {
-            "text": "So ziehe ich mein neues Dirndl an >",
-            "url": "shopify://blogs/trachten-blog/so-zieh-ich-mein-neues-dirndl-an",
-            "text_style": "link",
-            "open_new_window": false
           }
         },
         "14a0ef09-063f-4387-88d7-9be86385600f": {
@@ -192,7 +183,6 @@
         "9ed659ca-743a-4877-82db-1da05984edd1",
         "49af3870-c691-452d-a88d-ed7aec430d4a",
         "19325e18-288d-4298-98ac-a911d703d753",
-        "be7088e0-481d-4c93-8b1f-dcca58746a82",
         "14a0ef09-063f-4387-88d7-9be86385600f",
         "560bdaff-51eb-4652-9931-eaf552ba27bf",
         "0f46209b-bc1e-4eaa-90f7-c6533feec388"

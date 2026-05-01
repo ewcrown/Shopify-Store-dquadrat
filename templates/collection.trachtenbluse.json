@@ -137,12 +137,35 @@
     },
     "rich_text_JMfMJY": {
       "type": "rich-text",
+      "disabled": true,
       "settings": {
         "subheading": "",
-        "title": "Damen Trachtenjacken",
+        "title": "Dirndlblusen",
         "title_size": 48,
         "heading_h1": false,
-        "text": "<p>Unsere Damen Trachtenjacken sind ein unverzichtbarer Bestandteil traditioneller und zugleich zeitgemäßer Trachtenmode. Sie vereinen klassische Elemente mit modernen Schnitten und bieten vielseitige Kombinationsmöglichkeiten – sowohl zum Dirndl als auch zu Jeans oder Röcken. Ob für das Oktoberfest, Volksfeste oder stilvolle Alltagslooks: Eine hochwertige Trachtenjacke für Damen sorgt immer für einen eleganten Auftritt.</p><p><strong>Vielfalt an Designs und Materialien</strong></p><p>Trachtenjacken für Damen gibt es in zahlreichen Varianten – von klassischen Strickjacken über edle Blazer bis hin zu taillierten Janker-Modellen. Besonders beliebt sind Materialien wie Walkloden, Wolle oder Baumwolle, die nicht nur angenehm zu tragen sind, sondern auch für eine hochwertige Optik sorgen. Feine Stickereien, dekorative Knöpfe in Hornoptik und traditionelle Muster verleihen jeder Jacke ihren einzigartigen Charakter.</p><p><strong>Perfekte Ergänzung zum Dirndl</strong></p><p>Eine Damen Trachtenjacke ist die ideale Ergänzung zum <a href=\"https://www.dquadrat-stores.de/collections/dirndl\" target=\"_blank\" title=\"https://www.dquadrat-stores.de/collections/dirndl\">Dirndl</a>, vor allem an kühleren Tagen. Farblich abgestimmte Modelle unterstreichen den Gesamtlook und sorgen für ein harmonisches Erscheinungsbild. Kurze Schnitte betonen die Taille und passen hervorragend zu klassischen Dirndlkleidern, während längere Varianten eine moderne Alternative darstellen.</p><p><strong>Trachtenjacken im Alltag tragen</strong></p><p>Nicht nur auf traditionellen Festen sind Trachtenjacken ein Hingucker. Immer mehr Frauen integrieren sie in ihre Alltagsgarderobe. Kombiniert mit schlichten Basics entsteht ein stilvoller Look mit einem Hauch von alpiner Tradition. Besonders gedeckte Farben wie Grau, Beige oder Dunkelblau lassen sich vielseitig kombinieren und wirken zeitlos elegant.</p><p></p>",
+        "text": "<h3><strong>Dirndlbluse mit Dirndl</strong></h3><p>Die Dirndlbluse ist ein unverzichtbares Element der Trachtenmode und gehört zu<br/>jedem <a href=\"https://www.dquadrat-stores.de/collections/dirndl\">Dirndl</a>. Sie schmeichelt der Figur und unterstreicht die Weiblichkeit der Trägerin. </p><p>Doch Dirndlblusen sind nicht nur schön, sondern auch vielseitig: Sie können zu verschiedenen Anlässen getragen werden und lassen sich mit vielen verschiedenen Dirndln kombinieren.</p><h3><strong>Verschiedene Arten von Dirndlblusen</strong></h3><p>Dirndlblusen gibt es in verschiedenen Varianten, so dass für jeden Geschmack und jede Figur die passende Bluse dabei ist. Die folgenden Modelle sind besonders beliebt:</p><p><strong>Die klassische Dirndlbluse:</strong> Sie ist meist aus Baumwolle oder Leinen gefertigt und hat einen   runden oder V-Ausschnitt. Die Bluse ist tailliert und endet knapp      unter der Brust.</p><p><strong>Die Spitzenbluse:</strong> Sie wirkt romantisch und verspielt und ist ideal für festliche Anlässe. Spitze kann an der gesamten Bluse verwendet werden oder nur als     Verzierung an Ausschnitt und Ärmeln.</p><p><strong>Die Dirndlbluse mit Puffärmeln:</strong> Sie ist besonders feminin und schmeichelt zarten Armen.</p><p><strong>Die Dirndlbluse mit Stehkragen:</strong> Sie wirkt elegant und ist ideal für formelle Anlässe.</p><h3><strong>Wichtig zu wissen:</strong></h3><p>Die Dirndlbluse sollte immer zum Dirndl passen Bei einem schlichten Dirndl kann man eine auffälligere Bluse wählen, während bei einem Dirndl mit vielen Verzierungen eine schlichtere Bluse besser geeignet ist.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "rich_text_hKJAYC": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 48,
+        "heading_h1": false,
+        "text": "",
         "image_width": 120,
         "button_label": "",
         "button_link": "",
@@ -161,6 +184,7 @@
     "3551ad31-f5b3-48f9-8f4b-7f1f6d40fc04",
     "main",
     "165763798227edc8de",
-    "rich_text_JMfMJY"
+    "rich_text_JMfMJY",
+    "rich_text_hKJAYC"
   ]
 }

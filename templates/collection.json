@@ -187,12 +187,60 @@
         "show_view_all": false,
         "alternate_bg_color": false
       }
+    },
+    "rich_text_QdnEKW": {
+      "type": "rich-text",
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "Trachtenblusen für Damen",
+        "title_size": 48,
+        "heading_h1": false,
+        "text": "<p>Die Trachtenbluse gehört zur modernen Trachtenmode und lässt<br/>sich zu Jeans, <a href=\"https://www.dquadrat-stores.de/collections/lederhosen-co-damen\" target=\"_blank\" title=\"https://www.dquadrat-stores.de/collections/lederhosen-co-damen\">Lederhose</a> oder zum <a href=\"https://www.dquadrat-stores.de/collections/trachtenrocke\" target=\"_blank\" title=\"https://www.dquadrat-stores.de/collections/trachtenrocke\">Trachtenrock</a> kombinieren. Sie ist das<br/>weibliche Pendant zum klassischen <a href=\"https://www.dquadrat-stores.de/collections/hemden\" target=\"_blank\" title=\"https://www.dquadrat-stores.de/collections/hemden\">Trachtenhemd für Herren</a>.</p><p>Ob zum Volksfest oder im Alltag getragen – bei uns findet<br/>jede Frau die passende Bluse für ihren persönlichen Anlass. </p><p><strong>Arten von<br/>Trachtenblusen</strong></p><p>Wie bei den <a href=\"https://www.dquadrat-stores.de/collections/dirndlblusen\" target=\"_blank\" title=\"https://www.dquadrat-stores.de/collections/dirndlblusen\">Dirndlblusen</a> gibt es auch bei unseren Trachtenblusen<br/>verschiedene Varianten und Stilrichtungen.</p><p><strong>Variation im Ausschnitt:</strong> Ob hochgeschlossen, im Carmen-Stil<br/>oder mit klassischem V-Ausschnitt – unsere Trachtenblusen bieten eine große<br/>Auswahl an femininen Ausschnittformen.</p><p><strong>Verschiedene Farben und Muster:</strong> Unsere Trachtenblusen<br/>gibt es in vielen Farben wie Weiß, Schwarz, Grün, Blau oder Rosa. Auch bei unseren<br/>Mustern ist die Auswahl groß: Besonders beliebt sind karierte Trachtenblusen,<br/>Modelle mit feiner Spitze oder bestickte Blusen. Während das Karomuster den<br/>klassischen Trachtenhemden ähnlich ist, wirken Blusen mit Spitze romantisch und<br/>verspielt. </p><p><strong>Trachtenblusen mit Schleifen:</strong><br/>Die Schleife ist beim <a href=\"https://www.dquadrat-stores.de/collections/dirndl\" target=\"_blank\" title=\"https://www.dquadrat-stores.de/collections/dirndl\">Dirndl</a> ein echter Hingucker und ein traditionelles Detail<br/>im Trachtenoutfit. Darum schmückt sie auch den Ausschnitt einiger unserer Trachtenblusen.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "rich_text_YmaAnr": {
+      "type": "rich-text",
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "Trachtenröcke",
+        "title_size": 48,
+        "heading_h1": false,
+        "text": "<p>Unsere Trachtenröcke sind modern und vielseitig kombinierbar – zum Beispiel mit einem schmeichelnden <a href=\"https://www.dquadrat-stores.de/collections/mieder\" target=\"_blank\" title=\"https://www.dquadrat-stores.de/collections/mieder\">Mieder</a> und/oder einer zarten <a href=\"https://www.dquadrat-stores.de/collections/trachtenbluse\" target=\"_blank\" title=\"https://www.dquadrat-stores.de/collections/trachtenbluse\">Trachtenbluse</a>. Sie sind ähnlich wie <a href=\"https://www.dquadrat-stores.de/collections/dirndl\" target=\"_blank\" title=\"https://www.dquadrat-stores.de/collections/dirndl\">Dirndlröcke</a> weit ausgestellt und wirken dadurch besonders feminin und elegant. Der Trachtenrock passt sowohl zu festlichen Anlässen als auch zu stilvollen Alltagsoutfits. </p><p><strong>Verschiedene Schnitte, Farben und Muster</strong></p><p>Wir bieten eine große Vielfalt an Farben und Mustern. So findet jeder das passende (Krüger-) Modell.</p><p><strong>Länge und Schnitt</strong>: Unsere Trachtenröcke sind in den Längen 60 cm („Midi“, etwa knielang)und 70 cm (kniebedeckend) erhältlich. Sie sitzen auf der Taille und sorgen durch ihren klassischen Faltenwurf für eine schöne Silhouette.</p><p><strong>Klassisch und modern:</strong> Der Trachtenrock verbindet traditionelle Elemente mit modernen Designs und ist eine stilvolle Alternative zum klassischen Dirndl. </p><p>Unsere Röcke sind entweder einfarbig oder gemustert. Zur Verzierung werden Borten, Spitze, dekorative Knöpfe und Gürtel mit eleganter Schnalle eingesetzt. </p><p><strong>Kleiner Tipp:</strong> Gemusterte Trachtenröcke lassen sich besonders gut mit einfarbigen Trachtenblusen kombinieren. Einfarbige Röcke hingegen können entweder mit Dirndlbluse und Mieder oder mit einer passenden Trachtenbluse getragen werden.<br/><br/></p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
     }
   },
   "order": [
     "8808cc79-a1ab-4995-8341-f296cbb2a43b",
     "main",
     "165477742524042bd2",
-    "08bd9aca-d472-47f5-adc7-d7f4dfb34606"
+    "08bd9aca-d472-47f5-adc7-d7f4dfb34606",
+    "rich_text_QdnEKW",
+    "rich_text_YmaAnr"
   ]
 }

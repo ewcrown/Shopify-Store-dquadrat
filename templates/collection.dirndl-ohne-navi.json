@@ -159,6 +159,7 @@
     },
     "rich_text_JMfMJY": {
       "type": "rich-text",
+      "disabled": true,
       "settings": {
         "subheading": "Krüger Collection & Madl",
         "title": "Unsere Krüger Dirndl",
@@ -177,12 +178,35 @@
         "color_bg": "",
         "color_text": ""
       }
+    },
+    "rich_text_KbT3bj": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "Hochzeit in Tracht",
+        "title_size": 48,
+        "heading_h1": false,
+        "text": "<p>Wenn du von einer Hochzeit im Trachtenlook träumst, dann stellst du dir vermutlich eine Feier vor, die Tradition, Stil und eine ordentliche Portion Persönlichkeit verbindet. Genau das macht diesen Hochzeitsstil so besonders: Er ist festlich, aber nicht steif – verwurzelt in regionalen Bräuchen und gleichzeitig offen für moderne Interpretationen.</p><p>Schon bei der Wahl deines Outfits beginnt das Erlebnis. Als Braut kannst du dich für ein klassisches Dirndl entscheiden oder eine elegante Variante wählen, die mit feinen Stoffen und dezenten Farben spielt. Spitze, Seide oder zarte Stickereien verleihen deinem Look eine edle Note, ohne den traditionellen Charakter zu verlieren. Für den Bräutigam bieten sich <a href=\"https://www.dquadrat-stores.de/collections/lederhosen-co-herren\" target=\"_blank\" title=\"https://www.dquadrat-stores.de/collections/lederhosen-co-herren\">Lederhose</a> oder Trachtenanzug an – kombiniert mit <a href=\"https://www.dquadrat-stores.de/collections/westen\" target=\"_blank\" title=\"https://www.dquadrat-stores.de/collections/westen\">Weste</a>, <a href=\"https://www.dquadrat-stores.de/collections/trachtenschuhe-herren\" target=\"_blank\" title=\"https://www.dquadrat-stores.de/collections/trachtenschuhe-herren\">Haferlschuhen</a> und vielleicht sogar einem Charivari wird daraus ein stimmiges Gesamtbild.</p><h2>Gäste im Trachtenlook</h2><p>Auch deine Gäste solltest du frühzeitig auf das Motto einstimmen. Viele freuen sich über die Gelegenheit, Dirndl und Lederhose aus dem Schrank zu holen oder sich extra dafür einzukleiden. So entsteht ganz automatisch eine besondere Atmosphäre, die sofort ins Auge fällt und für ein Gefühl von Zusammengehörigkeit sorgt.</p><h2>Deine Persönlichkeit</h2><p>Am Ende geht es bei deiner Hochzeit im Trachtenlook nicht darum, alles perfekt „nach Vorschrift“ umzusetzen. Viel wichtiger ist, dass du deinen eigenen Stil einbringst und eine Feier gestaltest, die zu dir passt. Tradition bietet dir dabei eine wunderbare Grundlage – und du entscheidest, wie viel davon du übernehmen und wie viel du neu interpretieren möchtest. So wird deine Hochzeit nicht nur stilvoll, sondern auch ganz persönlich.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
     }
   },
   "order": [
     "3551ad31-f5b3-48f9-8f4b-7f1f6d40fc04",
     "main",
     "165763798227edc8de",
-    "rich_text_JMfMJY"
+    "rich_text_JMfMJY",
+    "rich_text_KbT3bj"
   ]
 }

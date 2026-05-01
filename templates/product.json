@@ -60,15 +60,6 @@
             "size_chart_page": ""
           }
         },
-        "size_guide_VTkFD3": {
-          "type": "size_guide",
-          "settings": {
-            "button_text": "Größentabelle",
-            "modal_title": "Größentabelle",
-            "show_icon": true,
-            "button_style": "link"
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -120,8 +111,8 @@
           "settings": {
             "icon": "box",
             "title": "Versand",
-            "content": "<p>Lieferzeit innerhalb Deutschlands ca. 2-4 Werktage.</p><p>Versandkostenrabatt von 3,99 bei Trachtenmode. Die Rücksendekosten sind selbst zu tragen.</p><p>Mehr Informationen findest du unter <a href=\"/pages/zahlung-versand\" title=\"Versand & Lieferung\">Versand & Lieferung</a>.</p>",
-            "page": "",
+            "content": "",
+            "page": "versandkosten-information",
             "open": false
           }
         },
@@ -142,7 +133,6 @@
         "5631a395-cc4a-4aeb-95d2-62342d321575",
         "rating",
         "variant_picker",
-        "size_guide_VTkFD3",
         "buy_buttons",
         "87bb02a1-ab04-4c6a-94e9-30f24a96b61f",
         "08183854-ca7c-418a-8902-915d02a88b59",

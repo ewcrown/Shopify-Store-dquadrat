@@ -108,8 +108,8 @@
           "settings": {
             "icon": "box",
             "title": "Versand",
-            "content": "<p>Lieferzeit innerhalb Deutschlands ca. 2-4 Werktage.</p><p>Versandkostenrabatt ab 60 Euro bei Trachtenmode.</p><p>Die Rücksendekosten sind selbst zu tragen.</p><p>Mehr Informationen findest du unter <a href=\"/pages/zahlung-versand\" title=\"Versand & Lieferung\">Versand & Lieferung</a>.</p>",
-            "page": "",
+            "content": "",
+            "page": "versandkosten-information",
             "open": false
           }
         },

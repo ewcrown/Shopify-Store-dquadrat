@@ -58,16 +58,6 @@
             "open_new_window": true
           }
         },
-        "size_guide_APxbDJ": {
-          "type": "size_guide",
-          "settings": {
-            "button_text": "Größentabelle",
-            "modal_title": "Größentabelle",
-            "show_icon": true,
-            "button_style": "link",
-            "fallback_page": ""
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -118,8 +108,8 @@
           "settings": {
             "icon": "box",
             "title": "Versand",
-            "content": "<p>Lieferzeit innerhalb Deutschlands ca. 2-4 Werktage.</p><p>Versandkostenrabatt ab 60 Euro bei Trachtenmode.</p><p>Die Rücksendekosten sind selbst zu tragen.</p><p>Mehr Informationen findest du unter <a href=\"/pages/zahlung-versand\" title=\"Versand & Lieferung\">Versand & Lieferung</a>.</p>",
-            "page": "",
+            "content": "",
+            "page": "versandkosten-information",
             "open": false
           }
         },
@@ -143,15 +133,6 @@
             "open": false
           }
         },
-        "f8e0bf8e-74ca-423f-a7a8-dcd7af407450": {
-          "type": "link",
-          "settings": {
-            "text": "So ziehe ich mein neues Dirndl an >",
-            "url": "shopify://blogs/trachten-blog/so-zieh-ich-mein-neues-dirndl-an",
-            "text_style": "link",
-            "open_new_window": false
-          }
-        },
         "14a0ef09-063f-4387-88d7-9be86385600f": {
           "type": "sku",
           "settings": {}
@@ -169,7 +150,6 @@
         "7827740d-0797-4dbe-b0b9-9f6355d3be76",
         "rating",
         "5631a395-cc4a-4aeb-95d2-62342d321575",
-        "size_guide_APxbDJ",
         "variant_picker",
         "buy_buttons",
         "59c5f8ea-49c1-4616-b439-61c71351b738",
@@ -177,7 +157,6 @@
         "9ed659ca-743a-4877-82db-1da05984edd1",
         "49af3870-c691-452d-a88d-ed7aec430d4a",
         "19325e18-288d-4298-98ac-a911d703d753",
-        "f8e0bf8e-74ca-423f-a7a8-dcd7af407450",
         "14a0ef09-063f-4387-88d7-9be86385600f",
         "560bdaff-51eb-4652-9931-eaf552ba27bf"
       ],

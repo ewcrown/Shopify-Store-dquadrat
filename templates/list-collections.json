@@ -99,9 +99,32 @@
         "collections_per_page": 44,
         "display_type": "selected"
       }
+    },
+    "rich_text_yJii83": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "Krüger Dirndl Sale und noch viel mehr....",
+        "title_size": 48,
+        "heading_h1": false,
+        "text": "<p>Hier findest du unseren Krüger Dirndl Sale, sowie reduzierte Herren-Tracht. Auch Wohnaccessoires und Trendartikel reduzieren wir regelmäßig. Hier kannst du ein echtes Schnäppchen machen.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "rich_text_yJii83"
   ]
 }

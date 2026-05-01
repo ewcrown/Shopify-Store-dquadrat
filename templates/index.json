@@ -54,16 +54,16 @@
     "aa6a0b4b-81c7-424a-a645-f1fe42ba43cc": {
       "type": "slideshow",
       "blocks": {
-        "image_6H6kyC": {
+        "79c2a28e-e8ad-4e3c-9076-96357d53c561": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_1024_58.png",
-            "mobile_image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_1024_58.png",
+            "image": "shopify://shop_images/Screenshot_2026-02-16_074041.png",
+            "mobile_image": "shopify://shop_images/Screenshot_2026-02-16_074041.png",
             "desktop_image_position": "center center",
             "mobile_image_position": "center center",
-            "slide_link": "shopify://collections/ostern",
-            "subheading": "",
-            "title": "Jetzt schon an Ostern denken!",
+            "slide_link": "shopify://collections/dirndl",
+            "subheading": "Krüger Trachtenmode",
+            "title": "Die neue Krüger Kollektion",
             "title_size": 60,
             "heading_h1": false,
             "text": "",
@@ -74,14 +74,15 @@
         },
         "image_CGpbeg": {
           "type": "image",
+          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_1024_46.png",
-            "mobile_image": "shopify://shop_images/Mobile_Slider_297_x_420_mm_f7cc9491-22c6-457e-9af5-2bc0442d62e6.png",
+            "image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_1024_69.png",
+            "mobile_image": "shopify://shop_images/Mobile_Slider_297_x_420_mm_83cc82a5-7a51-4e70-82f1-0705f771ecfe.png",
             "desktop_image_position": "center center",
             "mobile_image_position": "center center",
-            "slide_link": "shopify://collections/warmende-tracht",
-            "subheading": "Perfekt für kühle Tage",
-            "title": "Wärmende Tracht",
+            "slide_link": "shopify://collections/dirndl-der-woche",
+            "subheading": "",
+            "title": "",
             "title_size": 60,
             "heading_h1": false,
             "text": "",
@@ -90,11 +91,47 @@
             "overlay_position": "position--left position--bottom"
           }
         },
+        "image_rHNarN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_1024_73.png",
+            "mobile_image": "shopify://shop_images/Mobile_Slider_297_x_420_mm_17.png",
+            "desktop_image_position": "center center",
+            "mobile_image_position": "left bottom",
+            "slide_link": "shopify://collections/angebote-der-woche",
+            "subheading": "",
+            "title": "",
+            "title_size": 60,
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label": "Jetzt entdecken",
+            "overlay_position": "position--left position--bottom"
+          }
+        },
+        "image_6H6kyC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_852_px2048_x_850_px_43.png",
+            "mobile_image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_852_px2048_x_850_px_43.png",
+            "desktop_image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "shopify://collections/geschenke-mit-herz",
+            "subheading": "",
+            "title": "Bald ist Muttertag!",
+            "title_size": 60,
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label": "Geschenke mit Herz entdecken",
+            "overlay_position": "position--left position--bottom"
+          }
+        },
         "image_dwdHJQ": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_1024_61.png",
-            "mobile_image": "shopify://shop_images/Mobile_Slider_297_x_420_mm_11.png",
+            "image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_852_px2048_x_850_px_2.png",
+            "mobile_image": "shopify://shop_images/Mobile_Slider_297_x_420_mm_1_394c1ab4-5f27-4f9b-a234-316fdfbf67e0.png",
             "desktop_image_position": "center center",
             "mobile_image_position": "center center",
             "slide_link": "shopify://collections/fluid-market",
@@ -108,16 +145,16 @@
             "overlay_position": "position--left position--bottom"
           }
         },
-        "79c2a28e-e8ad-4e3c-9076-96357d53c561": {
+        "image_yKEMef": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Screenshot_2026-02-16_074041.png",
-            "mobile_image": "shopify://shop_images/Screenshot_2026-02-16_074041.png",
+            "image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_1024_68.png",
+            "mobile_image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_1024_68.png",
             "desktop_image_position": "center center",
             "mobile_image_position": "center center",
-            "slide_link": "shopify://collections/dirndl",
-            "subheading": "Krüger Trachtenmode",
-            "title": "Die neue Krüger Kollektion",
+            "slide_link": "shopify://collections/hochzeit",
+            "subheading": "",
+            "title": "Hochzeit in Tracht",
             "title_size": 60,
             "heading_h1": false,
             "text": "",
@@ -144,25 +181,6 @@
             "overlay_position": "position--left position--bottom"
           }
         },
-        "image_rHNarN": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Karte-Umfrage_Banner_Querformat_3.png",
-            "mobile_image": "shopify://shop_images/Karte-Umfrage_Karte_WhatsApp_2.png",
-            "desktop_image_position": "center center",
-            "mobile_image_position": "left bottom",
-            "slide_link": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__42PJ35UQVZGV1hSOU5UMEZPNkNMSVY2NDc1RjczNy4u&origin=lprLink&route=shorturl",
-            "subheading": "",
-            "title": "",
-            "title_size": 60,
-            "heading_h1": false,
-            "text": "",
-            "enlarge_text": true,
-            "button_label": "An Umfrage teilnehmen",
-            "overlay_position": "position--left position--bottom"
-          }
-        },
         "template--15954664751276__aa6a0b4b-81c7-424a-a645-f1fe42ba43cc-image-3": {
           "type": "image",
           "settings": {
@@ -180,35 +198,17 @@
             "button_label": "Jetzt entdecken",
             "overlay_position": "position--left position--bottom"
           }
-        },
-        "image_yKEMef": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_1024_60.png",
-            "mobile_image": "shopify://shop_images/Mobile_Slider_297_x_420_mm_9.png",
-            "desktop_image_position": "center center",
-            "mobile_image_position": "center center",
-            "slide_link": "shopify://collections/winkekatzen",
-            "subheading": "",
-            "title": "",
-            "title_size": 60,
-            "heading_h1": false,
-            "text": "",
-            "enlarge_text": true,
-            "button_label": "Entdecke unsere Winkekatzen",
-            "overlay_position": "position--left position--bottom"
-          }
         }
       },
       "block_order": [
-        "image_6H6kyC",
-        "image_CGpbeg",
-        "image_dwdHJQ",
         "79c2a28e-e8ad-4e3c-9076-96357d53c561",
-        "29d19ac9-202c-4a3e-96e8-b5365ac03f95",
+        "image_CGpbeg",
         "image_rHNarN",
-        "template--15954664751276__aa6a0b4b-81c7-424a-a645-f1fe42ba43cc-image-3",
-        "image_yKEMef"
+        "image_6H6kyC",
+        "image_dwdHJQ",
+        "image_yKEMef",
+        "29d19ac9-202c-4a3e-96e8-b5365ac03f95",
+        "template--15954664751276__aa6a0b4b-81c7-424a-a645-f1fe42ba43cc-image-3"
       ],
       "settings": {
         "height": "fixed",
@@ -232,8 +232,8 @@
         "heading_h1": false,
         "text": "<p><strong>Wir sind dein Online Shop mit Trachtenmode von Krüger und vielen Produkten aus den Bereichen Geschenke, Feinkost, Lifestyle und Wohnen. </strong></p><p><strong>Zu uns gehört auch die </strong><a href=\"https://www.tee-undkraeutergalerie.de/\" target=\"_blank\" title=\"https://www.tee-undkraeutergalerie.de/\"><strong>Tee-und-Kräutergalerie</strong></a><strong> im Breuningerland Ludwigsburg.</strong></p><p><strong>Außerdem haben wir einige Stores im Großraum Ludwigsburg und Stuttgart.</strong></p><p>👇<br/><a href=\"/pages/stores\" title=\"Stores und Öffnungszeiten\"><strong>Stores und Öffnungszeiten</strong></a></p><p><strong>Deine Vorteile:</strong></p><p><strong>- Rabattierter Versand der Trachtenmode innerhalb Deutschlands ab 70 Euro Verkaufswert. Einfach Code VKFREE im Checkout eingeben!</strong></p><p><strong>- Schneller Versand</strong></p><p><strong>- Freundlicher Service</strong></p><p><strong>- Kompetente Beratung</strong></p><p><strong>- 5 % Rabatt bei Newsletteranmeldung</strong></p><p><strong>- Viele Rabatt- und Sale-Aktionen!</strong></p><p>❤️<br/></p><p><strong>Wir wünschen dir viel Spaß beim Stöbern und Entdecken!</strong></p><p></p><p></p>",
         "image_width": 120,
-        "button_label": "",
-        "button_link": "",
+        "button_label": "Anmelden",
+        "button_link": "#popup",
         "button_style": "auto",
         "text_alignment": "center",
         "enlarge_text": true,
@@ -506,7 +506,7 @@
         "image_XBKCLD": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Cannstatter-Wasen.jpg",
+            "image": "shopify://shop_images/Hellgrun_Cremefarben_Modern_Minimalistisch_Black_Friday_Querformat_Banner.png",
             "video": "",
             "desktop_image_position": "center center",
             "mobile_image_position": "center center",
@@ -655,14 +655,21 @@
           "type": "collection",
           "settings": {
             "collection": "westen",
-            "image": "shopify://shop_images/Herren_Weste_Kr_ger_2026-_dquadrat.png"
+            "image": "shopify://shop_images/Mobile_Slider_297_x_420_mm_14.png"
           }
         },
         "1648220659c91ed362-1": {
           "type": "collection",
           "settings": {
             "collection": "lederhosen-co-herren",
-            "image": "shopify://shop_images/Herren-Lederhose-2026-Kruger-dquadrat.png"
+            "image": "shopify://shop_images/Mobile_Slider_297_x_420_mm_15.png"
+          }
+        },
+        "1648220659c91ed362-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "herren-jacken",
+            "image": "shopify://shop_images/Mobile_Slider_297_x_420_mm_16.png"
           }
         },
         "1648220659c91ed362-2": {
@@ -670,13 +677,6 @@
           "settings": {
             "collection": "hemden",
             "image": "shopify://shop_images/Hemden-Kruger-2026-dquadrat.png"
-          }
-        },
-        "1648220659c91ed362-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "herren-jacken",
-            "image": "shopify://shop_images/Trachtenjacke-kruger-2026-dquadrat.png"
           }
         },
         "402b3873-a6eb-425d-bd24-c2fea8eac838": {
@@ -690,8 +690,8 @@
       "block_order": [
         "1648220659c91ed362-0",
         "1648220659c91ed362-1",
-        "1648220659c91ed362-2",
         "1648220659c91ed362-3",
+        "1648220659c91ed362-2",
         "402b3873-a6eb-425d-bd24-c2fea8eac838"
       ],
       "settings": {

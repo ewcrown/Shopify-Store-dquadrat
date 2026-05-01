@@ -14,6 +14,7 @@
       "blocks": {
         "template--15954664390828__8808cc79-a1ab-4995-8341-f296cbb2a43b-1667402890c98bf233-0": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "geschenke-mit-herz",
             "image": "shopify://shop_images/Zahnbox_-_Rose_-_Herz_-_19-3607-00_-_Maileg-dquadrat.png"
@@ -21,6 +22,7 @@
         },
         "collection_p6hVCp": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "trend",
             "image": "shopify://shop_images/ZwitscherboxOak-11ZBX0201004-Relaxound-dquadrat_1.png"
@@ -28,6 +30,7 @@
         },
         "template--15954664390828__8808cc79-a1ab-4995-8341-f296cbb2a43b-1667402890c98bf233-2": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "rader-design",
             "image": "shopify://shop_images/SALZ_PFEFFERSTREUERSET-Austern-Unterwasserwelt-17563-RaderDesign-dquadrat_1.png"
@@ -35,6 +38,7 @@
         },
         "template--15954664390828__8808cc79-a1ab-4995-8341-f296cbb2a43b-1667402890c98bf233-1": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "papeterie",
             "image": "shopify://shop_images/Lieblingsmoment_Karte_Wundervolle_Momente_-_17751_-_R_der_Design-dquadrat.png"
