@@ -12,199 +12,192 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor_and_type": {
-          "type": "vendor_and_type",
-          "settings": {
-            "show_vendor": true,
-            "show_type": false
-          }
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
         },
         "title": {
           "type": "title",
-          "settings": {
-            "heading_h1": true
-          }
+          "settings": {}
         },
         "price": {
           "type": "price",
           "settings": {}
         },
-        "7827740d-0797-4dbe-b0b9-9f6355d3be76": {
-          "type": "text",
-          "settings": {
-            "text": "Lieferzeit: ca. 3 -4 Werktage",
-            "text_style": "uppercase"
-          }
-        },
-        "5631a395-cc4a-4aeb-95d2-62342d321575": {
-          "type": "link",
-          "disabled": true,
-          "settings": {
-            "text": "zur Größenberatung",
-            "url": "shopify://pages/grossenberatung-1",
-            "text_style": "button_primary",
-            "open_new_window": true
-          }
-        },
-        "rating": {
-          "type": "rating",
-          "settings": {}
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "variant_style": "underlined",
-            "show_realtime_availability": true,
-            "show_size_chart": false,
-            "size_chart_variant": "Size",
-            "size_chart_page": ""
+            "heading": "Choose variants",
+            "variants_style": "radio",
+            "color_swatches": true,
+            "style": "outline",
+            "unavailable_variants": "hide"
           }
         },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_tax_and_shipping": false,
             "show_quantity_selector": true,
-            "enable_payment_button": false,
-            "show_pickup_availability": true,
-            "enable_mobile_sticky_cart": false
+            "show_preorder": false,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false,
+            "show_price": true,
+            "style": "outline"
           }
         },
-        "87bb02a1-ab04-4c6a-94e9-30f24a96b61f": {
-          "type": "accordion",
-          "disabled": true,
-          "settings": {
-            "icon": "ruler",
-            "title": "Größenberatung",
-            "content": "<p>Du weißt nicht welche Größe du bestellen sollst? Dann hilft dir unsere Größenberatung.</p>",
-            "page": "grossenberatung-1",
-            "open": false
-          }
-        },
-        "a0c4d84d-f4f4-46c5-bdff-cc293cb5f1ac": {
+        "description": {
           "type": "description",
           "settings": {
-            "display": "accordion_open",
-            "icon": "heart"
+            "product_description_truncated": "full"
           }
         },
-        "9ed659ca-743a-4877-82db-1da05984edd1": {
-          "type": "accordion",
-          "settings": {
-            "icon": "box",
-            "title": "Versand",
-            "content": "<p>Du erhältst per Mail ein pdf-Dokument von uns zugeschickt.</p>",
-            "page": "",
-            "open": false
-          }
-        },
-        "14a0ef09-063f-4387-88d7-9be86385600f": {
-          "type": "sku",
-          "settings": {}
-        },
-        "560bdaff-51eb-4652-9931-eaf552ba27bf": {
-          "type": "social",
+        "share": {
+          "type": "share",
           "settings": {}
         }
       },
       "block_order": [
-        "vendor_and_type",
+        "vendor",
         "title",
         "price",
-        "7827740d-0797-4dbe-b0b9-9f6355d3be76",
-        "5631a395-cc4a-4aeb-95d2-62342d321575",
-        "rating",
         "variant_picker",
         "buy_buttons",
-        "87bb02a1-ab04-4c6a-94e9-30f24a96b61f",
-        "a0c4d84d-f4f4-46c5-bdff-cc293cb5f1ac",
-        "9ed659ca-743a-4877-82db-1da05984edd1",
-        "14a0ef09-063f-4387-88d7-9be86385600f",
-        "560bdaff-51eb-4652-9931-eaf552ba27bf"
+        "description",
+        "share"
       ],
       "settings": {
-        "media_style": "two-column",
-        "sticky_behaviour": "bottom",
-        "full_width": true,
-        "show_backorder_text": true,
-        "slide_nav_style": "dots",
-        "media_crop": "center",
-        "enable_zoom": false,
-        "zoom_cursor": "plus-light",
-        "show_thumbnails": true,
+        "gallery_layout": "two-cols scroll",
+        "gallery_desktop_width": "two-thirds",
+        "gallery_mobile_width": 100,
+        "gallery_aspect_ratio": "1",
+        "gallery_fit": false,
+        "gallery_padding": 0,
+        "gallery_background": "rgba(0,0,0,0)",
+        "gallery_border": "rgba(0,0,0,0)",
+        "border_radius": 0,
+        "show_thumbnails": false,
+        "enable_zoom": true,
         "enable_video_looping": false,
-        "scroll_to_variant_media": true,
-        "highlight_selected_media": true,
-        "variant_media_grouping": false,
-        "variant_media_grouping_option": "Color,Colour,Couleur,Farbe"
+        "default_to_first_variant": true,
+        "style": "primary"
+      }
+    },
+    "rich_text_zy9B9R": {
+      "type": "rich-text",
+      "blocks": {
+        "title_UPX97U": {
+          "type": "title",
+          "settings": {
+            "title": "Über uns",
+            "title_size": "heading-size--regular",
+            "seo_h_tag": "h2"
+          }
+        },
+        "text_VUtzLT": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Große Auswahl, höchste Qualität, stets frisch!</strong></p><p>So lautet unser Motto. Die Tee und Kräutergalerie gehört seit dem 1. Mai 2021 zur <a href=\"https://www.dquadrat-stores.de/\" target=\"_blank\" title=\"dquadrat-stores.de\">Dquadrat-Familie</a>. Zuvor wurde sie viele Jahre durch Frau Lange betrieben und aufgebaut. Nach ihrem wohlverdienten Eintritt in den Ruhestand führen wir die Tee und Kräutergalerie weiter. </p><p>Wir sind überzeugte Teeliebhaber und geben unser Wissen mit viel Liebe an unsere Kunden weiter. Wir freuen uns über Ihre Bestellung oder einen Besuch in unserem Teeladen im Breuningerland Ludwigsburg.</p>",
+            "text_size": "regular"
+          }
+        },
+        "button_k6ycBk": {
+          "type": "button",
+          "settings": {
+            "button_label": "Noch mehr erfahren",
+            "link": "shopify://pages/uber-uns",
+            "button_style": "outline"
+          }
+        }
+      },
+      "block_order": [
+        "title_UPX97U",
+        "text_VUtzLT",
+        "button_k6ycBk"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Gutschein_-Onlinesho-Tee_1.png",
+        "image_position": "right",
+        "height": "regular",
+        "image_crop": true,
+        "is_fullwidth": false,
+        "text_alignment": "horizontal-center",
+        "spacing": 24,
+        "color_background_main": "#e3e4db",
+        "color_text_main": "rgba(0,0,0,0)",
+        "color_borders_main": "#FFFFFF",
+        "border_radius": 0,
+        "color_hide_borders": false,
+        "gutter_decrease": false,
+        "remove_margin": false,
+        "remove_bottom_margin": false
       }
     },
     "product-recommendations": {
       "type": "product-recommendations",
-      "settings": {
-        "show_product_recommendations": true,
-        "title": "Das könnte dir auch gefallen",
-        "hide_swatches": false,
-        "show_vendor": false,
-        "grid": 3
-      }
-    },
-    "1659446064fbfc91c0": {
-      "type": "collection-list",
       "blocks": {
-        "1659446064264bd26f-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "grun-form"
-          }
+        "price": {
+          "type": "price",
+          "settings": {}
         },
-        "1659446064264bd26f-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "dirndl",
-            "image": "shopify://shop_images/Collection-List-Dirndl_f2a4ddcd-2170-4950-9a31-7642b9b1a7eb.jpg"
-          }
+        "title": {
+          "type": "title",
+          "settings": {}
         },
-        "1659446064264bd26f-2": {
-          "type": "collection",
+        "product_link": {
+          "type": "product_link",
           "settings": {
-            "collection": "lederhosen-co-herren",
-            "image": "shopify://shop_images/L2020879.jpg"
-          }
-        },
-        "616f667b-92ae-44c6-ab50-0b62bd908fcb": {
-          "type": "collection",
-          "settings": {
-            "collection": "accessoires-damen"
-          }
-        },
-        "614013a9-5565-48ae-80af-53a81313aff1": {
-          "type": "collection",
-          "settings": {
-            "collection": "kruger-tracht-kids"
+            "button_label": "View product"
           }
         }
       },
       "block_order": [
-        "1659446064264bd26f-0",
-        "1659446064264bd26f-1",
-        "1659446064264bd26f-2",
-        "616f667b-92ae-44c6-ab50-0b62bd908fcb",
-        "614013a9-5565-48ae-80af-53a81313aff1"
+        "price",
+        "title",
+        "product_link"
       ],
       "settings": {
-        "title": "Kennst du schon all unsere Produkte?",
-        "layout": "carousel",
-        "grid": 3,
-        "grid_mobile": "2",
+        "heading": "Sie suchen ein Geschenk?",
+        "subheading": "Hier finden Sie noch mehr",
+        "section_heading_size": "text-size--regular",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "gutter_decrease": false
+      }
+    },
+    "featured_collection_QtxNKy": {
+      "type": "featured-collection",
+      "blocks": {
+        "title_AtUpP7": {
+          "type": "title",
+          "settings": {}
+        },
+        "price_BrbEaC": {
+          "type": "price",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title_AtUpP7",
+        "price_BrbEaC"
+      ],
+      "settings": {
+        "heading": "Sie suchen ein Geschenk?",
+        "subheading": "Hier finden Sie bestimmt das richtige.",
+        "section_heading_size": "text-size--regular",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
         "show_view_all": true,
-        "alternate_bg_color": false
+        "layout": "grid-4 grid-portable-3 grid-lap-2 grid-tiny-1",
+        "products_number": 4,
+        "collection": "geschenke-1",
+        "gutter_decrease": false,
+        "seo_h_tag": "h2"
       }
     }
   },
   "order": [
     "main",
+    "rich_text_zy9B9R",
     "product-recommendations",
-    "1659446064fbfc91c0"
+    "featured_collection_QtxNKy"
   ]
 }

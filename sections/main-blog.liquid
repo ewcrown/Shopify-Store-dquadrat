@@ -1,163 +1,224 @@
-{%- liquid
-  assign columns = 4
+{{ 'component-blog-item.css' | asset_url | stylesheet_tag }}
 
-  if columns == 2
-    assign article_class = 'column half'
-  elsif columns == 3
-    assign article_class = 'column third'
-  else
-    assign article_class = 'column quarter'
-  endif
+{%- render 'breadcrumb', container: 'compact', vertical_space: 'vertical-space-xsmall', style: 'breadcrumb-main--margin' -%}
 
-  assign show_blog_filters = false
-  if blog.all_tags.size > 0 and section.settings.blog_show_filter
-    assign show_blog_filters = true
-  endif
--%}
-
-<div data-section-type="blog-template" class="{% if section.settings.blog_show_title == false %}sm:pt-medium pb-medium{% else %}py-medium{% endif %}">
-  {% if section.settings.blog_show_title %}
-    <div class="central align-center">
-      <h1 class="feature-header" data-cc-animate>
-        <span>
-          {{ blog.title }}
-
-          {% if show_blog_filters == false and section.settings.blog_show_rss_link %}
-            <a class="rsslink {% if section.settings.blog_show_filter == false or blog.all_tags.size == 0 %}no-filter{% endif %}"
-               href="{{ blog.url }}.atom" title="{{ blog.title | escape }} RSS" aria-label="{{ blog.title | escape }} RSS">
-              {% render 'svg-rss' %}
-            </a>
-          {% endif %}
-          </span>
-      </h1>
+<div class="container--compact container--vertical-space-small">
+  <div class="blog-header  gutter-bottom--regular">
+    <div>
+      <h1 class="title heading-size--page-title">{{ blog.title | escape }}</h1>
     </div>
-  {% endif %}
-
-  {% paginate blog.articles by section.settings.blog_posts_per_page %}
-    <div class="wide-container half-gutter">
-      {% if show_blog_filters %}
-        <div class="blog-toolbar" data-cc-animate data-cc-animate-delay="0.2s">
-          <div>
-            {% if section.settings.blog_show_rss_link %}
-              <a class="rsslink {% if section.settings.blog_show_filter == false or blog.all_tags.size == 0 %}no-filter{% endif %}"
-                 href="{{ blog.url }}.atom" title="{{ blog.title | escape }} RSS" aria-label="{{ blog.title | escape }} RSS">
-                {% render 'svg-rss' %}
-              </a>
-            {% endif %}
-          </div>
-
-          {% if show_blog_filters %}
-            <div class="option option--gap-top">
-              <label for="filter-by">{{ 'blogs.filtering.filter' | t }}</label>
-              <select id="filter-by" class="redirecter">
-                <option value="{{ blog.url }}">{{ 'blogs.filtering.all' | t }}</option>
-                {% for tag in blog.all_tags %}
-                  <option value="{{ blog.url }}/tagged/{{ tag | handle }}" {% if current_tags contains tag %}selected{% endif %}>{{ tag | capitalize }}</option>
-                {% endfor %}
-              </select>
-            </div>
-          {% endif %}
-        </div>
-      {% endif %}
-
-      <div class="product-list-container">
-        <div class="cc-articles product-list grid--uniform{% if section.settings.blog_posts_per_row_mobile == '2' %} mob-two-col{% endif %} product-list--{{ section.settings.blog_layout }}">
-          {% for article in blog.articles %}
-            <div class="{{ article_class }} article-column">
-              {% render 'article-block',
-                  article: article,
-                  show_date: settings.blog_show_date,
-                  show_author: settings.blog_show_author,
-                  image_shape: settings.blog_image_shape,
-                  blog_excerpt: settings.blog_excerpt
-              %}
-            </div>
-          {% else %}
-            <p class="align-centre"><em>{{ 'blogs.general.no_matches' | t }}</em></p>
-          {% endfor %}
-        </div>
-
-        {% if paginate.pages > 1 %}
-          <div class="pagination central content" data-cc-animate>
-            {% comment %}
-            When paginating blog articles, a previous article is actually a newer article, not an older one,
-            because blog articles are shown and paginated in a reversed chronological order.
-            The word 'previous' can be confusing, hence we'll change it.
-            {% endcomment %}
-            {% assign older_articles = 'blogs.pagination.older_articles' | t %}
-            {% assign newer_articles = 'blogs.pagination.newer_articles' | t %}
-            {{ paginate | default_pagination | replace: 'Previous', newer_articles | replace: 'Next', older_articles }}
-          </div>
-        {% endif %}
+    
+    {%- if section.settings.enable_tags -%}
+      <div class="blog-tags">
+        <a class="pill pill--outline pill--large {% if current_tags == blank %} button--solid {% endif %}" href="{{ blog.url }}">{{ 'blog.grid.tags_dropdown.all' | t }}</a>
+        {%- for tag in blog.all_tags -%}
+          <a class="pill pill--outline pill--large {% if current_tags contains tag %} pill--outline-active {% endif %}" href="{{ blog.url }}/tagged/{{ tag.handle }}">
+            {{ tag | capitalize }}
+          </a>
+        {%- endfor -%}
       </div>
-    </div>
-  {% endpaginate %}
+    {%- endif -%}
+  </div>
+  {%- render 'hr' -%}
 </div>
 
+<div id="blog-posts-{{ section.id }}" class="container--compact container--vertical-space-small">
+
+  {% style %}
+    @media screen and (max-width: 767px) {
+      #blog-posts-{{ section.id }} {
+        margin-top: 30px;
+      }
+    }
+  {% endstyle %}
+ 
+  {%- if blog.articles.size > 0 -%}
+    
+    {%- paginate blog.articles by section.settings.post_limit -%}
+
+      <div class="grid grid--layout {{ section.settings.layout }} grid--gap-bottom">
+        {%- liquid
+          for article in blog.articles
+            render 'blog-item', article: article, section_blocks: section.blocks, show_image: section.settings.blog_show_image, image_aspect_ratio: section.settings.image_aspect_ratio, image_border_radius: section.settings.image_border_radius, layout: section.settings.layout, index: forloop.index
+          endfor
+        -%}
+      </div>
+
+      {%- liquid
+        if paginate.pages > 1
+          render 'pagination', paginate: paginate
+        endif
+      -%}
+
+    {%- endpaginate -%}
+
+  {%- else -%}
+
+    <span class="no-content-message">
+      {{ 'blog.grid.no_articles_text' | t }}
+    </span>
+
+  {%- endif -%}
+  
+</div>
 
 {% schema %}
   {
-    "name": "Blog pages",
-    "settings": [
+    "name": "t:sections.local-extra-words.sections.main-blog.name",
+    "blocks": [
       {
-        "type": "select",
-        "id": "blog_layout",
-        "label": "Layout",
-        "options": [
+        "type": "title",
+        "name": "t:sections.blog-posts.blocks.title.name",
+        "limit": 1
+      },
+      {
+        "type": "info",
+        "name": "t:sections.blog-posts.blocks.info.name",
+        "limit": 1,
+        "settings": [
           {
-            "value": "collage",
-            "label": "Collage"
+            "type": "checkbox",
+            "id": "show_date",
+            "label": "t:sections.blog-posts.blocks.info.settings.show_date.label",
+            "default": true
           },
           {
-            "value": "rows",
-            "label": "Grid"
+            "type": "checkbox",
+            "id": "show_author",
+            "label": "t:sections.blog-posts.blocks.info.settings.show_author.label",
+            "default": false
+          },
+          {
+            "type": "checkbox",
+            "id": "show_comments_number",
+            "label": "t:sections.main-article.blocks.title.settings.blog_show_comments.label",
+            "default": false
+          }
+        ]
+      },
+      {
+        "type": "summary",
+        "name": "t:sections.local-extra-words.sections.blog-posts.blocks.summary.name",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "range",
+            "id": "excerpt_limit",
+            "label": "t:sections.local-extra-words.sections.blog-posts.blocks.summary.settings.excerpt_limit",
+            "info": "t:sections.local-extra-words.sections.blog-posts.blocks.summary.settings.excerpt_limit_info",
+            "default": 15,
+            "step": 1,
+            "min": 5,
+            "max": 40
+          }
+        ]
+      },
+      {
+        "type": "button",
+        "name": "t:sections.bundle-extra-words.settings_schema.blog.article_link",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "button_label",
+            "label": "t:sections.bundle-extra-words.sections.product_grid.blocks.product_link.settings.button_label.label",
+            "default": "Read more"
+          }
+        ]
+      },
+      {
+        "type": "tags",
+        "limit": 1,
+        "name": "t:sections.bundle-extra-words.settings_schema.blog.tags.name",
+        "settings": [
+          {
+            "type": "range",
+            "id": "tags_limit",
+            "label": "t:sections.bundle-extra-words.settings_schema.blog.tags.limit.label",
+            "default": 3,
+            "step": 1,
+            "min": 2,
+            "max": 8
+          }
+        ]
+      }
+    ],
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable_tags",
+        "label": "t:sections.main-blog.settings.enable_tags.label",
+        "default": false
+      },
+      {
+        "type": "select",
+        "id": "layout",
+        "label": "t:sections.local-extra-words.sections.columns.name",
+        "info": "t:sections.local-extra-words.sections.columns.info",
+        "options": [
+          {
+            "value": "grid-1",
+            "label": "t:sections.local-extra-words.sections.columns.option__0"
+          },
+          {
+            "value": "grid-2 grid-lap-1",
+            "label": "t:sections.local-extra-words.sections.columns.option__1"
           }
         ],
-        "default": "collage",
-        "info": "Collage applies to larger screens only"
+        "default": "grid-1"
       },
       {
         "type": "range",
-        "id": "blog_posts_per_page",
-        "label": "Posts per page",
-        "min": 6,
-        "max": 24,
+        "id": "post_limit",
+        "label": "t:sections.main-blog.settings.post_limit.label",
+        "min": 4,
+        "max": 12,
         "step": 1,
-        "default": 10
+        "default": 6
       },
       {
-        "type": "select",
-        "id": "blog_posts_per_row_mobile",
-        "label": "Posts per row on mobile",
-        "options": [
-          {
-            "value": "1",
-            "label": "1"
-          },
-          {
-            "value": "2",
-            "label": "2"
-          }
-        ],
-        "default": "2"
+        "type": "header",
+        "content": "t:sections.main-blog.settings.header.content"
       },
       {
         "type": "checkbox",
-        "id": "blog_show_title",
-        "label": "Show page title",
+        "id": "blog_show_image",
+        "label": "t:sections.blog-posts.settings.show_image.label",
         "default": true
       },
       {
-        "type": "checkbox",
-        "id": "blog_show_filter",
-        "label": "Show tag filter",
-        "default": false
+        "type": "select",
+        "id": "image_aspect_ratio",
+        "label": "t:settings_schema.product-grid.settings.aspect_ratio.label",
+        "options": [
+          {
+            "value": "1.33333",
+            "label": "t:sections.gallery.settings.aspect_ratio.options__1.label"
+          },
+          {
+            "value": "1",
+            "label": "t:sections.gallery.settings.aspect_ratio.options__2.label"
+          },
+          {
+            "value": "0.83333",
+            "label": "t:sections.gallery.settings.aspect_ratio.options__3.label"
+          },
+          {
+            "value": "0.666667",
+            "label": "t:sections.gallery.settings.aspect_ratio.options__4.label"
+          }
+        ],
+        "default": "1.33333"
       },
       {
-        "type": "checkbox",
-        "id": "blog_show_rss_link",
-        "label": "Show RSS link",
-        "default": false
+        "type": "range",
+        "id": "image_border_radius",
+        "label": "t:sections.bundle-extra-words.sections.main-product-page.settings.gallery.border_radius",
+        "min": 0,
+        "max": 30,
+        "step": 1,
+        "unit": "px",
+        "default": 0
       }
     ]
   }

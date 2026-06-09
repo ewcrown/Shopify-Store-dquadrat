@@ -12,182 +12,152 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor_and_type": {
-          "type": "vendor_and_type",
-          "settings": {
-            "show_vendor": true,
-            "show_type": false
-          }
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
         },
         "title": {
           "type": "title",
-          "settings": {
-            "heading_h1": true
-          }
+          "settings": {}
         },
         "price": {
           "type": "price",
-          "settings": {}
-        },
-        "7827740d-0797-4dbe-b0b9-9f6355d3be76": {
-          "type": "text",
-          "settings": {
-            "text": "Lieferzeit: ca. 3 -4 Werktage",
-            "text_style": "uppercase"
-          }
-        },
-        "5631a395-cc4a-4aeb-95d2-62342d321575": {
-          "type": "link",
           "disabled": true,
-          "settings": {
-            "text": "zur Größenberatung",
-            "url": "shopify://pages/grossenberatung-1",
-            "text_style": "button_primary",
-            "open_new_window": true
-          }
-        },
-        "rating": {
-          "type": "rating",
           "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "variant_style": "underlined",
-            "show_realtime_availability": true,
-            "show_size_chart": false,
-            "size_chart_variant": "Size",
-            "size_chart_page": ""
+            "heading": "{{ product.metafields.custom.frisch_abgepackt.value }}",
+            "variants_style": "radio",
+            "color_swatches": true,
+            "style": "primary",
+            "unavailable_variants": "show"
           }
         },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_tax_and_shipping": false,
             "show_quantity_selector": true,
-            "enable_payment_button": false,
-            "show_pickup_availability": true,
-            "enable_mobile_sticky_cart": false
+            "show_preorder": false,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false,
+            "show_price": true,
+            "style": "outline"
           }
         },
-        "87bb02a1-ab04-4c6a-94e9-30f24a96b61f": {
-          "type": "accordion",
-          "disabled": true,
-          "settings": {
-            "icon": "ruler",
-            "title": "Größenberatung",
-            "content": "<p>Du weißt nicht welche Größe du bestellen sollst? Dann hilft dir unsere Größenberatung.</p>",
-            "page": "grossenberatung-1",
-            "open": false
-          }
-        },
-        "08183854-ca7c-418a-8902-915d02a88b59": {
-          "type": "trust_icons",
-          "settings": {
-            "icon_size": 30,
-            "show_icon1": true,
-            "text1": "<p>Versandkostenrabatt bei Trachtenmode ab 70 € Einkaufswert</p>",
-            "icon1": "check_mark",
-            "show_icon2": true,
-            "text2": "<p>schnelle Lieferung</p>",
-            "icon2": "truck",
-            "show_icon3": true,
-            "text3": "<p>wiederverwendete Kartons</p>",
-            "icon3": "box",
-            "show_icon4": true,
-            "text4": "<p>mit Liebe verpackt</p>",
-            "icon4": "heart"
-          }
-        },
-        "a0c4d84d-f4f4-46c5-bdff-cc293cb5f1ac": {
+        "description": {
           "type": "description",
           "settings": {
-            "display": "accordion_open",
-            "icon": "heart"
+            "product_description_truncated": "full"
           }
         },
-        "9ed659ca-743a-4877-82db-1da05984edd1": {
-          "type": "accordion",
-          "settings": {
-            "icon": "box",
-            "title": "Versand",
-            "content": "",
-            "page": "versandkosten-information",
-            "open": false
-          }
-        },
-        "14a0ef09-063f-4387-88d7-9be86385600f": {
-          "type": "sku",
-          "settings": {}
-        },
-        "560bdaff-51eb-4652-9931-eaf552ba27bf": {
-          "type": "social",
+        "share": {
+          "type": "share",
           "settings": {}
         }
       },
       "block_order": [
-        "vendor_and_type",
+        "vendor",
         "title",
         "price",
-        "7827740d-0797-4dbe-b0b9-9f6355d3be76",
-        "5631a395-cc4a-4aeb-95d2-62342d321575",
-        "rating",
         "variant_picker",
         "buy_buttons",
-        "87bb02a1-ab04-4c6a-94e9-30f24a96b61f",
-        "08183854-ca7c-418a-8902-915d02a88b59",
-        "a0c4d84d-f4f4-46c5-bdff-cc293cb5f1ac",
-        "9ed659ca-743a-4877-82db-1da05984edd1",
-        "14a0ef09-063f-4387-88d7-9be86385600f",
-        "560bdaff-51eb-4652-9931-eaf552ba27bf"
+        "description",
+        "share"
       ],
       "settings": {
-        "media_style": "two-column",
-        "sticky_behaviour": "bottom",
-        "full_width": true,
-        "show_backorder_text": true,
-        "slide_nav_style": "dots",
-        "media_crop": "center",
+        "gallery_layout": "one-col scroll",
+        "gallery_desktop_width": "one-half",
+        "gallery_mobile_width": 100,
+        "gallery_aspect_ratio": "1",
+        "gallery_fit": false,
+        "gallery_padding": 0,
+        "gallery_background": "rgba(0,0,0,0)",
+        "gallery_border": "rgba(0,0,0,0)",
+        "border_radius": 0,
+        "show_thumbnails": false,
         "enable_zoom": true,
-        "zoom_cursor": "plus-light",
-        "show_thumbnails": true,
         "enable_video_looping": false,
-        "scroll_to_variant_media": true,
-        "highlight_selected_media": true,
-        "variant_media_grouping": false,
-        "variant_media_grouping_option": "Color,Colour,Couleur,Farbe"
+        "default_to_first_variant": true,
+        "style": "primary"
       }
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "price"
+      ],
       "settings": {
-        "show_product_recommendations": true,
-        "title": "Durchstöbere doch mal unser vielfältiges Sortiment",
-        "hide_swatches": false,
-        "show_vendor": false,
-        "grid": 3
+        "heading": "Produktempfehlung",
+        "subheading": "Diese Produkte könnten Ihnen auch gefallen",
+        "section_heading_size": "text-size--regular",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "gutter_decrease": false
       }
     },
-    "16551872197b74e0e0": {
+    "featured_collection_BVppNt": {
       "type": "featured-collection",
-      "disabled": true,
+      "blocks": {
+        "title_EMDgYE": {
+          "type": "title",
+          "settings": {}
+        },
+        "price_wJB3cB": {
+          "type": "price",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title_EMDgYE",
+        "price_wJB3cB"
+      ],
       "settings": {
-        "title": "Featured collection",
-        "collection": "",
-        "layout": "rows",
-        "show_vendor": false,
-        "grid": 3,
-        "rows": 2,
-        "grid_mobile": "2",
-        "hide_swatches": false,
-        "alternate_bg_color": false,
-        "show_view_all": true
+        "heading": "Bestseller",
+        "subheading": "Entdecken Sie die Lieblingstees unserer Kunden",
+        "section_heading_size": "text-size--regular",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "show_view_all": true,
+        "layout": "grid-4 grid-portable-3 grid-lap-2 grid-tiny-1",
+        "products_number": 4,
+        "collection": "bestseller",
+        "gutter_decrease": false,
+        "seo_h_tag": "h2"
+      }
+    },
+    "1709202590c4df49f3": {
+      "type": "apps",
+      "blocks": {
+        "bogox_free_gift_product_cross_sell_bUUXHR": {
+          "type": "shopify://apps/bogox-free-gift/blocks/product-cross-sell/4254c128-561c-4a78-b553-cfcb302243bb",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "bogox_free_gift_product_cross_sell_bUUXHR"
+      ],
+      "settings": {
+        "full_width": false,
+        "remove_margin": false
       }
     }
   },
   "order": [
     "main",
     "product-recommendations",
-    "16551872197b74e0e0"
+    "1709202590c4df49f3",
+    "featured_collection_BVppNt"
   ]
 }

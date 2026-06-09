@@ -9,238 +9,232 @@
  */
 {
   "sections": {
-    "8808cc79-a1ab-4995-8341-f296cbb2a43b": {
-      "type": "collection-list",
-      "blocks": {
-        "template--15954664390828__8808cc79-a1ab-4995-8341-f296cbb2a43b-1667402890c98bf233-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "wohnen",
-            "image": "shopify://shop_images/11869-mood--Guten-Appetet-Krug.jpg"
-          }
-        },
-        "template--15954664390828__8808cc79-a1ab-4995-8341-f296cbb2a43b-1667402890c98bf233-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "trend",
-            "image": "shopify://shop_images/75dpi__zwitscherbox_weiss_fruehjahr_2021.jpg"
-          }
-        },
-        "template--15954664390828__8808cc79-a1ab-4995-8341-f296cbb2a43b-1667402890c98bf233-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "kuechenartikel",
-            "image": "shopify://shop_images/teekanne_leaf_1_5liter_25LEA_1024_dquadrat_plint-1.jpg"
-          }
-        },
-        "d6ad552e-b7b1-4798-9635-9afd003121ff": {
-          "type": "collection",
-          "settings": {
-            "collection": "geschenke",
-            "image": "shopify://shop_images/mothers-day-gifts.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "template--15954664390828__8808cc79-a1ab-4995-8341-f296cbb2a43b-1667402890c98bf233-0",
-        "template--15954664390828__8808cc79-a1ab-4995-8341-f296cbb2a43b-1667402890c98bf233-1",
-        "template--15954664390828__8808cc79-a1ab-4995-8341-f296cbb2a43b-1667402890c98bf233-2",
-        "d6ad552e-b7b1-4798-9635-9afd003121ff"
-      ],
+    "banner": {
+      "type": "main-collection-banner",
       "disabled": true,
       "settings": {
-        "title": "Unser Sortiment",
-        "layout": "rows",
-        "grid": 4,
-        "grid_mobile": "1",
-        "show_view_all": false,
-        "alternate_bg_color": false
-      }
-    },
-    "main": {
-      "type": "main-collection",
-      "settings": {
-        "show_collection_content": false,
+        "show_collection_description": false,
         "show_collection_image": false,
-        "description_position": "top",
-        "layout": "rows",
-        "grid": 3,
-        "grid_mobile": "2",
-        "products_per_page": 18,
-        "enable_infinite_scroll": true,
-        "show_vendor": false,
-        "show_filter_counts": false,
-        "show_filter_deadends": true,
-        "ajax_products": true,
-        "filter_mode": "sidebar",
-        "sticky_sidebar": true,
-        "collapse_filters_method": "none",
-        "collapse_sort_by": false,
-        "enable_sorting": true,
-        "show_featured_in_sort": false
+        "color_background_main": "rgba(0,0,0,0)",
+        "color_text_main": "rgba(0,0,0,0)",
+        "height": "small"
       }
     },
-    "165477742524042bd2": {
-      "type": "gallery",
-      "blocks": {
-        "1654777425e7922d86-0": {
-          "type": "image",
-          "settings": {
-            "video": "",
-            "desktop_image_position": "center center",
-            "mobile_image_position": "center center",
-            "enlarge_image": false,
-            "subheading": "Gallery",
-            "title": "Tell your story",
-            "heading_h1": false,
-            "button_label": "Shop this",
-            "link": "",
-            "text_alignment": "position--left position--bottom"
-          }
-        },
-        "1654777425e7922d86-1": {
-          "type": "image",
-          "settings": {
-            "video": "",
-            "desktop_image_position": "center center",
-            "mobile_image_position": "center center",
-            "enlarge_image": false,
-            "subheading": "Gallery",
-            "title": "Tell your story",
-            "heading_h1": false,
-            "button_label": "Shop this",
-            "link": "",
-            "text_alignment": "position--left position--bottom"
-          }
-        },
-        "1654777425e7922d86-2": {
-          "type": "image",
-          "settings": {
-            "video": "",
-            "desktop_image_position": "center center",
-            "mobile_image_position": "center center",
-            "enlarge_image": false,
-            "subheading": "Gallery",
-            "title": "Tell your story",
-            "heading_h1": false,
-            "button_label": "Shop this",
-            "link": "",
-            "text_alignment": "position--left position--bottom"
-          }
-        }
-      },
-      "block_order": [
-        "1654777425e7922d86-0",
-        "1654777425e7922d86-1",
-        "1654777425e7922d86-2"
-      ],
+    "collection_description_9WdDhQ": {
+      "type": "collection-description",
       "disabled": true,
       "settings": {
-        "title": "",
-        "grid": 3,
-        "desktop_image_height": 300,
-        "mobile_image_height": 400,
-        "title_size": 44,
-        "enable_margin": true,
-        "full_width": false,
-        "enable_carousel": true,
-        "overlay_style_tint": true,
-        "alternate_bg_color": false
+        "heading": "Tee trinken wie in England",
+        "subheading": "Wir laden Sie herzlich dazu ein auf eine Teereise nach England zu gehen. In England wird die Tradition des Teetrinkens hochgeschätzt. Kaum ein anderes Land legt so viel Wert auf das traditionelle Teetrinken wie England. Der Afternoon Tea ist dort eine beliebte Tradition, bei der Tee in einer gemütlichen Atmosphäre genossen wird. Typischerweise wird der Tee in einer Teekanne serviert und in feinem Teegeschirr wie Tassen und Untertassen eingeschenkt. Dazu werden oft Gebäck wie Scones mit Clotted Cream und Marmelade gereicht. Diese Kombination aus Tee, Teegeschirr und Gebäck macht den Afternoon Tea zu einem besonderen Erlebnis, das von den Engländern sehr geschätzt wird.",
+        "section_heading_size": "text-size--regular",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "gutter_decrease": false,
+        "seo_h_tag": "h2"
       }
     },
-    "08bd9aca-d472-47f5-adc7-d7f4dfb34606": {
-      "type": "collection-list",
+    "collection_description_9pRD7N": {
+      "type": "collection-description",
+      "disabled": true,
+      "settings": {
+        "heading": "Gentleman Tee Genuss",
+        "subheading": "Erkunden Sie unsere Zusammenstellung von Gentleman-Tees! Wir haben speziell würzige und kräftige Teesorten für den Herrn ausgewählt.Jeder Schluck verspricht ein einzigartiges Geschmackserlebnis, das sowohl den Gaumen erfreut als auch den Geist belebt. Unsere Tees sind nicht nur ein Genuss, sondern auch eine Möglichkeit, sich eine wohlverdiente Auszeit zu gönnen und den Moment zu genießen.Ob Sie einen kräftigen Schwarztee bevorzugen, der Sie mit Energie versorgt, oder einen beruhigenden Kräutertee, der Ihnen hilft, nach einem langen Tag zu entspannen – in unserer Kollektion finden Sie garantiert das Richtige.Unsere Tees sind handverlesen und stammen aus den besten Teeanbaugebieten der Welt. Jede Sorte wird sorgfältig ausgewählt, um höchste Qualität und besten Geschmack zu gewährleisten.Treten Sie ein in die Welt der Gentleman-Tees und erleben Sie die Kunst des Teegenusses auf höchstem Niveau.",
+        "section_heading_size": "text-size--regular",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "gutter_decrease": false,
+        "seo_h_tag": "h2"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
       "blocks": {
-        "template--15954664390828__08bd9aca-d472-47f5-adc7-d7f4dfb34606-16674034176c734b84-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "kruger-tracht",
-            "image": "shopify://shop_images/Collection-List-Blusen.jpg"
-          }
+        "title": {
+          "type": "title",
+          "settings": {}
         },
-        "template--15954664390828__08bd9aca-d472-47f5-adc7-d7f4dfb34606-16674034176c734b84-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "alle-artikel-herren",
-            "image": "shopify://shop_images/Juli_2020_Krueger_Tag19979_iso_ausschnitt.jpg"
-          }
+        "price": {
+          "type": "price",
+          "settings": {}
         },
-        "template--15954664390828__08bd9aca-d472-47f5-adc7-d7f4dfb34606-16674034176c734b84-2": {
-          "type": "collection",
+        "quick_buy": {
+          "type": "quick_buy",
           "disabled": true,
           "settings": {
-            "collection": ""
+            "show_only_available": false,
+            "variant_default": true,
+            "show_price": true,
+            "unavailable_variants": "hide"
+          }
+        },
+        "7de7d863-ee35-4a4a-a402-d687a7c955cd": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "quick_buy",
+        "7de7d863-ee35-4a4a-a402-d687a7c955cd"
+      ],
+      "settings": {
+        "products_number": 24,
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "filters_position": "sidebar"
+      }
+    },
+    "featured_product_rFtpnF": {
+      "type": "featured-product",
+      "blocks": {
+        "title_jUdnWj": {
+          "type": "title",
+          "settings": {
+            "seo_h_tag": "h3"
+          }
+        },
+        "price_N7inkM": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_n6tJHc": {
+          "type": "variant_picker",
+          "settings": {
+            "heading": "",
+            "variants_style": "radio",
+            "color_swatches": true,
+            "style": "primary",
+            "show_quantities": "no",
+            "unavailable_variants": "hide"
+          }
+        },
+        "buy_buttons_tqTiK6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_preorder": false,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false,
+            "show_price": true,
+            "style": "outline"
           }
         }
       },
       "block_order": [
-        "template--15954664390828__08bd9aca-d472-47f5-adc7-d7f4dfb34606-16674034176c734b84-0",
-        "template--15954664390828__08bd9aca-d472-47f5-adc7-d7f4dfb34606-16674034176c734b84-1",
-        "template--15954664390828__08bd9aca-d472-47f5-adc7-d7f4dfb34606-16674034176c734b84-2"
+        "title_jUdnWj",
+        "price_N7inkM",
+        "variant_picker_n6tJHc",
+        "buy_buttons_tqTiK6"
       ],
       "disabled": true,
       "settings": {
-        "title": "Tracht",
-        "layout": "rows",
-        "grid": 2,
-        "grid_mobile": "2",
-        "show_view_all": false,
-        "alternate_bg_color": false
+        "heading": "Teeangebot des Monats",
+        "subheading": "",
+        "section_heading_size": "text-size--regular",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "product": "english-afternoon-tea-ausgewaehlte-teemischung",
+        "gallery_layout": "one-col scroll",
+        "gallery_desktop_width": "one-half",
+        "gallery_mobile_width": 90,
+        "gallery_aspect_ratio": "1",
+        "gallery_fit": false,
+        "gallery_padding": 0,
+        "gallery_background": "rgba(0,0,0,0)",
+        "gallery_border": "rgba(0,0,0,0)",
+        "border_radius": 0,
+        "show_thumbnails": false,
+        "enable_zoom": false,
+        "enable_video_looping": false,
+        "default_to_first_variant": true,
+        "gutter_decrease": true,
+        "seo_h_tag": "h2"
       }
     },
-    "rich_text_QdnEKW": {
-      "type": "rich-text",
+    "promotion_cards_ppyLnt": {
+      "type": "promotion-cards",
+      "blocks": {
+        "card_9h3ENF": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/EnglishAfternoonTea_1.jpg",
+            "caption": "",
+            "title": "Tee des Monats",
+            "subtitle": "English Afternoon Tea",
+            "button_label": "Jetzt entdecken",
+            "button_link": "shopify://products/english-afternoon-tea-ausgewaehlte-teemischung",
+            "color_background_main": "rgba(0,0,0,0)",
+            "color_text_main": "rgba(0,0,0,0)",
+            "color_borders_main": "rgba(0,0,0,0)",
+            "color_hide_borders": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "card_eQfVmR": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Freisteller_Early_Morning_1.jpg",
+            "caption": "",
+            "title": "Sale im Monat Juni",
+            "subtitle": "Early Morning Tea",
+            "button_label": "Jetzt entdecken",
+            "button_link": "shopify://products/early-morning-tea-schwarztee",
+            "color_background_main": "rgba(0,0,0,0)",
+            "color_text_main": "rgba(0,0,0,0)",
+            "color_borders_main": "rgba(0,0,0,0)",
+            "color_hide_borders": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "card_tUR6yG": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/BioWaldbeere.jpg",
+            "caption": "",
+            "title": "Sale im Monat Juni",
+            "subtitle": "Bio Waldbeere",
+            "button_label": "Jetzt entdecken",
+            "button_link": "shopify://products/waldbeere-bio-schwarztee-aroma",
+            "color_background_main": "rgba(0,0,0,0)",
+            "color_text_main": "rgba(0,0,0,0)",
+            "color_borders_main": "rgba(0,0,0,0)",
+            "color_hide_borders": false,
+            "seo_h_tag": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "card_9h3ENF",
+        "card_eQfVmR",
+        "card_tUR6yG"
+      ],
       "disabled": true,
-      "name": "Rich text",
       "settings": {
-        "subheading": "",
-        "title": "Trachtenblusen für Damen",
-        "title_size": 48,
-        "heading_h1": false,
-        "text": "<p>Die Trachtenbluse gehört zur modernen Trachtenmode und lässt<br/>sich zu Jeans, <a href=\"https://www.dquadrat-stores.de/collections/lederhosen-co-damen\" target=\"_blank\" title=\"https://www.dquadrat-stores.de/collections/lederhosen-co-damen\">Lederhose</a> oder zum <a href=\"https://www.dquadrat-stores.de/collections/trachtenrocke\" target=\"_blank\" title=\"https://www.dquadrat-stores.de/collections/trachtenrocke\">Trachtenrock</a> kombinieren. Sie ist das<br/>weibliche Pendant zum klassischen <a href=\"https://www.dquadrat-stores.de/collections/hemden\" target=\"_blank\" title=\"https://www.dquadrat-stores.de/collections/hemden\">Trachtenhemd für Herren</a>.</p><p>Ob zum Volksfest oder im Alltag getragen – bei uns findet<br/>jede Frau die passende Bluse für ihren persönlichen Anlass. </p><p><strong>Arten von<br/>Trachtenblusen</strong></p><p>Wie bei den <a href=\"https://www.dquadrat-stores.de/collections/dirndlblusen\" target=\"_blank\" title=\"https://www.dquadrat-stores.de/collections/dirndlblusen\">Dirndlblusen</a> gibt es auch bei unseren Trachtenblusen<br/>verschiedene Varianten und Stilrichtungen.</p><p><strong>Variation im Ausschnitt:</strong> Ob hochgeschlossen, im Carmen-Stil<br/>oder mit klassischem V-Ausschnitt – unsere Trachtenblusen bieten eine große<br/>Auswahl an femininen Ausschnittformen.</p><p><strong>Verschiedene Farben und Muster:</strong> Unsere Trachtenblusen<br/>gibt es in vielen Farben wie Weiß, Schwarz, Grün, Blau oder Rosa. Auch bei unseren<br/>Mustern ist die Auswahl groß: Besonders beliebt sind karierte Trachtenblusen,<br/>Modelle mit feiner Spitze oder bestickte Blusen. Während das Karomuster den<br/>klassischen Trachtenhemden ähnlich ist, wirken Blusen mit Spitze romantisch und<br/>verspielt. </p><p><strong>Trachtenblusen mit Schleifen:</strong><br/>Die Schleife ist beim <a href=\"https://www.dquadrat-stores.de/collections/dirndl\" target=\"_blank\" title=\"https://www.dquadrat-stores.de/collections/dirndl\">Dirndl</a> ein echter Hingucker und ein traditionelles Detail<br/>im Trachtenoutfit. Darum schmückt sie auch den Ausschnitt einiger unserer Trachtenblusen.</p>",
-        "image_width": 120,
-        "button_label": "",
-        "button_link": "",
-        "button_style": "auto",
-        "text_alignment": "center",
-        "enlarge_text": false,
-        "full_width": false,
-        "no_padding_bottom": false,
-        "color_scheme": "standard",
-        "color_bg": "",
-        "color_text": ""
-      }
-    },
-    "rich_text_YmaAnr": {
-      "type": "rich-text",
-      "disabled": true,
-      "name": "Rich text",
-      "settings": {
-        "subheading": "",
-        "title": "Trachtenröcke",
-        "title_size": 48,
-        "heading_h1": false,
-        "text": "<p>Unsere Trachtenröcke sind modern und vielseitig kombinierbar – zum Beispiel mit einem schmeichelnden <a href=\"https://www.dquadrat-stores.de/collections/mieder\" target=\"_blank\" title=\"https://www.dquadrat-stores.de/collections/mieder\">Mieder</a> und/oder einer zarten <a href=\"https://www.dquadrat-stores.de/collections/trachtenbluse\" target=\"_blank\" title=\"https://www.dquadrat-stores.de/collections/trachtenbluse\">Trachtenbluse</a>. Sie sind ähnlich wie <a href=\"https://www.dquadrat-stores.de/collections/dirndl\" target=\"_blank\" title=\"https://www.dquadrat-stores.de/collections/dirndl\">Dirndlröcke</a> weit ausgestellt und wirken dadurch besonders feminin und elegant. Der Trachtenrock passt sowohl zu festlichen Anlässen als auch zu stilvollen Alltagsoutfits. </p><p><strong>Verschiedene Schnitte, Farben und Muster</strong></p><p>Wir bieten eine große Vielfalt an Farben und Mustern. So findet jeder das passende (Krüger-) Modell.</p><p><strong>Länge und Schnitt</strong>: Unsere Trachtenröcke sind in den Längen 60 cm („Midi“, etwa knielang)und 70 cm (kniebedeckend) erhältlich. Sie sitzen auf der Taille und sorgen durch ihren klassischen Faltenwurf für eine schöne Silhouette.</p><p><strong>Klassisch und modern:</strong> Der Trachtenrock verbindet traditionelle Elemente mit modernen Designs und ist eine stilvolle Alternative zum klassischen Dirndl. </p><p>Unsere Röcke sind entweder einfarbig oder gemustert. Zur Verzierung werden Borten, Spitze, dekorative Knöpfe und Gürtel mit eleganter Schnalle eingesetzt. </p><p><strong>Kleiner Tipp:</strong> Gemusterte Trachtenröcke lassen sich besonders gut mit einfarbigen Trachtenblusen kombinieren. Einfarbige Röcke hingegen können entweder mit Dirndlbluse und Mieder oder mit einer passenden Trachtenbluse getragen werden.<br/><br/></p>",
-        "image_width": 120,
-        "button_label": "",
-        "button_link": "",
-        "button_style": "auto",
-        "text_alignment": "center",
-        "enlarge_text": false,
-        "full_width": false,
-        "no_padding_bottom": false,
-        "color_scheme": "standard",
-        "color_bg": "",
-        "color_text": ""
+        "heading": "Hier empfehlen wir unsere monatlich wechselnden Angebote und unsere Sonderaktionen zu saisonalen Tees.",
+        "subheading": "Ideal, um auch unbekannte Teesorten zu probieren!",
+        "section_heading_size": "text-size--regular",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "cta_label": "",
+        "cta_url": "",
+        "layout": "grid-3 grid-lap-1",
+        "image_aspect_ratio": "1",
+        "text_alignment": "text-align--center",
+        "caption_size": "regular",
+        "title_size": "100%",
+        "subtitle_size": "regular",
+        "spacing": 18,
+        "button_style": "outline",
+        "border_radius": 0,
+        "gutter_decrease": false,
+        "seo_h_tag": "h2"
       }
     }
   },
   "order": [
-    "8808cc79-a1ab-4995-8341-f296cbb2a43b",
-    "main",
-    "165477742524042bd2",
-    "08bd9aca-d472-47f5-adc7-d7f4dfb34606",
-    "rich_text_QdnEKW",
-    "rich_text_YmaAnr"
+    "banner",
+    "collection_description_9WdDhQ",
+    "collection_description_9pRD7N",
+    "product-grid",
+    "featured_product_rFtpnF",
+    "promotion_cards_ppyLnt"
   ]
 }

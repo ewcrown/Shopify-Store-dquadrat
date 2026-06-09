@@ -9,79 +9,17 @@
  */
 {
   "sections": {
-    "165728406723c9e695": {
-      "type": "image-with-text-overlay",
-      "settings": {
-        "image": "shopify://shop_images/contact-us-sign-with-phone-on-desk.jpg",
-        "desktop_image_position": "center center",
-        "mobile_image_position": "center center",
-        "height": "fixed",
-        "height_desktop": 450,
-        "height_mobile": 400,
-        "subheading": "",
-        "title": "",
-        "title_size": 50,
-        "heading_h1": false,
-        "text": "",
-        "enlarge_text": true,
-        "button_label": "",
-        "image_link": "",
-        "overlay_position": "position--right position--top",
-        "full_width": true,
-        "mobile_overlay_under": false,
-        "overlay_style_tint": true
-      }
-    },
-    "1654761839874c645a": {
-      "type": "map",
-      "disabled": true,
-      "settings": {
-        "heading": "Pleidelsheim | Lagerverkauf",
-        "address": "<p><strong>Krüger Dirndl - Dekoration - Mode</strong></p><p>Gottlieb-Daimler Str. 20<br/>74385 Pleidelsheim</p><p>Telefon: 07144 / 896880</p><p>Email: info@dquadrat.de<br/>Web: www.dquadrat.de</p><p></p><p><strong>ÖFFNUNGSZEITEN:</strong></p><p>Montag bis Freitag 9:30 bis 18.00 Uhr</p><p>Samstag 9:30 bis 16:00 Uhr</p>",
-        "button": "Anfahrt",
-        "text_alignment": "left",
-        "color_scheme": "standard",
-        "color_bg": "",
-        "color_text": "",
-        "map_address": "https://www.google.com/maps?ll=48.95293,9.196116&z=13&t=m&hl=de-DE&gl=DE&mapclient=embed&cid=12862998692126519363",
-        "api_key": "",
-        "map_style": "silver",
-        "image": "shopify://shop_images/dquadrat_krueger_dirndl_oktoberfest_volksfest.jpg"
-      }
+    "contact": {
+      "type": "contact-form",
+      "settings": {}
     },
     "main": {
-      "type": "main-contact",
-      "settings": {
-        "show_title": true
-      }
-    },
-    "2b5f7104-5eb3-4b28-8ace-942d889cec04": {
-      "type": "image-with-text",
-      "settings": {
-        "subheading": "KOMM UNS BESUCHEN",
-        "title": "UNSERE STANDORTE",
-        "title_size": 28,
-        "text": "<p>Neben unserem Onlineshop führen wir auch Fachgeschäfte. Hier wirst du persönlich von unserem kompetenten Team beraten und kannst dir deine Lieblingsprodukte in Ruhe ansehen. Wir wünschen viel Freude beim Bummeln.</p>",
-        "button_label": "Hier sind wir zu finden",
-        "button_link": "shopify://pages/stores",
-        "text_alignment": "center",
-        "text_width": 50,
-        "button_style": "auto",
-        "image": "shopify://shop_images/Hier_sind_wir_zu_finden_1.png",
-        "video": "",
-        "image_width": 100,
-        "image_position": "right",
-        "media_size": "cover",
-        "color_scheme": "standard",
-        "color_bg": "",
-        "color_text": ""
-      }
+      "type": "main-page",
+      "settings": {}
     }
   },
   "order": [
-    "165728406723c9e695",
-    "1654761839874c645a",
     "main",
-    "2b5f7104-5eb3-4b28-8ace-942d889cec04"
+    "contact"
   ]
 }

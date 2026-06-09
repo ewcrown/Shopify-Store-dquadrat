@@ -9,408 +9,429 @@
  */
 {
   "sections": {
-    "1633684260f2d526f0": {
-      "type": "image-with-text-overlay",
-      "settings": {
-        "image": "shopify://shop_images/minimalist-retail-clothing-display.jpg",
-        "desktop_image_position": "center center",
-        "mobile_image_position": "center center",
-        "height": "fixed",
-        "height_desktop": 400,
-        "height_mobile": 400,
-        "subheading": "",
-        "title": "FAQ",
-        "title_size": 60,
-        "heading_h1": true,
-        "text": "<p><strong>Häufig gestellte Fragen</strong></p>",
-        "enlarge_text": false,
-        "button_label": "",
-        "image_link": "",
-        "overlay_position": "position--hcenter position--vcenter",
-        "full_width": true,
-        "mobile_overlay_under": false,
-        "overlay_style_tint": true
-      }
-    },
     "main": {
-      "type": "main-faq",
+      "type": "main-page",
       "settings": {
-        "show_title": false,
-        "show_content": true,
-        "text_alignment": "left",
-        "show_search": true,
-        "show_sidebar": true,
-        "sidebar_title": ""
+        "center": false,
+        "page_cover_metafield": "",
+        "color_background_main": "rgba(0,0,0,0)",
+        "color_text_main": "rgba(0,0,0,0)",
+        "height": "small"
       }
     },
-    "16336816691fb51b7b": {
-      "type": "accordions",
+    "cd546e5d-492e-48dd-b25b-9fd2ac20bf8d": {
+      "type": "content-toggles",
       "blocks": {
-        "16336816691fb51b7b-0": {
-          "type": "accordion",
+        "template--18027765825801__cd546e5d-492e-48dd-b25b-9fd2ac20bf8d-text-1": {
+          "type": "text",
           "settings": {
-            "icon": "none",
             "title": "Woher weiß ich, ob meine Bestellung erfolgreich war?",
-            "text": "<p>Nach Abschluss deiner Bestellung erhältst du eine Bestellbestätigung per E-Mail von uns.</p>",
-            "open": false
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Nach Abschluss Ihrer Bestellung erhalten Sie eine Bestellbestätigung per E-Mail von uns.</p>"
           }
         },
-        "16336816691fb51b7b-2": {
-          "type": "accordion",
+        "template--18027765825801__cd546e5d-492e-48dd-b25b-9fd2ac20bf8d-text-2": {
+          "type": "text",
           "settings": {
-            "icon": "none",
             "title": "Ist es möglich, meine Bestellung noch zu ändern?",
-            "text": "<p>Leider ist es nicht möglich, bereits aufgegebene Bestellungen zu ändern. Am besten du stornierst deine Bestellung und schickst deine Bestellung erneut ab.  </p>",
-            "open": false
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Leider ist es nicht möglich, bereits aufgegebene Bestellungen zu ändern. Am besten, Sie stornieren Ihre Bestellung und schicken Ihre Bestellung erneut ab.  </p><p>Falls Sie noch etwas zusätzlich bestellen möchten, können Sie dies einfach nachträglich bestellen. Wir versuchen, wenn möglich, die Bestellungen dann gemeinsam zu versenden.</p>"
           }
         },
-        "16336816691fb51b7b-1": {
-          "type": "accordion",
+        "template--18027765825801__cd546e5d-492e-48dd-b25b-9fd2ac20bf8d-text-3": {
+          "type": "text",
           "settings": {
-            "icon": "none",
             "title": "Gibt es einen Mindestbestellwert?",
-            "text": "<p>Nein, es gibt keinen Mindestbestellwert. Ab 70 € bekommst du einen Versandkostenrabatt. Dieser gilt ausschließlich für Trachtenmode.</p>",
-            "open": false
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Nein, es gibt keinen Mindestbestellwert. Ab 40 € Einkaufswert übernehmen wir Ihre Versandkosten.</p>"
           }
         },
-        "8eb60c6e-6153-4349-b84f-4daf9b598c6b": {
-          "type": "accordion",
+        "bfa3872d-788f-4c89-b610-01c947e01110": {
+          "type": "text",
           "settings": {
-            "icon": "none",
             "title": "Wie kann ich bezahlen?",
-            "text": "<p>Wähle selbst, welche Zahlungsweise die bequemste für dich ist: </p><p>- Kreditkarte (Visa, Mastercard, Amex, Maestro)</p><p>- Google Pay</p><p>- Shop Pay</p><p>- PayPal</p><p>- Sofortüberweisung</p><p></p><p></p>",
-            "open": false
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Wählen Sie selbst, welche Zahlungsweise die bequemste für Sie ist: </p><p>- Kreditkarte (Visa, Mastercard, Amex, Maestro)</p><p>- Apple Pay</p><p>- Google Pay</p><p>- Shop Pay</p><p>- Sofort Überweisung</p><p></p><p></p>"
           }
         },
-        "8dc4c825-a25f-49f5-b087-83618fa4a7da": {
-          "type": "accordion",
+        "78f09851-ddcf-4dc8-b22b-5aebe4f98e63": {
+          "type": "text",
           "settings": {
-            "icon": "none",
             "title": "Ich möchte gerne einen Artikel meiner Bestellung umtauschen, was muss ich tun?",
-            "text": "<p>Ein Umtausch ist leider nicht möglich. Bitte bestelle dein Wunschprodukt erneut in unserem Onlineshop und sende die anderen Artikel an uns zurück, damit wir dir die Kosten so schnell wie möglich zurückerstatten können. </p>",
-            "open": false
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Ein Umtausch ist leider nicht möglich. Bitte bestellen Sie Ihr Wunschprodukt erneut. Frisch abgepackte Tees können wir leider aus Hygienegründen nicht zurücknehmen. </p>"
           }
         },
-        "5e3d99a7-fb6a-43ca-a23e-d5e4d2ec8916": {
-          "type": "accordion",
+        "e87fd8a8-4635-44b8-88a4-0c002d0cebde": {
+          "type": "text",
           "settings": {
-            "icon": "none",
-            "title": "Bei meinem Dirndl/Mieder fehlt die Miederschnürung, was soll ich tun?",
-            "text": "<p>Die Miederschnürung ist im Normalfall in einer kleinen Tasche unter dem linken Arm. Alternativ kann sie auch am Logo-Emblem am Rücken angebracht sein oder sich in einer der Rocktaschen befinden. </p><p>Wenn keine Schnürung dabei ist, schicke uns bitte eine E-Mail an <a href=\"mailto:onlineshop@dquadrat.de\" title=\"mailto:onlineshop@dquadrat.de\"><strong>onlineshop@dquadrat.de</strong></a> mit deiner Bestellnummer und der Artikelnummer des Dirndls oder Mieders, dann senden wir dir eine neue Miederschnürung per Post zu (für dich fallen keine zusätzlichen Kosten an).</p>",
-            "open": false
-          }
-        },
-        "255b6b68-671e-43e3-8b1e-f01e81801aed": {
-          "type": "accordion",
-          "settings": {
-            "icon": "none",
             "title": "Werden die Artikel im Warenkorb automatisch reserviert?",
-            "text": "<p>Nein, Artikel in den Warenkorb zu legen, ist keine Garantie dafür, dass der Artikel reserviert wird oder verfügbar ist.</p>",
-            "open": false
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Artikel in den Warenkorb zu legen, ist keine Garantie dafür, dass der Artikel reserviert wird oder verfügbar ist.</p>"
           }
         },
-        "c7a0ade1-1c46-4b21-9e3e-a745c07e603a": {
-          "type": "accordion",
+        "48ca1d4f-5d4b-41a9-a915-382bd8cfb22f": {
+          "type": "text",
           "settings": {
-            "icon": "none",
             "title": "Warum wurde meine Lieferung storniert oder teilrückerstattet?",
-            "text": "<p>Zur Stornierung einer Bestellung oder Teilrückerstattung kann es kommen, wenn die bestellte Ware nicht verfügbar oder fehlerhaft ist und uns dies vor dem Versand aufgefallen ist. In diesem Fall wirst du selbstverständlich von uns per E-Mail benachrichtigt.</p>",
-            "open": false
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Zur Stornierung einer Bestellung oder Teilrückerstattung kann es kommen, wenn die bestellte Ware nicht verfügbar oder fehlerbehaftet ist und uns dies vor dem Versand aufgefallen ist. In diesem Fall werden Sie selbstverständlich von uns per E-Mail benachrichtigt.</p>"
           }
         },
-        "e9933ab3-6b35-4d5e-9f7d-16dc9e7df8c9": {
-          "type": "accordion",
+        "b908934a-e90d-4f42-806b-11e74bda7127": {
+          "type": "text",
           "settings": {
-            "icon": "none",
-            "title": "Ist die Rückgabefrist verstrichen und du möchtest den Artikel reklamieren?",
-            "text": "<p>Bitte sende uns eine E-Mail an <a href=\"mailto:onlineshop@dquadrat.de\" title=\"mailto:onlineshop@dquadrat.de\">onlineshop@dquadrat.de</a> und schicke uns Fotos des Artikels. Erkläre uns zudem bitte deutlich deinen Reklamationsgrund. Mehr dazu findest du unter <a href=\"https://dquadrat-stores.myshopify.com/pages/rucksendung-ruckerstattung\" title=\"https://dquadrat-stores.myshopify.com/pages/rucksendung-ruckerstattung\">Rückerstattung.</a></p>",
-            "open": false
+            "title": "Ist die Rückgabefrist verstrichen und Sie möchten den Artikel reklamieren?",
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Bitte senden Sie uns eine E-Mail an shop@tee-undkraeutergalerie.de und schicken Sie uns Fotos des Artikels. Erklären Sie uns zudem bitte deutlich Ihren Reklamationsgrund. Mehr dazu finden Sie unter <a href=\"https://dquadrat-stores.myshopify.com/pages/rucksendung-ruckerstattung\" title=\"https://dquadrat-stores.myshopify.com/pages/rucksendung-ruckerstattung\">Rückerstattung.</a></p>"
           }
         },
-        "b81db6e5-8e03-44b3-9e9d-1c98d3527530": {
-          "type": "accordion",
+        "41054217-f84a-4b4d-a7f8-aa2006c75e44": {
+          "type": "text",
           "settings": {
-            "icon": "none",
             "title": "Kann ich meine Lieferadresse nach der Bestellung noch ändern?",
-            "text": "<p>Bitte melde dich bei einer Adressänderung schnellstmöglich bei unserem Kundenservice.</p><p><a href=\"mailto:onlineshop@dquadrat.de\" title=\"mailto:onlineshop@dquadrat.de\">onlineshop@dquadrat.de</a>  oder 07144 / 896880</p><p>Wenn die Artikel deiner Bestellung noch nicht verpackt und versendet wurden, können wir deine Lieferadresse noch abändern. </p>",
-            "open": false
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Bitte melden Sie sich bei einer Adressänderung schnellstmöglich bei unserem Kundenservice.</p><p>shop@tee-undkraeutergalerie.de  oder 07141-918270</p><p>Wenn die Artikel Ihrer Bestellung noch nicht verpackt und versendet wurden, können wir Ihre Lieferadresse noch abändern. </p>"
           }
         },
-        "6d71cf12-978e-4a86-96e3-5da1e2cc4845": {
-          "type": "accordion",
+        "b6d6d6e8-f0b2-460a-b32c-035f7321253f": {
+          "type": "text",
           "settings": {
-            "icon": "none",
-            "title": "Kann ich mir meine Bestellung zu einer ihrer Filialen schicken lassen?",
-            "text": "<p>Gerne senden wir die Ware auch an eine unserer Filialen. Du wirst in diesem Fall telefonisch kontaktiert, sobald die Ware in der Filiale abholbereit ist. Bitte schließe deine Bestellung in diesem Fall komplett online ab.</p>",
-            "open": false
+            "title": "Kann ich mir meine Bestellung zu einer Ihrer Filialen schicken lassen?",
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Gerne können Sie Ihre Bestellung in unserem Teeladen im Breuningerland Ludwigsburg abholen. Sie werden in diesem Fall telefonisch kontaktiert, sobald die Ware in der Filiale abholbereit ist. Bitte schließen Sie Ihre Bestellung in diesem Fall komplett online ab.</p>"
           }
         }
       },
       "block_order": [
-        "16336816691fb51b7b-0",
-        "16336816691fb51b7b-2",
-        "16336816691fb51b7b-1",
-        "8eb60c6e-6153-4349-b84f-4daf9b598c6b",
-        "8dc4c825-a25f-49f5-b087-83618fa4a7da",
-        "5e3d99a7-fb6a-43ca-a23e-d5e4d2ec8916",
-        "255b6b68-671e-43e3-8b1e-f01e81801aed",
-        "c7a0ade1-1c46-4b21-9e3e-a745c07e603a",
-        "e9933ab3-6b35-4d5e-9f7d-16dc9e7df8c9",
-        "b81db6e5-8e03-44b3-9e9d-1c98d3527530",
-        "6d71cf12-978e-4a86-96e3-5da1e2cc4845"
+        "template--18027765825801__cd546e5d-492e-48dd-b25b-9fd2ac20bf8d-text-1",
+        "template--18027765825801__cd546e5d-492e-48dd-b25b-9fd2ac20bf8d-text-2",
+        "template--18027765825801__cd546e5d-492e-48dd-b25b-9fd2ac20bf8d-text-3",
+        "bfa3872d-788f-4c89-b610-01c947e01110",
+        "78f09851-ddcf-4dc8-b22b-5aebe4f98e63",
+        "e87fd8a8-4635-44b8-88a4-0c002d0cebde",
+        "48ca1d4f-5d4b-41a9-a915-382bd8cfb22f",
+        "b908934a-e90d-4f42-806b-11e74bda7127",
+        "41054217-f84a-4b4d-a7f8-aa2006c75e44",
+        "b6d6d6e8-f0b2-460a-b32c-035f7321253f"
       ],
       "settings": {
-        "title": "Bestellung",
-        "alternate_bg_color": false,
-        "view_all_page": ""
+        "heading": "Bestellung",
+        "subheading": "Sie haben Fragen, rund um Ihre Bestellung? Vielleicht können wir Ihnen hier helfen.",
+        "section_heading_size": "text-size--large",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "cta_label": "",
+        "cta_url": "",
+        "form_enable": false,
+        "form_title": "Ihre Frage wurde nicht beantwortet?  Dann schreiben Sie uns gerne eine Nachricht.",
+        "style": "primary",
+        "open_first": false,
+        "gutter_decrease": false,
+        "seo_h_tag": "h2"
       }
     },
-    "1633681707d0a1c902": {
-      "type": "accordions",
+    "16b2dba1-91cf-41a2-aace-f1795a74fd4b": {
+      "type": "content-toggles",
       "blocks": {
-        "1633681707d0a1c902-1": {
-          "type": "accordion",
+        "template--18077632758078__16b2dba1-91cf-41a2-aace-f1795a74fd4b-1677675595b001aa13-0": {
+          "type": "text",
           "settings": {
-            "icon": "none",
             "title": "Welche Zahlungsarten stehen zur Verfügung?",
-            "text": "<p>- Kreditkarte (Visa, Mastercard, Amex, Maestro)</p><p>- Apple Pay</p><p>- Google Pay</p><p>- Shop Pay</p><p>- Sofort Überweisung</p>",
-            "open": false
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>- Kreditkarte (Visa, Mastercard, Amex, Maestro)</p><p>- Apple Pay</p><p>- Google Pay</p><p>- Shop Pay</p><p>- Sofort Überweisung</p>"
           }
         },
-        "1633681707d0a1c902-0": {
-          "type": "accordion",
+        "template--18077632758078__16b2dba1-91cf-41a2-aace-f1795a74fd4b-1677675595b001aa13-1": {
+          "type": "text",
           "settings": {
-            "icon": "none",
             "title": "Wo kann ich den Rabattcode/Gutschein eingeben?",
-            "text": "<p>Dies ist im Warenkorb beim Checkout möglich. Es kann nur ein Code pro Bestellung eingelöst werden.</p>",
-            "open": false
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Dies ist im Warenkorb möglich.</p><p>Bitte beachten Sie, dass die korrekte Schreibweise einzuhalten ist.</p>"
           }
         },
-        "5cb11ecd-702b-49ea-a078-b233faf22ad5": {
-          "type": "accordion",
+        "template--18077632758078__16b2dba1-91cf-41a2-aace-f1795a74fd4b-1677675595b001aa13-2": {
+          "type": "text",
           "settings": {
-            "icon": "none",
             "title": "Wo kann ich einen Gutschein kaufen?",
-            "text": "<p>Entweder in einem unserer lokalen Stores oder hier: <a href=\"/products/dquadrat-gutschein\" target=\"_blank\" title=\"DQUADRAT - Gutschein\">Gutschein</a></p>",
-            "open": false
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Entweder in unserem lokalen Teeladen oder hier: <a href=\"/products/dquadrat-gutschein\" target=\"_blank\" title=\"DQUADRAT - Gutschein\">Gutschein</a></p>"
           }
         }
       },
       "block_order": [
-        "1633681707d0a1c902-1",
-        "1633681707d0a1c902-0",
-        "5cb11ecd-702b-49ea-a078-b233faf22ad5"
+        "template--18077632758078__16b2dba1-91cf-41a2-aace-f1795a74fd4b-1677675595b001aa13-0",
+        "template--18077632758078__16b2dba1-91cf-41a2-aace-f1795a74fd4b-1677675595b001aa13-1",
+        "template--18077632758078__16b2dba1-91cf-41a2-aace-f1795a74fd4b-1677675595b001aa13-2"
       ],
       "settings": {
-        "title": "Zahlung & Gutscheine",
-        "alternate_bg_color": false,
-        "view_all_page": ""
+        "heading": "Zahlung & Gutscheine",
+        "subheading": "Sie haben Fragen, rund um Ihre Bezahlung? Vielleicht können wir Ihnen hier helfen.",
+        "section_heading_size": "text-size--large",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "cta_label": "",
+        "cta_url": "",
+        "form_enable": false,
+        "form_title": "Ihre Frage wurde nicht beantwortet?  Dann schreiben Sie uns gerne eine Nachricht.",
+        "style": "primary",
+        "open_first": false,
+        "gutter_decrease": true,
+        "seo_h_tag": "h2"
       }
     },
-    "1633684277a52541f1": {
-      "type": "accordions",
+    "d7bbed72-c0f1-40b8-9406-c61c1b626845": {
+      "type": "content-toggles",
       "blocks": {
-        "1633684277a52541f1-0": {
-          "type": "accordion",
+        "template--18027765825801__d7bbed72-c0f1-40b8-9406-c61c1b626845-text-1": {
+          "type": "text",
           "settings": {
-            "icon": "none",
             "title": "Wie lange dauert der Versand meiner Bestellung?",
-            "text": "<p>Standardmäßig dauert der Versand innerhalb Deutschlands 2-4 Werktage.</p><p>Innerhalb der EU 3-6 Werktage, jeweils nach Zahlungseingang.</p><p>Mehr Infos unter <a href=\"/pages/zahlung-versand\" title=\"Versand & Lieferung\">Versand & Lieferung.</a></p>",
-            "open": false
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Standardmäßig dauert der Versand innerhalb Deutschlands 2-4 Werktage.</p><p>Innerhalb der EU 3-6 Werktage, jeweils nach Zahlungseingang.</p><p><strong>Sollte ein Tee nicht ausreichend vorrätig sein, kann der Versand ggf. länger dauern. In diesem Fall werden wir Sie kontaktieren. </strong></p><p>Mehr Infos unter <a href=\"/pages/zahlung-versand\" title=\"Versand & Lieferung\">Versand & Lieferung.</a></p>"
           }
         },
-        "1633684277a52541f1-1": {
-          "type": "accordion",
+        "template--18027765825801__d7bbed72-c0f1-40b8-9406-c61c1b626845-text-2": {
+          "type": "text",
           "settings": {
-            "icon": "none",
             "title": "Kann ich meine Bestellung an eine DHL-Packstation liefern lassen?",
-            "text": "<p>Ja, gib dazu einfach die Adresse deiner Packstation als Lieferadresse ein.</p>",
-            "open": false
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Ja, geben Sie hierzu einfach die Adresse Ihrer Packstation als Lieferadresse ein.</p>"
           }
         },
-        "818eef40-1c5a-4826-8992-1037ad075610": {
-          "type": "accordion",
+        "template--18027765825801__d7bbed72-c0f1-40b8-9406-c61c1b626845-text-3": {
+          "type": "text",
           "settings": {
-            "icon": "none",
             "title": "Kann ich nachsehen wo mein Paket ist?",
-            "text": "<p>Ja, grundsätzlich erhältst du mit der Versandbestätigung den Trackingcode deiner Sendung. Mit diesem kannst du bei DHL den Sendungsstatus deiner Bestellung abfragen.</p>",
-            "open": false
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Grundsätzlich erhalten Sie mit der Versandbestätigung den Trackingcode Ihrer Sendung. Mit diesem können Sie bei DHL den Sendungsstatus Ihrer Bestellung abfragen.</p>"
           }
         },
-        "f95a416d-f3e8-4546-ac3b-23a7d6c4ebd5": {
-          "type": "accordion",
+        "b54b4afa-faac-439e-9d8b-54cff0e25ef6": {
+          "type": "text",
           "settings": {
-            "icon": "none",
-            "title": "Was kostet mich der Versand?",
-            "text": "<p>Siehe dazu <a href=\"/pages/zahlung-versand\" title=\"Versand & Lieferung\">Versand & Lieferung.</a></p>",
-            "open": false
+            "title": "Was kostet mich der Versand, wenn ich unter einem Wert von 40 € bestelle?",
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Sehen Sie dazu <a href=\"/pages/zahlung-versand\" title=\"Versand & Lieferung\">Versand & Lieferung.</a></p>"
           }
         },
-        "e5f33bef-3090-4734-b709-4a1027108801": {
-          "type": "accordion",
+        "db726bb6-f813-4d53-8ee5-79a3b7791f47": {
+          "type": "text",
           "settings": {
-            "icon": "none",
             "title": "In welche Länder wird verschickt?",
-            "text": "<p>Wir liefern innerhalb der Europäischen Union. Außnahme ist die Schweiz. Genauere Infos findest du unter <a href=\"/pages/zahlung-versand\" title=\"Versand & Lieferung\">Versand & Lieferung.</a></p><p>Du möchtest in ein anderes Land bestellen? Nimm einfach Kontakt mit uns auf und wir sehen was wir tun können. <a href=\"mailto:onlineshop@dquadrat.de\" title=\"mailto:onlineshop@dquadrat.de\">onlineshop@dquadrat.de</a></p>",
-            "open": false
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Wir liefern innerhalb der Europäischen Union. Außnahme ist die Schweiz. Genauere Informationen finden Sie unter <a href=\"/pages/zahlung-versand\" title=\"Versand & Lieferung\">Versand & Lieferung.</a></p><p>Sie möchten in ein anderes Land bestellen? Nehmen Sie einfach Kontakt mit uns auf und wir sehen, was wir für Sie tun können. </p><p>shop@tee-undkraeutergalerie.de</p>"
           }
         }
       },
       "block_order": [
-        "1633684277a52541f1-0",
-        "1633684277a52541f1-1",
-        "818eef40-1c5a-4826-8992-1037ad075610",
-        "f95a416d-f3e8-4546-ac3b-23a7d6c4ebd5",
-        "e5f33bef-3090-4734-b709-4a1027108801"
+        "template--18027765825801__d7bbed72-c0f1-40b8-9406-c61c1b626845-text-1",
+        "template--18027765825801__d7bbed72-c0f1-40b8-9406-c61c1b626845-text-2",
+        "template--18027765825801__d7bbed72-c0f1-40b8-9406-c61c1b626845-text-3",
+        "b54b4afa-faac-439e-9d8b-54cff0e25ef6",
+        "db726bb6-f813-4d53-8ee5-79a3b7791f47"
       ],
       "settings": {
-        "title": "Versand & Lieferung",
-        "alternate_bg_color": false,
-        "view_all_page": ""
+        "heading": "Versand & Lieferung",
+        "subheading": "Sie haben Fragen zum Versand oder Lieferung, vielleicht werden Sie hier fündig.",
+        "section_heading_size": "text-size--regular",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "cta_label": "",
+        "cta_url": "",
+        "form_enable": false,
+        "form_title": "Contact form",
+        "style": "outline",
+        "open_first": false,
+        "gutter_decrease": false,
+        "seo_h_tag": "h2"
       }
     },
-    "165710489887980ca0": {
-      "type": "accordions",
+    "2c6e4807-7f04-43b9-a130-27a537d04d6c": {
+      "type": "content-toggles",
       "blocks": {
-        "165710489838622b3a-0": {
-          "type": "accordion",
+        "template--18027765825801__2c6e4807-7f04-43b9-a130-27a537d04d6c-text-1": {
+          "type": "text",
           "settings": {
-            "icon": "none",
             "title": "Wie retourniere ich meine Bestellung?",
-            "text": "<p><strong>Rücksendung:</strong></p><p><strong>1.</strong> Bitte fülle den beiliegenden Retourenschein vollständig aus und lege ihn ins Paket.<br/><strong>2.</strong> Sende das Paket an uns zurück. Die Adresse findest du auf dem Retourenschein. </p><p><strong>Die Versandkosten für die Retoure sind selbst zu zahlen.</strong></p><p><strong>Allgemeine Retoureninformation:</strong></p><p>Bitte beachte, dass die Bearbeitung von Retouren bis zu 10 Werktage dauern kann. Die Rückerstattung erfolgt auf dem gleichen Zahlungsweg, wie bei Bestellabschluss.</p><p></p><p>Mehr Infos findest du <a href=\"/pages/rucksendung-ruckerstattung\" title=\"Rücksendung & Rückerstattung\">hier.</a></p>",
-            "open": false
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p><strong>Rücksendung:</strong></p><p><strong>1.</strong> Bitte füllen Sie den beiliegenden Retourenschein vollständig aus und legen Sie diesen in Ihr  Paket.<br/><strong>2.</strong> Senden Sie das Paket an uns zurück. Die Adresse finden Sie auf dem Retourenschein. </p><p><strong>Die Versandkosten für die Retoure sind selbst zu zahlen.</strong></p><h4><strong>Allgemeine Retoureninformation:</strong></h4><p><strong>Wichtig, frisch abgepackter Tee ist aus Hygienegründen von der Rückgabe ausgeschlossen.</strong></p><p>Bitte beachten Sie, dass die Bearbeitung von Retouren bis zu 10 Werktage dauern kann. Die Rückerstattung erfolgt auf dem gleichen Zahlungsweg, wie bei Bestellabschluss.</p><p></p><p>Mehr Infos finden Sie <a href=\"/pages/rucksendung-ruckerstattung\" title=\"Rücksendung & Rückerstattung\">hier.</a></p>"
           }
         },
-        "165710489838622b3a-1": {
-          "type": "accordion",
+        "template--18027765825801__2c6e4807-7f04-43b9-a130-27a537d04d6c-text-2": {
+          "type": "text",
           "settings": {
-            "icon": "none",
+            "title": "Darf ich Tee zurücksenden?",
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Lebensmittel, welche geöffnet wurden, sind vom Rückgaberecht ausgeschlossen. Wir füllen den Tee immer frisch für Sie ab und verschließen den Tee mit einem Verschlussstreifen. Da wir in diesem Fall nicht nachweisen können, dass der Tee nicht von Ihnen geöffnet wurde, können wir diesen Tee nicht zurücknehmen. </p><p>Teegeschirr, Zubehör und eingeschweißten Tee können Sie selbstverständlich innerhalb von 14 Tagen an uns zurücksenden. </p>"
+          }
+        },
+        "template--18027765825801__2c6e4807-7f04-43b9-a130-27a537d04d6c-text-3": {
+          "type": "text",
+          "settings": {
             "title": "Wann erhalte ich mein Geld zurück?",
-            "text": "<p>Nachdem deine Rücksendung bei uns angekommen ist und wir diese geprüft haben. Dies kann je nach Aufkommen bis zu 10 Tage dauern.</p>",
-            "open": false
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Nachdem Ihre Rücksendung bei uns angekommen ist, und wir diese geprüft haben. Dies kann je nach Aufkommen bis zu 14 Tage dauern.</p>"
           }
         },
-        "165710489838622b3a-2": {
-          "type": "accordion",
+        "9071355d-4c01-469a-af92-8751cbb078d7": {
+          "type": "text",
           "settings": {
-            "icon": "none",
             "title": "Wie erhalte ich mein Geld zurück?",
-            "text": "<p>Die Rückerstattung erfolgt auf dem gleichen Zahlungsweg wie bei Bestellabschluss.</p>",
-            "open": false
-          }
-        },
-        "17d43cc3-e673-4b33-bdf3-669aa89f539d": {
-          "type": "accordion",
-          "settings": {
-            "icon": "none",
-            "title": "Falls mir ein Artikel nicht gefällt, kann ich diesen zurückschicken?",
-            "text": "<p>Selbstverständlich kannst du ungetragene Artikel innerhalb von 14 Tagen an uns zurückschicken.</p><p><strong>Bitte beachte hierbei ein paar Details:</strong></p><p>- Bitte schicke gekaufte Artikel immer mit dem anhängenden Etikett zurück, ansonsten erfolgt keine Rückerstattung des Kaufpreises.</p><p>- Trachtenmode/Mode wird nur mit unbeschädigtem Sicherheitsband zurückgenommen.</p><p>- Bitte lege deiner Rücksendung den ausgefüllten Retourenschein bei.</p><p>- Bitte verwende bei der Rücksendung möglichst die Originalverpackung des Produkts. Wir versuchen aus ökologischen Gründen, so viele Versandverpackungen wie möglich wiederzuverwenden und bitten dich, das auch zu tun.</p>",
-            "open": false
+            "subtitle": "",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Die Rückerstattung erfolgt auf dem gleichen Zahlungsweg, wie bei Bestellabschluss.</p>"
           }
         }
       },
       "block_order": [
-        "165710489838622b3a-0",
-        "165710489838622b3a-1",
-        "165710489838622b3a-2",
-        "17d43cc3-e673-4b33-bdf3-669aa89f539d"
+        "template--18027765825801__2c6e4807-7f04-43b9-a130-27a537d04d6c-text-1",
+        "template--18027765825801__2c6e4807-7f04-43b9-a130-27a537d04d6c-text-2",
+        "template--18027765825801__2c6e4807-7f04-43b9-a130-27a537d04d6c-text-3",
+        "9071355d-4c01-469a-af92-8751cbb078d7"
       ],
       "settings": {
-        "title": "Rücksendung & Rückerstattung",
-        "alternate_bg_color": false,
-        "view_all_page": ""
+        "heading": "Rücksendung & Rückerstattung",
+        "subheading": "",
+        "section_heading_size": "text-size--regular",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "cta_label": "",
+        "cta_url": "",
+        "form_enable": true,
+        "form_title": "Ihre Frage wurde nicht beantwortet? Dann senden Sie uns bitte eine Nachricht.",
+        "style": "outline",
+        "open_first": false,
+        "gutter_decrease": false,
+        "seo_h_tag": "h2"
       }
     },
-    "16572870464af1cd4d": {
-      "type": "accordions",
+    "e48326d5-c2cd-4c62-8aab-86ed306bc290": {
+      "type": "content-toggles",
       "blocks": {
-        "13449687-9343-40e5-b39d-0e9131924e4c": {
-          "type": "accordion",
+        "template--18027765825801__e48326d5-c2cd-4c62-8aab-86ed306bc290-text-1": {
+          "type": "text",
           "settings": {
-            "icon": "none",
-            "title": "Die kleinen Knöpfe an der Schürze fehlen/sind abgefallen. Kann ich das Dirndl dann reklamieren?",
-            "text": "<p>Nein, dies ist kein Reklamationsgrund, da man ohnehin nach Erhalt des Dirndls, die zwei transparenten Knöpfe abschneiden sollte. Diese sind nur für den Transport der Schürze gedacht, da die Schürze direkt auf der Taille getragen werden sollte.</p>",
-            "open": false
+            "title": "Shipping details",
+            "subtitle": "Question subtitle",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Write some useful information about your shipping details</p><p>Link to your <a href='#'>shipping policy</a>.</p>"
           }
         },
-        "16572870464dcbabd2-0": {
-          "type": "accordion",
+        "template--18027765825801__e48326d5-c2cd-4c62-8aab-86ed306bc290-text-2": {
+          "type": "text",
           "settings": {
-            "icon": "none",
-            "title": "Sind einzelne Schürzen erhältlich?",
-            "text": "<p>Nein, die Schürzen werden immer nur <strong>zusammen</strong> mit dem Dirndl produziert und sind daher nicht einzeln erhältlich.</p>",
-            "open": false
+            "title": "Delivery details",
+            "subtitle": "Question subtitle",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Let your customers know if you offer free delivery for certain types of orders</p><p>Link to your <a href='#'>offers page</a>.</p>"
           }
         },
-        "16572870464dcbabd2-1": {
-          "type": "accordion",
+        "template--18027765825801__e48326d5-c2cd-4c62-8aab-86ed306bc290-text-3": {
+          "type": "text",
           "settings": {
-            "icon": "none",
-            "title": "Welche Größe ist die richtige Größe für mich?",
-            "text": "<p>Hier empfiehlt sich ein Blick in unsere <a href=\"/pages/grossenberatung-1\" title=\"Größenberatung\">Größenberatung.</a></p>",
-            "open": false
-          }
-        },
-        "16572870464dcbabd2-2": {
-          "type": "accordion",
-          "settings": {
-            "icon": "none",
-            "title": "Kann ich einen Artikel vorab reservieren?",
-            "text": "<p>Nein, wir bieten keine Vorab-Reservierungen von Artikeln an.</p>",
-            "open": false
-          }
-        },
-        "ee6adfd9-768e-4d03-baac-881f8ec83e03": {
-          "type": "accordion",
-          "settings": {
-            "icon": "none",
-            "title": "Hat jedes Dirndl Taschen?",
-            "text": "<p>Ja, die Dirndl von Krüger haben alle Taschen, diese findest du unterhalb der Schürze.</p>",
-            "open": false
-          }
-        },
-        "6609fff3-e585-452d-96eb-ac30357199f8": {
-          "type": "accordion",
-          "settings": {
-            "icon": "none",
-            "title": "Wie kann ich mein Trachtenoutfit pflegen?",
-            "text": "<p><a href=\"/pages/lederhose-reinigen\" title=\"Lederhose reinigen\">Lederhose reinigen.</a></p><p><a href=\"/pages/darf-mein-dirndl-in-die-waschmaschine\" title=\"Darf mein Dirndl in die Waschmaschine?\">Darf mein Dirndl in die Waschmaschine?</a></p>",
-            "open": false
-          }
-        },
-        "96f9f2aa-db4b-47c4-bd84-f30d635a5b38": {
-          "type": "accordion",
-          "settings": {
-            "icon": "none",
-            "title": "Mein Dirndl ist zu eng geworden, was kann ich tun?",
-            "text": "<p>Im Mieder deines Krüger-Dirndls ist auf beiden Seiten eine Nahtzugabe. Hier kannst du dein Dirndl bis zu einer Größe größer auslassen. </p>",
-            "open": false
+            "title": "Returns details",
+            "subtitle": "Question subtitle",
+            "icon": "no-icon",
+            "button_label": "",
+            "button_link": "",
+            "body": "<p>Show customers how much time they have for testing your products</p><p>Link to your <a href='#'>returns policy</a>.</p>"
           }
         }
       },
       "block_order": [
-        "13449687-9343-40e5-b39d-0e9131924e4c",
-        "16572870464dcbabd2-0",
-        "16572870464dcbabd2-1",
-        "16572870464dcbabd2-2",
-        "ee6adfd9-768e-4d03-baac-881f8ec83e03",
-        "6609fff3-e585-452d-96eb-ac30357199f8",
-        "96f9f2aa-db4b-47c4-bd84-f30d635a5b38"
+        "template--18027765825801__e48326d5-c2cd-4c62-8aab-86ed306bc290-text-1",
+        "template--18027765825801__e48326d5-c2cd-4c62-8aab-86ed306bc290-text-2",
+        "template--18027765825801__e48326d5-c2cd-4c62-8aab-86ed306bc290-text-3"
       ],
+      "disabled": true,
       "settings": {
-        "title": "Produkte & Bestand",
-        "alternate_bg_color": false,
-        "view_all_page": ""
+        "heading": "Tee & Besonderheiten",
+        "subheading": "",
+        "section_heading_size": "text-size--regular",
+        "section_heading_layout": "section-heading--left section-heading--one-row",
+        "cta_label": "",
+        "cta_url": "",
+        "form_enable": false,
+        "form_title": "Contact form",
+        "style": "outline",
+        "open_first": false,
+        "gutter_decrease": false,
+        "seo_h_tag": "h2"
       }
     }
   },
   "order": [
-    "1633684260f2d526f0",
     "main",
-    "16336816691fb51b7b",
-    "1633681707d0a1c902",
-    "1633684277a52541f1",
-    "165710489887980ca0",
-    "16572870464af1cd4d"
+    "cd546e5d-492e-48dd-b25b-9fd2ac20bf8d",
+    "16b2dba1-91cf-41a2-aace-f1795a74fd4b",
+    "d7bbed72-c0f1-40b8-9406-c61c1b626845",
+    "2c6e4807-7f04-43b9-a130-27a537d04d6c",
+    "e48326d5-c2cd-4c62-8aab-86ed306bc290"
   ]
 }
