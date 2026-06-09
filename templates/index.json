@@ -94,8 +94,8 @@
         "image_rHNarN": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_1024_73.png",
-            "mobile_image": "shopify://shop_images/Mobile_Slider_297_x_420_mm_17.png",
+            "image": "shopify://shop_images/Banner_Slider_Startseite_2048_x_852_px2048_x_850_px_1_b5194f51-89ec-4d0f-8227-e4bdf1bc000c.png",
+            "mobile_image": "shopify://shop_images/Mobile_Slider_297_x_420_mm_1_3ddfd259-c6c9-46cf-afdc-2340e389719d.png",
             "desktop_image_position": "center center",
             "mobile_image_position": "left bottom",
             "slide_link": "shopify://collections/angebote-der-woche",

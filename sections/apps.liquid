@@ -1,17 +1,26 @@
-<div class="section-spacing {% unless section.settings.skip_container %}container{% endunless %}" data-cc-animate>
-  {%- for block in section.blocks -%}
-    {% render block %}
-  {%- endfor -%}
+<div class="container {% unless section.settings.remove_margin %} container--vertical-space {% endunless %} {% unless section.settings.full_width %} container--large {% else %} container--fullwidth {% endunless %}">
+  {%- liquid
+    for block in section.blocks
+      render block
+    endfor
+  -%}
 </div>
 
 {% schema %}
 {
-  "name": "Apps",
+  "name": "t:sections.apps.name",
+  "class": "mount-app",
   "settings": [
     {
       "type": "checkbox",
-      "id": "skip_container",
-      "label": "Full page width",
+      "id": "full_width",
+      "label": "t:sections.image.fullwidth",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "remove_margin",
+      "label": "t:sections.local-extra-words.sections.rich-text.settings.remove_margin.label",
       "default": false
     }
   ],
@@ -22,7 +31,7 @@
   ],
   "presets": [
     {
-      "name": "Apps"
+      "name": "t:sections.apps.presets.name"
     }
   ]
 }

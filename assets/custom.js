@@ -1,252 +1,198 @@
 /**
- * Free gift chooser: when cart total reaches threshold, show 3 product options.
- * User chooses one to add as free gift. Free gift is removed if cart drops below threshold.
+ * Custom free-product offer: show 3 free product choices when cart total
+ * >= minimum (custom_integer in €). User chooses which one to add.
+ * When cart drops below minimum, free gift is auto-removed.
  */
 (function () {
-  if (!window.theme || !window.theme.freeGift) return;
-  var config = window.theme.freeGift;
-  if (config.thresholdCents <= 0) return;
+  'use strict';
 
-  var thresholdCents = config.thresholdCents;
-  var variantIds = config.variantIds || [];
-  var products = config.products || [];
-  var cartAddUrl = (window.theme.routes && window.theme.routes.cart_add_url) ? window.theme.routes.cart_add_url + '.js' : '/cart/add.js';
-  var cartUrl = (window.theme.routes && window.theme.routes.cart_url) ? window.theme.routes.cart_url + '.js' : '/cart.js';
-  var cartChangeUrl = ((window.theme.routes && window.theme.routes.cart_url) ? window.theme.routes.cart_url.replace(/\/?$/, '') : '/cart') + '/change.js';
+  const CART_JSON = '/cart.js';
+  const OFFER_ID = 'custom-free-product-offer';
+  var autoRemoveInProgress = false;
 
-  var containerId = 'free-gift-chooser';
-  var progressBarId = 'free-gift-progress-bar';
-  var headlineText = 'Wähle dein Gratisgeschenk';
-
-  function formatMoney(cents) {
-    var val = (cents / 100).toFixed(2).replace('.', ',');
-    return '€' + val;
+  function getConfig() {
+    return window.KROWN && window.KROWN.settings && window.KROWN.settings.custom;
   }
 
-  function buildProgressBarHTML(cart) {
-    var totalCents = cart.total_price || 0;
-    var progress = thresholdCents > 0 ? Math.min(100, Math.round((totalCents / thresholdCents) * 100)) : 0;
-    var qualified = totalCents >= thresholdCents;
-    var currentStr = formatMoney(totalCents);
-    var goalStr = formatMoney(thresholdCents);
-    var remainingCents = Math.max(0, thresholdCents - totalCents);
-    var remainingStr = formatMoney(remainingCents);
-
-    var msg = qualified
-      ? 'Du hast dich für ein Gratisgeschenk qualifiziert!'
-      : 'Noch ' + remainingStr + ' bis zum Gratisgeschenk';
-
-    var html = '<div id="' + progressBarId + '" class="free-gift-progress">';
-    html += '<div class="free-gift-progress__text">' + currentStr + ' / ' + goalStr + '</div>';
-    html += '<div class="free-gift-progress__bar"><span class="free-gift-progress__fill" style="width:' + progress + '%"></span></div>';
-    html += '<div class="free-gift-progress__msg">' + msg + '</div>';
-    html += '</div>';
-    return html;
+  function isConfigured(config) {
+    return config &&
+      config.free_products &&
+      Array.isArray(config.free_products) &&
+      config.free_products.length > 0;
   }
 
-  function updateProgressBars(cart) {
-    if (!cart || config.thresholdCents <= 0) return;
-    var html = buildProgressBarHTML(cart);
-
-    var cartSection = document.querySelector('[data-section-type="cart-template"]');
-    if (cartSection) {
-      var existing = cartSection.querySelector('#' + progressBarId);
-      if (existing) {
-        existing.outerHTML = html;
-      } else {
-        var wrap = document.createElement('div');
-        wrap.className = 'free-gift-progress-wrapper';
-        wrap.innerHTML = html;
-        cartSection.insertBefore(wrap, cartSection.firstChild);
-      }
-    }
-
-    var modalInner = document.querySelector('#added-to-cart .inner');
-    if (modalInner) {
-      var existingInModal = modalInner.querySelector('#' + progressBarId);
-      if (existingInModal) {
-        existingInModal.outerHTML = html;
-      } else {
-        var wrapModal = document.createElement('div');
-        wrapModal.className = 'free-gift-progress-wrapper free-gift-progress-wrapper--modal';
-        wrapModal.innerHTML = html;
-        modalInner.insertBefore(wrapModal, modalInner.firstChild);
-      }
-    }
+  function fetchCart() {
+    return fetch(CART_JSON).then(function (r) { return r.json(); });
   }
 
-  function getCart() {
-    return fetch(cartUrl).then(function (res) { return res.json(); });
+  function hasAnyFreeProductInCart(cart, freeProductIds) {
+    if (!cart.items || !freeProductIds || freeProductIds.length === 0) return false;
+    return cart.items.some(function (item) {
+      return freeProductIds.indexOf(String(item.product_id)) !== -1;
+    });
   }
 
-  function addToCart(variantId, quantity) {
-    quantity = quantity || 1;
-    return fetch(cartAddUrl, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify({ id: variantId, quantity: quantity })
-    }).then(function (res) { return res.json(); });
-  }
-
-  function removeFromCart(lineItemKey) {
-    return fetch(cartChangeUrl, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify({ id: lineItemKey, quantity: 0 })
-    }).then(function (res) { return res.json(); });
-  }
-
-  function isFreeGiftVariant(variantId) {
-    return variantIds.indexOf(variantId) !== -1;
-  }
-
-  function refreshCartUI() {
-    if (window.location.pathname === '/cart' || window.location.pathname === '/cart/') {
-      setTimeout(function () { window.location.reload(); }, 200);
-    } else {
-      document.dispatchEvent(new CustomEvent('cart:refresh'));
-    }
-  }
-
-  function freeGiftVariantInCart(cart) {
-    if (!cart || !cart.items) return null;
+  function getFreeProductLineItemInCart(cart, freeProductIds) {
+    if (!cart.items || !freeProductIds) return null;
     for (var i = 0; i < cart.items.length; i++) {
-      if (isFreeGiftVariant(cart.items[i].variant_id)) return cart.items[i];
+      if (freeProductIds.indexOf(String(cart.items[i].product_id)) !== -1) {
+        return cart.items[i];
+      }
     }
     return null;
   }
 
-  function buildChooserHTML(cart) {
-    var totalCents = cart.total_price || 0;
-    var qualified = totalCents >= thresholdCents;
-    var existing = freeGiftVariantInCart(cart);
-    var existingVariantId = existing ? existing.variant_id : null;
-
-    var html = '<div class="free-gift-chooser" data-qualified="' + qualified + '">';
-    html += '<p class="free-gift-chooser__headline">' + headlineText + '</p>';
-    html += '<div class="free-gift-chooser__products">';
-    products.forEach(function (p) {
-      var inCart = existingVariantId === p.variantId;
-      var disabled = existing !== null && !inCart;
-      html += '<div class="free-gift-chooser__product' + (inCart ? ' is-added' : '') + '">';
-      html += '<a href="' + (p.productUrl || '#') + '" class="free-gift-chooser__image-wrap">';
-      html += '<img src="' + (p.imageUrl || '') + '" alt="" class="free-gift-chooser__image" loading="lazy">';
-      html += '</a>';
-      html += '<p class="free-gift-chooser__title">' + (p.title || '') + '</p>';
-      if (inCart) {
-        html += '<span class="free-gift-chooser__btn free-gift-chooser__btn--added">Hinzugefügt</span>';
-      } else if (disabled) {
-        html += '<span class="free-gift-chooser__btn free-gift-chooser__btn--disabled">Nur eines wählbar</span>';
-      } else {
-        html += '<button type="button" class="free-gift-chooser__btn" data-variant-id="' + p.variantId + '">Als Geschenk hinzufügen</button>';
-      }
-      html += '</div>';
-    });
-    html += '</div></div>';
-
-    return html;
+  function cartTotalMeetsMinimum(cart, minEuro) {
+    var minCents = (parseInt(minEuro, 10) || 0) * 100;
+    return cart.total_price >= minCents;
   }
 
-  function showOrHideChooser(cart) {
-    var totalCents = cart.total_price || 0;
-    var qualified = totalCents >= thresholdCents;
-    var container = document.getElementById(containerId);
-    if (!container) return;
+  function getFreeProductIds(config) {
+    if (!config || !config.free_products) return [];
+    return config.free_products.map(function (p) { return String(p.id); });
+  }
 
-    if (qualified) {
-      container.innerHTML = buildChooserHTML(cart);
-      container.classList.add('free-gift-chooser--visible');
-      container.querySelectorAll('.free-gift-chooser__btn[data-variant-id]').forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          var variantId = parseInt(btn.getAttribute('data-variant-id'), 10);
-          btn.disabled = true;
-          btn.textContent = '…';
-          addToCart(variantId, 1).then(function () {
-            refreshCartUI();
-            getCart().then(function (updatedCart) {
-              showOrHideChooser(updatedCart);
-            });
-          }).catch(function () {
-            btn.disabled = false;
-            btn.textContent = 'Als Geschenk hinzufügen';
-          });
-        });
-      });
-    } else {
-      container.classList.remove('free-gift-chooser--visible');
-      container.innerHTML = '';
+  function updateOfferUi(show, config) {
+    var el = document.getElementById(OFFER_ID);
+    if (!el) return;
+    el.style.display = show ? 'block' : 'none';
+  }
+
+  function addFreeProduct(variantId) {
+    var id = parseInt(String(variantId), 10);
+    if (!id) return Promise.reject(new Error('Invalid variant id'));
+    var addUrl = (window.KROWN && window.KROWN.settings && window.KROWN.settings.routes && window.KROWN.settings.routes.cart_add_url) || '/cart/add';
+    var body = JSON.stringify({
+      items: [{ id: id, quantity: 1 }]
+    });
+    return fetch(addUrl + '.js', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: body
+    }).then(function (r) { return r.json(); });
+  }
+
+  function removeFreeProduct(cart, freeProductIds) {
+    var lineItem = getFreeProductLineItemInCart(cart, freeProductIds);
+    if (!lineItem || !lineItem.key) return Promise.reject(new Error('Free product not in cart'));
+    var changeUrl = (window.KROWN && window.KROWN.settings && window.KROWN.settings.routes && window.KROWN.settings.routes.cart_change_url) || '/cart/change';
+    var body = JSON.stringify({ id: lineItem.key, quantity: 0 });
+    return fetch(changeUrl + '.js', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: body
+    }).then(function (r) { return r.json(); });
+  }
+
+  function refreshCart() {
+    if (typeof window.refreshCart === 'function') {
+      window.refreshCart();
     }
   }
 
-  function removeFreeGiftIfBelowThreshold(cart) {
-    var totalCents = cart.total_price || 0;
-    if (totalCents >= thresholdCents) return;
-    var item = freeGiftVariantInCart(cart);
-    if (!item) return;
-    removeFromCart(item.key).then(refreshCartUI).catch(function () {});
-  }
+  function run() {
+    var config = getConfig();
+    if (!isConfigured(config)) return;
+    if (autoRemoveInProgress) return;
 
-  function updateFreeGiftUI() {
-    getCart().then(function (cart) {
-      removeFreeGiftIfBelowThreshold(cart);
-      updateProgressBars(cart);
-      if (!products.length) return;
-      var container = document.getElementById(containerId);
-      if (!container) {
-        container = document.createElement('div');
-        container.id = containerId;
-        container.className = 'free-gift-chooser-wrapper';
-        document.body.appendChild(container);
+    var freeProductIds = getFreeProductIds(config);
+
+    fetchCart().then(function (cart) {
+      var hasFree = hasAnyFreeProductInCart(cart, freeProductIds);
+      var meetsMinimum = cartTotalMeetsMinimum(cart, config.integer);
+      var show = meetsMinimum && !hasFree;
+
+      if (!meetsMinimum && hasFree) {
+        autoRemoveInProgress = true;
+        removeFreeProduct(cart, freeProductIds).then(function (res) {
+          if (res.status && (res.status === 422 || res.message)) {
+            autoRemoveInProgress = false;
+            return;
+          }
+          refreshCart();
+          setTimeout(function () {
+            autoRemoveInProgress = false;
+            run();
+          }, 600);
+        }).catch(function () {
+          autoRemoveInProgress = false;
+        });
+      } else {
+        updateOfferUi(show, config);
       }
-      showOrHideChooser(cart);
-    }).catch(function () {});
-  }
-
-  (function injectStyles() {
-    var css = [
-      '.free-gift-chooser-wrapper{position:fixed;bottom:0;left:0;right:0;z-index:9999;padding:12px 16px;background:#fff;box-shadow:0 -4px 20px rgba(0,0,0,.12);transform:translateY(100%);transition:transform .3s ease;}',
-      '.free-gift-chooser-wrapper.free-gift-chooser--visible{transform:translateY(0);}',
-      '.free-gift-chooser__headline{margin:0 0 12px;font-size:1rem;font-weight:600;text-align:center;}',
-      '.free-gift-chooser__products{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;max-width:900px;margin:0 auto;}',
-      '.free-gift-chooser__product{flex:0 0 auto;width:140px;text-align:center;}',
-      '.free-gift-chooser__image-wrap{display:block;margin-bottom:8px;}',
-      '.free-gift-chooser__image{width:100%;height:140px;object-fit:cover;border-radius:6px;}',
-      '.free-gift-chooser__title{margin:0 0 8px;font-size:13px;line-height:1.3;}',
-      '.free-gift-chooser__btn{display:inline-block;padding:8px 12px;font-size:12px;cursor:pointer;border:1px solid #e50051;color:#e50051;background:#fff;border-radius:4px;}',
-      '.free-gift-chooser__btn:hover:not(:disabled){background:#e50051;color:#fff;}',
-      '.free-gift-chooser__btn--added,.free-gift-chooser__btn--disabled{cursor:default;border-color:#ccc;color:#666;background:#f5f5f5;}',
-      '.free-gift-progress-wrapper{margin-bottom:1.25rem;}',
-      '.free-gift-progress-wrapper--modal{margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #eee;}',
-      '.free-gift-progress{font-size:14px;}',
-      '.free-gift-progress__text{font-weight:600;margin-bottom:6px;}',
-      '.free-gift-progress__bar{height:10px;background:#e8e8e8;border-radius:5px;overflow:hidden;}',
-      '.free-gift-progress__fill{display:block;height:100%;background:#e50051;border-radius:5px;transition:width .3s ease;}',
-      '.free-gift-progress__msg{margin-top:6px;font-size:13px;color:#555;}',
-      '@media (min-width:768px){.free-gift-chooser-wrapper{padding:16px 24px;} .free-gift-chooser__product{width:160px;} .free-gift-chooser__image{height:160px;}}'
-    ].join('');
-    var style = document.createElement('style');
-    style.id = 'free-gift-chooser-styles';
-    style.textContent = css;
-    if (!document.getElementById(style.id)) document.head.appendChild(style);
-  })();
-
-  updateFreeGiftUI();
-
-  var runs = 0;
-  var interval = setInterval(function () {
-    updateFreeGiftUI();
-    if (++runs >= 4) clearInterval(interval);
-  }, 2500);
-
-  document.addEventListener('cart:updated', updateFreeGiftUI);
-  document.addEventListener('theme:cart:updated', updateFreeGiftUI);
-
-  (function observeAddedToCartModal() {
-    var observer = new MutationObserver(function () {
-      if (document.getElementById('added-to-cart')) {
-        getCart().then(updateProgressBars);
-      }
+    }).catch(function () {
+      updateOfferUi(false);
     });
-    observer.observe(document.body, { childList: true, subtree: true });
-  })();
+  }
+
+  function onAddFreeClick(e) {
+    var btn = e.target.closest('[data-js-add-free-product]');
+    if (!btn) return;
+
+    var variantId = btn.getAttribute('data-free-variant-id');
+    if (!variantId) return;
+
+    var config = getConfig();
+    if (!config) return;
+
+    btn.disabled = true;
+    btn.textContent = '…';
+
+    addFreeProduct(variantId).then(function (res) {
+      if (res.status && (res.status === 422 || res.message)) {
+        btn.disabled = false;
+        btn.textContent = 'Kostenlos hinzufügen';
+        if (typeof alert !== 'undefined') alert(res.description || res.message);
+        return;
+      }
+      refreshCart();
+      setTimeout(run, 600);
+      btn.disabled = false;
+      btn.textContent = 'Kostenlos hinzufügen';
+    }).catch(function () {
+      btn.disabled = false;
+      btn.textContent = 'Kostenlos hinzufügen';
+    });
+  }
+
+  function bind() {
+    document.removeEventListener('click', onAddFreeClick);
+    document.addEventListener('click', onAddFreeClick);
+  }
+
+  function debounce(fn, ms) {
+    var t;
+    return function () {
+      clearTimeout(t);
+      t = setTimeout(fn, ms);
+    };
+  }
+
+  function observeCartForm() {
+    var form = document.getElementById('AjaxCartForm');
+    if (!form || form._customFreeOfferObserved) return;
+    form._customFreeOfferObserved = true;
+    var runDebounced = debounce(run, 150);
+    var observer = new MutationObserver(function () {
+      runDebounced();
+    });
+    observer.observe(form, { childList: true, subtree: true });
+  }
+
+  function init() {
+    bind();
+    run();
+    observeCartForm();
+
+    var form = document.getElementById('AjaxCartForm');
+    if (form) {
+      form.addEventListener('cart-updated', run);
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
 })();
